@@ -1,0 +1,389 @@
+# Curriculum Data: Bayern Gymnasium Mathematik Klasse 7
+# Based on Lehrplan PLUS Bayern 2024
+
+curriculum_metadata:
+  region: "Bayern"
+  country: "Germany"
+  school_type: "Gymnasium"
+  subject: "Mathematik"
+  subject_en: "Mathematics"
+  grade: 7
+  klassenstufe: 7
+  age_range: "12-13"
+  source: "Lehrplan PLUS Bayern"
+  source_url: "https://www.lehrplanplus.bayern.de/schulart/gymnasium"
+  document_version: "2024"
+  last_updated: "2024-09-01"
+  next_review: "2026-09-01"
+  language: "de"
+
+# Main curriculum topics for Grade 7
+topics:
+  - id: "algebra_equations"
+    name_de: "Lineare Gleichungen"
+    name_en: "Linear Equations"
+    category: "Algebra"
+    
+    learning_objectives:
+      - id: "LO1"
+        text_de: "Lösen einfacher linearer Gleichungen"
+        text_en: "Solving simple linear equations"
+        bloom_level: "Apply"
+        curriculum_ref: "LP-PLUS-BY-GYM-M7-2.3"
+        description: "Schüler lösen lineare Gleichungen der Form ax + b = c durch Äquivalenzumformungen"
+      
+      - id: "LO2"
+        text_de: "Anwenden von Äquivalenzumformungen"
+        text_en: "Applying equivalent transformations"
+        bloom_level: "Apply"
+        curriculum_ref: "LP-PLUS-BY-GYM-M7-2.3.1"
+        description: "Schüler wenden Äquivalenzumformungen systematisch an (Addition, Subtraktion, Multiplikation, Division)"
+      
+      - id: "LO3"
+        text_de: "Übersetzen von Sachaufgaben in Gleichungen"
+        text_en: "Translating word problems into equations"
+        bloom_level: "Analyze"
+        curriculum_ref: "LP-PLUS-BY-GYM-M7-2.3.2"
+        description: "Schüler modellieren Sachsituationen durch Aufstellen und Lösen linearer Gleichungen"
+      
+      - id: "LO4"
+        text_de: "Durchführen von Proben zur Lösungsüberprüfung"
+        text_en: "Performing solution checks"
+        bloom_level: "Evaluate"
+        curriculum_ref: "LP-PLUS-BY-GYM-M7-2.3.3"
+        description: "Schüler überprüfen Lösungen durch Einsetzen (Probe)"
+    
+    competency_areas:
+      - name_de: "Mit symbolischen und formalen Elementen umgehen"
+        name_en: "Working with symbolic and formal elements"
+        weight: "high"
+        curriculum_ref: "LP-PLUS-BY-GYM-M-K5"
+        percentage: 60
+      
+      - name_de: "Mathematisch argumentieren"
+        name_en: "Mathematical reasoning"
+        weight: "medium"
+        curriculum_ref: "LP-PLUS-BY-GYM-M-K1"
+        percentage: 30
+      
+      - name_de: "Probleme lösen"
+        name_en: "Problem solving"
+        weight: "medium"
+        curriculum_ref: "LP-PLUS-BY-GYM-M-K2"
+        percentage: 10
+    
+    content_scope:
+      include:
+        - "Einfache lineare Gleichungen (ax + b = c)"
+        - "Gleichungen mit Variablen auf beiden Seiten (ax + b = cx + d)"
+        - "Gleichungen mit Klammern"
+        - "Sachaufgaben mit linearen Gleichungen"
+        - "Proben durchführen"
+        - "Lösungsmengen angeben"
+      
+      exclude:
+        - "Quadratische Gleichungen (erst Klasse 9)"
+        - "Lineare Gleichungssysteme (erst Klasse 8)"
+        - "Bruchgleichungen (erst Klasse 8)"
+        - "Wurzelgleichungen (erst Klasse 9)"
+        - "Exponentialgleichungen (erst Klasse 10)"
+      
+      prerequisites:
+        - "Grundrechenarten sicher beherrschen"
+        - "Umgang mit Variablen und Termen"
+        - "Rechengesetze (Kommutativ-, Assoziativ-, Distributivgesetz)"
+        - "Bruchrechnung Grundlagen"
+        - "Negative Zahlen"
+      
+      follow_up_topics:
+        - "Lineare Gleichungssysteme (Klasse 8)"
+        - "Lineare Funktionen (Klasse 8)"
+        - "Ungleichungen (Klasse 8)"
+    
+    difficulty_recommendations:
+      distribution:
+        easy: 30
+        medium: 50
+        hard: 20
+      
+      explanation: "Gymnasium Klasse 7 - Mittelstufe, akademisches Niveau"
+      
+      easy_characteristics:
+        - "Einschrittige Gleichungen (x + a = b oder ax = b)"
+        - "Ganzzahlige Lösungen"
+        - "Klare, einfache Formulierung"
+        - "Keine Klammern"
+        - "Positive Zahlen bevorzugt"
+      
+      medium_characteristics:
+        - "Zweischrittige Gleichungen (ax + b = c)"
+        - "Variable auf beiden Seiten"
+        - "Sachaufgaben mit klarem Kontext"
+        - "Einfache Klammern"
+        - "Gemischte positive und negative Zahlen"
+      
+      hard_characteristics:
+        - "Mehrschrittige Gleichungen"
+        - "Komplexe Sachaufgaben (Altersaufgaben, Bewegungsaufgaben)"
+        - "Verschachtelte Klammern"
+        - "Transfer zu neuen Situationen"
+        - "Brüche und Dezimalzahlen"
+    
+    terminology:
+      mathematical_terms:
+        - german: "Gleichung"
+          english: "Equation"
+          symbol: "="
+          usage: "x + 3 = 7"
+          explanation: "Mathematische Aussage mit Gleichheitszeichen"
+        
+        - german: "Variable"
+          english: "Variable"
+          symbol: "x, y, z"
+          usage: "x ist die unbekannte Größe"
+          explanation: "Platzhalter für eine Zahl"
+        
+        - german: "Lösung"
+          english: "Solution"
+          symbol: "x = ..."
+          usage: "Die Lösung ist x = 4"
+          explanation: "Wert, der die Gleichung erfüllt"
+        
+        - german: "Lösungsmenge"
+          english: "Solution set"
+          symbol: "𝕃"
+          usage: "𝕃 = {4}"
+          explanation: "Menge aller Lösungen"
+        
+        - german: "Äquivalenzumformung"
+          english: "Equivalent transformation"
+          symbol: "⇔"
+          usage: "x + 3 = 7 ⇔ x = 4"
+          explanation: "Umformung ohne Änderung der Lösungsmenge"
+        
+        - german: "Probe"
+          english: "Check/Verification"
+          usage: "Setze x = 4 in die Gleichung ein"
+          explanation: "Überprüfung der Lösung durch Einsetzen"
+        
+        - german: "Term"
+          english: "Term/Expression"
+          usage: "3x + 5 ist ein Term"
+          explanation: "Rechenausdruck mit Zahlen und Variablen"
+        
+        - german: "Umformen"
+          english: "Transform/Rearrange"
+          usage: "Forme die Gleichung um"
+          explanation: "Gleichung in andere Form bringen"
+    
+    regional_specifics:
+      language: "de"
+      formality_level: "du"  # Informal for Klasse 7
+      
+      notation_conventions:
+        decimal_separator: ","
+        decimal_example: "3,14"
+        thousands_separator: "."
+        thousands_example: "1.000"
+        multiplication: "·"
+        multiplication_example: "3·x"
+        multiplication_alternatives: ["3x", "3 · x"]
+        division: ":"
+        division_example: "12 : 4"
+        division_alternatives: ["/", "÷"]
+      
+      grading_scale:
+        type: "1-6"
+        best: 1
+        passing: 4
+        failing: [5, 6]
+        descriptions:
+          1: "Sehr gut"
+          2: "Gut"
+          3: "Befriedigend"
+          4: "Ausreichend"
+          5: "Mangelhaft"
+          6: "Ungenügend"
+        percentage_ranges:
+          1: "90-100%"
+          2: "80-89%"
+          3: "70-79%"
+          4: "60-69%"
+          5: "50-59%"
+          6: "0-49%"
+      
+      cultural_context:
+        currency: "EUR"
+        currency_symbol: "€"
+        measurement_system: "metric"
+        date_format: "DD.MM.YYYY"
+        time_format: "24h"
+        
+        appropriate_names:
+          - "Lisa"
+          - "Tom"
+          - "Anna"
+          - "Max"
+          - "Sophie"
+          - "Leon"
+          - "Emma"
+          - "Lukas"
+          - "Mia"
+          - "Felix"
+        
+        appropriate_scenarios:
+          - "Fußball spielen"
+          - "Schule und Unterricht"
+          - "Familie und Geschwister"
+          - "Einkaufen im Supermarkt"
+          - "Fahrrad fahren"
+          - "Taschengeld"
+          - "Geburtstag feiern"
+          - "Ausflüge und Wandern"
+        
+        avoid_scenarios:
+          - "Teure Urlaubsreisen"
+          - "Luxusgüter"
+          - "Religiöse Feste (nicht alle feiern die gleichen)"
+          - "Alkohol oder Tabak"
+    
+    assessment_criteria:
+      question_types_recommended:
+        - type: "fill_blank"
+          percentage: 30
+          reason: "Tests direct recall and application"
+          examples:
+            - "Solve: x + 5 = 12"
+            - "Find x: 3x = 15"
+        
+        - type: "short_answer"
+          percentage: 40
+          reason: "Shows understanding of process"
+          examples:
+            - "Solve and show steps: 2x - 3 = 11"
+            - "Solve with proof: 5x + 7 = 22"
+        
+        - type: "multiple_choice"
+          percentage: 20
+          reason: "Quick concept checking"
+          examples:
+            - "Which equation has x = 3 as solution?"
+            - "Which step is correct?"
+        
+        - type: "word_problem"
+          percentage: 10
+          reason: "Application to real-world context"
+          examples:
+            - "Lisa is 3 times as old as Tom..."
+            - "A number increased by 7 equals 15..."
+      
+      cognitive_levels:
+        reproduction: 30
+        connection: 50
+        reflection: 20
+      
+      blooms_taxonomy:
+        remember: 10
+        understand: 20
+        apply: 40
+        analyze: 20
+        evaluate: 5
+        create: 5
+    
+    vocabulary_guidelines:
+      reading_level: "Grade 7"
+      flesch_kincaid_target: 7
+      max_sentence_length: 20
+      max_words_per_question: 50
+      
+      required_terms:
+        - "Gleichung"
+        - "Variable"
+        - "Lösung"
+        - "Äquivalenzumformung"
+        - "Probe"
+        - "Term"
+      
+      avoid_terms:
+        - "Isomorphismus (zu fortgeschritten)"
+        - "Kongruenz (erst Klasse 9)"
+        - "Homomorphismus (Universität)"
+        - "Injektiv/Surjektiv (zu fortgeschritten)"
+      
+      preferred_phrasing:
+        - use: "Löse die Gleichung"
+          avoid: "Bestimme die Lösungsmenge der Gleichung"
+        - use: "Forme um"
+          avoid: "Transformiere mittels Äquivalenzumformungen"
+        - use: "Mache die Probe"
+          avoid: "Verifiziere die Lösung durch Substitution"
+    
+    typical_errors:
+      - error: "Vorzeichenfehler bei der Subtraktion"
+        example: "x + 5 = 12 → x = 12 + 5 (falsch!)"
+        correction: "x + 5 = 12 → x = 12 - 5 = 7"
+      
+      - error: "Nur auf einer Seite umformen"
+        example: "x + 3 = 7 → x = 7 (falsch - 3 vergessen)"
+        correction: "x + 3 = 7 → x = 7 - 3 = 4"
+      
+      - error: "Durch Null dividieren"
+        example: "0·x = 5 → x = 5/0 (unmöglich!)"
+        correction: "0·x = 5 hat keine Lösung"
+      
+      - error: "Probe vergessen"
+        example: "Lösung nicht überprüft"
+        correction: "Immer Probe machen: Lösung einsetzen"
+    
+    time_estimates:
+      total_topic_hours: 8
+      breakdown:
+        introduction: 1
+        practice: 4
+        word_problems: 2
+        review: 1
+      
+      typical_test_duration: 30
+      question_count_recommendation: 8-12
+
+# Standards alignment
+standards:
+  - standard_id: "LP-PLUS-BY-GYM-M7-2"
+    name: "Algebra"
+    description: "Umgang mit Termen und Gleichungen"
+  
+  - standard_id: "LP-PLUS-BY-GYM-M7-2.3"
+    name: "Lineare Gleichungen"
+    description: "Lösen linearer Gleichungen durch Äquivalenzumformungen"
+  
+  - standard_id: "KMK-M-K5"
+    name: "Mit symbolischen Elementen umgehen"
+    description: "Bundesweite Kompetenz: Symbolische Darstellungen verstehen und nutzen"
+
+# Assessment examples
+sample_questions:
+  - difficulty: "easy"
+    type: "fill_blank"
+    question_de: "Löse die Gleichung: x + 7 = 15"
+    solution: "x = 8"
+    points: 3
+  
+  - difficulty: "medium"
+    type: "short_answer"
+    question_de: "Löse die Gleichung und mache die Probe: 3x - 8 = 13"
+    solution: "x = 7; Probe: 3(7) - 8 = 21 - 8 = 13 ✓"
+    points: 5
+  
+  - difficulty: "hard"
+    type: "word_problem"
+    question_de: "Lisa ist dreimal so alt wie Tom. In 5 Jahren wird Lisa doppelt so alt sein wie Tom. Wie alt sind beide jetzt?"
+    solution: "Tom: 5 Jahre, Lisa: 15 Jahre"
+    points: 10
+
+# Quality metrics
+quality_thresholds:
+  factual_accuracy: 100
+  age_appropriateness: 95
+  clarity: 90
+  bias_free: 100
+  curriculum_alignment: 100

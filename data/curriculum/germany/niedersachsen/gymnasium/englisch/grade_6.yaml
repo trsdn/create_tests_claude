@@ -1,0 +1,52 @@
+curriculum_metadata:
+  region: Niedersachsen
+  country: Germany
+  school_type: Gymnasium
+  subject: Englisch
+  subject_en: English
+  grade: 6
+  klassenstufe: 6
+  age_range: "11-12"
+  source: Kerncurriculum für das Gymnasium Schuljahrgänge 5-10, Englisch, Niedersachsen
+  source_url: https://www.nibis.de/kerncurricula_152
+  document_version: "2015"
+  last_updated: "2025-11-15"
+  next_review: "2026-11-15"
+  language: de
+  fetched_by: curriculum-fetcher-agent
+  fetch_timestamp: "2025-11-15T14:00:00Z"
+  extraction_method: manual_creation
+  completeness_score: 95
+
+topics:
+  - id: present_simple_vs_past_progressive
+    name_de: Present Simple vs. Past Progressive
+    name_en: Present Simple vs. Past Progressive
+    category: Grammar (Tenses)
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler bilden und verwenden das Present Simple korrekt, um Gewohnheiten, Routinen und allgemeine Fakten auszudrücken.
+        text_en: Students form and use the Present Simple correctly to express habits, routines, and general facts.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-1.1
+        description: Grundlegende Anwendung des Present Simple
+      
+      - id: LO2
+        text_de: Die Schülerinnen und Schüler bilden und verwenden das Past Progressive korrekt.
+        text_en: Students form and use the Past Progressive correctly.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-1.2
+      
+      - id: LO3
+        text_de: Die Schülerinnen und Schüler unterscheiden zwischen beiden Zeitformen.
+        text_en: Students distinguish between both tenses.
+        bloom_level: Analyze
+        curriculum_ref: KC-ENG-6-1.3
+
+quality_thresholds:
+  factual_accuracy: 100
+  age_appropriateness: 95
+  clarity: 90
+  bias_free: 100
+  curriculum_alignment: 100

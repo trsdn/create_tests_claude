@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+ENV/
+env/
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.blg
+*.bbl
+*.lof
+*.lot
+
+# PDFs (generated files - comment out if you want to commit PDFs)
+# pdfs/student_versions/*.pdf
+# pdfs/answer_keys/*.pdf
+
+# Agent workspace (intermediate files - comment out if you want to commit)
+# .agent_workspace/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# VS Code
+#.vscode/
+*.code-workspace
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# Test outputs (optional)
+# tests/**/*.md
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Node modules (if using any JS tools)
+node_modules/

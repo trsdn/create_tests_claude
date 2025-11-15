@@ -1,0 +1,33 @@
+session_id: sess_20251115_140000
+test_id: de-ns-gym-eng-6-tenses-001
+curriculum_file: data/curriculum/germany/niedersachsen/gymnasium/englisch/grade_6.yaml
+
+extracted_objectives:
+  - id: LO1
+    text: Die Schülerinnen und Schüler bilden und verwenden das Present Simple korrekt
+    bloom_level: Apply
+    focus_areas:
+      - Gewohnheiten und Routinen
+      - Allgemeine Fakten
+      - he/she/it + -s Regel
+  
+  - id: LO2
+    text: Die Schülerinnen und Schüler bilden und verwenden das Past Progressive korrekt
+    bloom_level: Apply
+    focus_areas:
+      - was/were + -ing Bildung
+      - Handlungen zu bestimmten Zeitpunkten in der Vergangenheit
+  
+  - id: LO3
+    text: Die Schülerinnen und Schüler unterscheiden zwischen beiden Zeitformen
+    bloom_level: Analyze
+    focus_areas:
+      - Signalwörter erkennen
+      - Kontextuelle Anwendung
+
+regional_specs:
+  grading_scale: 1-6
+  language: German
+  formality: informal
+
+next_step: test-designer

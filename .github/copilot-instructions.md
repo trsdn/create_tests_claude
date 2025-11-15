@@ -101,6 +101,22 @@ Final outputs:
 **Terminal Access:** PDF Generator uses `runInTerminal` for Pandoc commands
 **Auto-Approval:** Disabled for safety - manual review required for file modifications
 
+## GitHub Integration
+
+**GitHub MCP Server:** This repository uses the GitHub Model Context Protocol (MCP) server for enhanced GitHub integration.
+
+When working with this repository, you can:
+- Use `@github` to interact with GitHub issues, pull requests, and repository management
+- Access GitHub API for repository operations
+- Manage issues, PRs, branches, and releases programmatically
+- Query repository metadata and collaboration features
+
+**Common GitHub MCP Operations:**
+- Create and manage issues for tracking test creation tasks
+- Create pull requests for curriculum updates or new test templates
+- Search repository content and history
+- Manage repository settings and collaborators
+
 ## Documentation
 
 Complete specifications available in `specs/`:

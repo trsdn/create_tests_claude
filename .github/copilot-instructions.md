@@ -103,19 +103,29 @@ Final outputs:
 
 ## GitHub Integration
 
-**GitHub MCP Server:** This repository uses the GitHub Model Context Protocol (MCP) server for enhanced GitHub integration.
+**⚠️ MANDATORY: GitHub MCP Server Usage**
 
-When working with this repository, you can:
-- Use `@github` to interact with GitHub issues, pull requests, and repository management
-- Access GitHub API for repository operations
-- Manage issues, PRs, branches, and releases programmatically
-- Query repository metadata and collaboration features
+This repository **REQUIRES** the use of the GitHub Model Context Protocol (MCP) server for ALL GitHub operations.
 
-**Common GitHub MCP Operations:**
-- Create and manage issues for tracking test creation tasks
-- Create pull requests for curriculum updates or new test templates
-- Search repository content and history
-- Manage repository settings and collaborators
+**REQUIRED for:**
+- ✅ Creating issues for test creation tasks
+- ✅ Managing pull requests for curriculum updates
+- ✅ Tracking agent workflow progress via GitHub issues
+- ✅ Version control operations (commits, branches)
+- ✅ Repository metadata queries
+- ✅ Collaboration and code review
+
+**Usage:**
+- **ALWAYS** use `@github` for GitHub-related operations
+- **DO NOT** use git commands directly in terminal for GitHub operations
+- **MUST** create GitHub issues for each test creation session
+- **MUST** use PRs for curriculum additions or template changes
+
+**Workflow Integration:**
+1. **Start Session**: Create GitHub issue via `@github` (e.g., "Create Grade 6 English test")
+2. **Track Progress**: Update issue with agent handoff status
+3. **Complete**: Close issue when test is generated and validated
+4. **Curriculum Updates**: Always use PRs via `@github` for new curriculum YAML files
 
 ## Documentation
 

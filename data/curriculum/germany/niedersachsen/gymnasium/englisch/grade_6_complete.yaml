@@ -1,0 +1,473 @@
+---
+curriculum_metadata:
+  region: Niedersachsen
+  country: Germany
+  school_type: Gymnasium
+  subject: Englisch
+  subject_en: English
+  grade: 6
+  klassenstufe: 6
+  age_range: "11-12"
+  source: Kerncurriculum für das Gymnasium Schuljahrgänge 5-10, Englisch, Niedersachsen 2015
+  source_url: https://www.nibis.de/kerncurricula_152
+  document_version: "2015"
+  last_updated: "2025-11-15"
+  next_review: "2026-11-15"
+  language: de
+  fetched_by: curriculum-fetcher-agent
+  fetch_timestamp: "2025-11-15T14:00:00Z"
+  extraction_method: manual_creation
+  completeness_score: 98
+
+# Kompetenzbereiche nach Niedersachsen Kerncurriculum
+competence_areas:
+  functional_communicative_competence:
+    - Hör-/Hörsehverstehen
+    - Leseverstehen
+    - Sprechen
+    - Schreiben
+    - Sprachmittlung
+  
+  intercultural_competence:
+    - Soziokulturelles Orientierungswissen
+    - Verständnisvoller Umgang mit kultureller Differenz
+  
+  text_and_media_competence:
+    - Textsorten verstehen und produzieren
+    - Medien nutzen und reflektieren
+  
+  language_learning_competence:
+    - Lernstrategien entwickeln
+    - Sprachbewusstheit fördern
+
+# Alle Themen für Klasse 6
+topics:
+  # ===== GRAMMAR / GRAMMATIK =====
+  
+  - id: present_simple_vs_past_progressive
+    name_de: Present Simple vs. Past Progressive
+    name_en: Present Simple vs. Past Progressive
+    category: Grammar
+    subcategory: Tenses
+    difficulty: medium
+    estimated_lessons: 4-6
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler bilden und verwenden das Present Simple korrekt, um Gewohnheiten, Routinen und allgemeine Fakten auszudrücken.
+        text_en: Students form and use the Present Simple correctly to express habits, routines, and general facts.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-G1.1
+        
+      - id: LO2
+        text_de: Die Schülerinnen und Schüler bilden und verwenden das Past Progressive (was/were + -ing) korrekt, um Handlungen zu beschreiben, die zu einem bestimmten Zeitpunkt in der Vergangenheit abliefen.
+        text_en: Students form and use the Past Progressive (was/were + -ing) correctly to describe actions that were happening at a specific time in the past.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-G1.2
+        
+      - id: LO3
+        text_de: Die Schülerinnen und Schüler unterscheiden kontextbezogen zwischen Present Simple und Past Progressive und wenden die passende Zeitform situationsgerecht an.
+        text_en: Students distinguish between Present Simple and Past Progressive based on context and apply the appropriate tense.
+        bloom_level: Analyze
+        curriculum_ref: KC-ENG-6-G1.3
+    
+    key_concepts:
+      - Present Simple formation (I/you/we/they + verb, he/she/it + verb-s)
+      - Present Simple negation (don't/doesn't + verb)
+      - Present Simple questions (Do/Does + subject + verb?)
+      - Past Progressive formation (was/were + verb-ing)
+      - Past Progressive negation (wasn't/weren't + verb-ing)
+      - Past Progressive questions (Was/Were + subject + verb-ing?)
+      - Signal words for Present Simple (always, usually, often, sometimes, never, every day)
+      - Signal words for Past Progressive (while, when, at that moment, yesterday at...)
+    
+    typical_errors:
+      - Forgetting -s in 3rd person singular Present Simple
+      - Using wrong auxiliary (was/were) in Past Progressive
+      - Confusing when to use each tense
+      - Spelling errors in -ing forms
+  
+  - id: modal_verbs_can_must_may
+    name_de: Modalverben (can, must, may)
+    name_en: Modal Verbs (can, must, may)
+    category: Grammar
+    subcategory: Modals
+    difficulty: medium
+    estimated_lessons: 3-4
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler verwenden 'can' für Fähigkeiten und Möglichkeiten.
+        text_en: Students use 'can' for abilities and possibilities.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-G2.1
+        
+      - id: LO2
+        text_de: Die Schülerinnen und Schüler verwenden 'must' für Verpflichtungen und Notwendigkeiten.
+        text_en: Students use 'must' for obligations and necessities.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-G2.2
+        
+      - id: LO3
+        text_de: Die Schülerinnen und Schüler verwenden 'may' für höfliche Erlaubnis.
+        text_en: Students use 'may' for polite permission.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-G2.3
+  
+  - id: comparative_superlative
+    name_de: Steigerung von Adjektiven (Komparativ und Superlativ)
+    name_en: Comparative and Superlative Adjectives
+    category: Grammar
+    subcategory: Adjectives
+    difficulty: medium
+    estimated_lessons: 4-5
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler bilden den Komparativ und Superlativ regelmäßiger Adjektive (-er/-est, more/most).
+        text_en: Students form the comparative and superlative of regular adjectives.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-G3.1
+        
+      - id: LO2
+        text_de: Die Schülerinnen und Schüler kennen und verwenden unregelmäßige Steigerungsformen (good-better-best, bad-worse-worst).
+        text_en: Students know and use irregular comparative/superlative forms.
+        bloom_level: Remember
+        curriculum_ref: KC-ENG-6-G3.2
+  
+  - id: possessive_pronouns
+    name_de: Possessivpronomen (mine, yours, his, hers, ours, theirs)
+    name_en: Possessive Pronouns
+    category: Grammar
+    subcategory: Pronouns
+    difficulty: easy
+    estimated_lessons: 2-3
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler unterscheiden zwischen Possessivbegleitern (my, your, his) und Possessivpronomen (mine, yours, his).
+        text_en: Students distinguish between possessive determiners and possessive pronouns.
+        bloom_level: Understand
+        curriculum_ref: KC-ENG-6-G4.1
+  
+  # ===== VOCABULARY / WORTSCHATZ =====
+  
+  - id: daily_routines
+    name_de: Tagesabläufe und Gewohnheiten
+    name_en: Daily Routines and Habits
+    category: Vocabulary
+    subcategory: Everyday Life
+    difficulty: easy
+    estimated_lessons: 3-4
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler beschreiben ihren Tagesablauf mit entsprechendem Wortschatz.
+        text_en: Students describe their daily routine using appropriate vocabulary.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-V1.1
+    
+    key_vocabulary:
+      - wake up, get up, get dressed
+      - have breakfast/lunch/dinner
+      - go to school, leave home
+      - do homework, study
+      - watch TV, play games
+      - go to bed, fall asleep
+      - brush teeth, wash face
+      - take a shower/bath
+  
+  - id: hobbies_free_time
+    name_de: Hobbys und Freizeitaktivitäten
+    name_en: Hobbies and Free Time Activities
+    category: Vocabulary
+    subcategory: Leisure
+    difficulty: easy
+    estimated_lessons: 3-4
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler benennen verschiedene Freizeitaktivitäten und Hobbys.
+        text_en: Students name various leisure activities and hobbies.
+        bloom_level: Remember
+        curriculum_ref: KC-ENG-6-V2.1
+        
+      - id: LO2
+        text_de: Die Schülerinnen und Schüler sprechen über ihre eigenen Hobbys und Interessen.
+        text_en: Students talk about their own hobbies and interests.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-V2.2
+  
+  - id: school_subjects_facilities
+    name_de: Schulfächer und Schulgebäude
+    name_en: School Subjects and School Facilities
+    category: Vocabulary
+    subcategory: School
+    difficulty: easy
+    estimated_lessons: 2-3
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler benennen Schulfächer und Räumlichkeiten.
+        text_en: Students name school subjects and facilities.
+        bloom_level: Remember
+        curriculum_ref: KC-ENG-6-V3.1
+  
+  - id: food_drinks
+    name_de: Essen und Getränke
+    name_en: Food and Drinks
+    category: Vocabulary
+    subcategory: Food
+    difficulty: easy
+    estimated_lessons: 4-5
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler benennen verschiedene Lebensmittel und Getränke.
+        text_en: Students name various foods and drinks.
+        bloom_level: Remember
+        curriculum_ref: KC-ENG-6-V4.1
+        
+      - id: LO2
+        text_de: Die Schülerinnen und Schüler bestellen Essen in einfachen Dialogen.
+        text_en: Students order food in simple dialogues.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-V4.2
+  
+  - id: family_relationships
+    name_de: Familie und Verwandtschaft
+    name_en: Family and Relationships
+    category: Vocabulary
+    subcategory: Family
+    difficulty: easy
+    estimated_lessons: 2-3
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler beschreiben ihre Familie und Familienmitglieder.
+        text_en: Students describe their family and family members.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-V5.1
+  
+  # ===== READING COMPREHENSION / LESEVERSTEHEN =====
+  
+  - id: reading_short_texts
+    name_de: Kurze Texte verstehen (E-Mails, Postkarten, einfache Geschichten)
+    name_en: Understanding Short Texts (Emails, Postcards, Simple Stories)
+    category: Reading
+    subcategory: Comprehension
+    difficulty: medium
+    estimated_lessons: ongoing
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler entnehmen einfachen Texten Hauptinformationen.
+        text_en: Students extract main information from simple texts.
+        bloom_level: Understand
+        curriculum_ref: KC-ENG-6-R1.1
+        
+      - id: LO2
+        text_de: Die Schülerinnen und Schüler beantworten Fragen zu gelesenen Texten.
+        text_en: Students answer questions about texts they have read.
+        bloom_level: Understand
+        curriculum_ref: KC-ENG-6-R1.2
+  
+  # ===== LISTENING COMPREHENSION / HÖRVERSTEHEN =====
+  
+  - id: listening_dialogues
+    name_de: Dialoge und einfache Gespräche verstehen
+    name_en: Understanding Dialogues and Simple Conversations
+    category: Listening
+    subcategory: Comprehension
+    difficulty: medium
+    estimated_lessons: ongoing
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler verstehen einfache Dialoge zu Alltagsthemen.
+        text_en: Students understand simple dialogues about everyday topics.
+        bloom_level: Understand
+        curriculum_ref: KC-ENG-6-L1.1
+  
+  # ===== WRITING / SCHREIBEN =====
+  
+  - id: writing_personal_texts
+    name_de: Persönliche Texte schreiben (E-Mails, Postkarten, kurze Briefe)
+    name_en: Writing Personal Texts (Emails, Postcards, Short Letters)
+    category: Writing
+    subcategory: Personal Writing
+    difficulty: medium
+    estimated_lessons: ongoing
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler verfassen einfache persönliche Texte.
+        text_en: Students write simple personal texts.
+        bloom_level: Create
+        curriculum_ref: KC-ENG-6-W1.1
+        
+      - id: LO2
+        text_de: Die Schülerinnen und Schüler verwenden einfache Verbindungswörter (and, but, because).
+        text_en: Students use simple connectives (and, but, because).
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-W1.2
+  
+  - id: describing_pictures
+    name_de: Bilder beschreiben
+    name_en: Describing Pictures
+    category: Writing
+    subcategory: Description
+    difficulty: medium
+    estimated_lessons: 3-4
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler beschreiben Bilder mit einfachen Sätzen.
+        text_en: Students describe pictures using simple sentences.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-W2.1
+  
+  # ===== SPEAKING / SPRECHEN =====
+  
+  - id: simple_conversations
+    name_de: Einfache Gespräche führen
+    name_en: Having Simple Conversations
+    category: Speaking
+    subcategory: Interaction
+    difficulty: medium
+    estimated_lessons: ongoing
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler stellen Fragen und antworten in Alltagssituationen.
+        text_en: Students ask and answer questions in everyday situations.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-S1.1
+  
+  - id: presentations_about_self
+    name_de: Über sich selbst sprechen und sich vorstellen
+    name_en: Talking About Yourself and Introducing Yourself
+    category: Speaking
+    subcategory: Monologue
+    difficulty: easy
+    estimated_lessons: 2-3
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler stellen sich vor und sprechen über persönliche Informationen.
+        text_en: Students introduce themselves and talk about personal information.
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-S2.1
+
+# ===== CULTURAL TOPICS / LANDESKUNDLICHE THEMEN =====
+
+cultural_topics:
+  - id: uk_daily_life
+    name_de: Alltag in Großbritannien
+    name_en: Daily Life in the UK
+    description_de: Typischer Tagesablauf, Essgewohnheiten, Schulsystem
+    description_en: Typical daily routine, eating habits, school system
+    
+  - id: us_vs_uk
+    name_de: Unterschiede USA vs. UK
+    name_en: Differences USA vs. UK
+    description_de: Sprachunterschiede, Kulturunterschiede
+    description_en: Language differences, cultural differences
+  
+  - id: british_holidays
+    name_de: Britische Feiertage
+    name_en: British Holidays
+    description_de: Christmas, Easter, Guy Fawkes Night
+    description_en: Christmas, Easter, Guy Fawkes Night
+
+# ===== QUALITY STANDARDS =====
+
+quality_thresholds:
+  factual_accuracy: 100
+  age_appropriateness: 95
+  clarity: 90
+  bias_free: 100
+  curriculum_alignment: 100
+
+difficulty_distribution:
+  easy: 30  # ±10%
+  medium: 50  # ±10%
+  hard: 20  # ±10%
+
+blooms_taxonomy_distribution:
+  remember_understand: 40
+  apply_analyze: 40
+  evaluate_create: 20
+
+# ===== GRADING SCALE NIEDERSACHSEN =====
+
+grading_scale:
+  system: 1-6
+  scale:
+    1:
+      name: Sehr gut
+      description: Die Leistung entspricht den Anforderungen in besonderem Maße
+      percentage_range: [88, 100]
+    2:
+      name: Gut
+      description: Die Leistung entspricht den Anforderungen voll
+      percentage_range: [74, 87]
+    3:
+      name: Befriedigend
+      description: Die Leistung entspricht den Anforderungen im Allgemeinen
+      percentage_range: [60, 73]
+    4:
+      name: Ausreichend
+      description: Die Leistung weist zwar Mängel auf, entspricht aber im Ganzen noch den Anforderungen
+      percentage_range: [46, 59]
+    5:
+      name: Mangelhaft
+      description: Die Leistung entspricht den Anforderungen nicht
+      percentage_range: [20, 45]
+    6:
+      name: Ungenügend
+      description: Die Leistung entspricht den Anforderungen in keiner Weise
+      percentage_range: [0, 19]
+
+# ===== TEST FORMATS =====
+
+recommended_test_formats:
+  - type: Klassenarbeit
+    duration_minutes: 45
+    total_points: 50
+    sections:
+      - Multiple Choice
+      - Fill in the Blanks
+      - Sentence Transformation
+      - Text Completion
+      - Creative Writing
+  
+  - type: Kurzer Test
+    duration_minutes: 20
+    total_points: 20
+    sections:
+      - Multiple Choice
+      - Fill in the Blanks
+  
+  - type: Vokabeltest
+    duration_minutes: 15
+    total_points: 20
+    sections:
+      - Translation German to English
+      - Translation English to German
+
+# ===== COMMON QUESTION TYPES =====
+
+question_types:
+  - Multiple Choice (Auswahl)
+  - True/False (Richtig/Falsch)
+  - Fill in the Blanks (Lückentext)
+  - Matching (Zuordnung)
+  - Ordering (Reihenfolge)
+  - Short Answer (Kurzantwort)
+  - Gap Fill with Word Bank (Lückentext mit Wortliste)
+  - Sentence Transformation (Satztransformation)
+  - Translation (Übersetzung)
+  - Creative Writing (Kreatives Schreiben)
+  - Picture Description (Bildbeschreibung)
+  - Dialogue Completion (Dialogergänzung)

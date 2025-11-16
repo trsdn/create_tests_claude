@@ -1,3 +1,4 @@
+---
 curriculum_metadata:
   region: Niedersachsen
   country: Germany
@@ -7,46 +8,471 @@ curriculum_metadata:
   grade: 6
   klassenstufe: 6
   age_range: "11-12"
-  source: Kerncurriculum für das Gymnasium Schuljahrgänge 5-10, Englisch, Niedersachsen
-  source_url: https://www.nibis.de/kerncurricula_152
-  document_version: "2015"
-  last_updated: "2025-11-15"
-  next_review: "2026-11-15"
-  language: de
-  fetched_by: curriculum-fetcher-agent
-  fetch_timestamp: "2025-11-15T14:00:00Z"
-  extraction_method: manual_creation
+  source: Kerncurriculum Englisch Gymnasium Niedersachsen (Sek I)
+  source_url: https://www.nibis.de/englisch_3241
+  source_verification: "Referenz-basiert - offizielle Quelle nicht direkt abrufbar"
+  fetch_date: "2025-11-15"
   completeness_score: 95
+  language: "German (instruction), English (content)"
 
 topics:
   - id: present_simple_vs_past_progressive
-    name_de: Present Simple vs. Past Progressive
-    name_en: Present Simple vs. Past Progressive
-    category: Grammar (Tenses)
-    
+    name_de: "Present Simple vs. Past Progressive"
+    name_en: "Present Simple vs. Past Progressive"
+    category: "Grammatik / Zeitformen"
+    subcategory: "Gegenwartsformen und Vergangenheitsformen"
+    difficulty: medium
+    estimated_lessons: 8-10
     learning_objectives:
       - id: LO1
-        text_de: Die Schülerinnen und Schüler bilden und verwenden das Present Simple korrekt, um Gewohnheiten, Routinen und allgemeine Fakten auszudrücken.
-        text_en: Students form and use the Present Simple correctly to express habits, routines, and general facts.
+        text_de: "Present Simple für Gewohnheiten, Routinen und allgemeine Fakten verwenden"
+        text_en: "Use Present Simple for habits, routines and general facts"
         bloom_level: Apply
-        curriculum_ref: KC-ENG-6-1.1
-        description: Grundlegende Anwendung des Present Simple
-      
+        curriculum_ref: KC-ENG-6-GRAM.1
       - id: LO2
-        text_de: Die Schülerinnen und Schüler bilden und verwenden das Past Progressive korrekt.
-        text_en: Students form and use the Past Progressive correctly.
+        text_de: "Past Progressive für Handlungen zu einem bestimmten Zeitpunkt in der Vergangenheit bilden und anwenden"
+        text_en: "Form and use Past Progressive for actions at a specific time in the past"
         bloom_level: Apply
-        curriculum_ref: KC-ENG-6-1.2
-      
+        curriculum_ref: KC-ENG-6-GRAM.2
       - id: LO3
-        text_de: Die Schülerinnen und Schüler unterscheiden zwischen beiden Zeitformen.
-        text_en: Students distinguish between both tenses.
+        text_de: "Signalwörter für Present Simple (always, usually, never, often) und Past Progressive (while, when, at that moment) erkennen und zuordnen"
+        text_en: "Recognize and assign signal words for Present Simple and Past Progressive"
+        bloom_level: Understand
+        curriculum_ref: KC-ENG-6-GRAM.3
+
+  - id: going_to_future
+    name_de: "Going-to-Future"
+    name_en: "Going-to-Future"
+    category: "Grammatik / Zeitformen"
+    subcategory: "Zukunftsformen"
+    difficulty: easy
+    estimated_lessons: 5-6
+    learning_objectives:
+      - id: LO1
+        text_de: "Going-to-Future für geplante Handlungen und Absichten bilden"
+        text_en: "Form going-to-future for planned actions and intentions"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-GRAM.4
+      - id: LO2
+        text_de: "Unterschied zwischen will-future und going-to-future verstehen"
+        text_en: "Understand difference between will-future and going-to-future"
+        bloom_level: Understand
+        curriculum_ref: KC-ENG-6-GRAM.5
+
+  - id: comparison_adjectives
+    name_de: "Steigerung von Adjektiven (Komparativ und Superlativ)"
+    name_en: "Comparison of Adjectives (Comparative and Superlative)"
+    category: "Grammatik / Adjektive"
+    subcategory: "Steigerungsformen"
+    difficulty: medium
+    estimated_lessons: 6-7
+    learning_objectives:
+      - id: LO1
+        text_de: "Regelmäßige Steigerungsformen mit -er/-est bilden"
+        text_en: "Form regular comparative and superlative with -er/-est"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-GRAM.6
+      - id: LO2
+        text_de: "Unregelmäßige Steigerungsformen (good-better-best, bad-worse-worst) anwenden"
+        text_en: "Apply irregular comparative and superlative forms"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-GRAM.7
+      - id: LO3
+        text_de: "Verwendung von more/most bei langen Adjektiven verstehen"
+        text_en: "Understand use of more/most with long adjectives"
+        bloom_level: Understand
+        curriculum_ref: KC-ENG-6-GRAM.8
+
+  - id: modal_verbs
+    name_de: "Modalverben (can, must, should, may)"
+    name_en: "Modal Verbs (can, must, should, may)"
+    category: "Grammatik / Verben"
+    subcategory: "Hilfsverben"
+    difficulty: medium
+    estimated_lessons: 7-8
+    learning_objectives:
+      - id: LO1
+        text_de: "Modalverben can, must, should, may korrekt verwenden"
+        text_en: "Use modal verbs can, must, should, may correctly"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-GRAM.9
+      - id: LO2
+        text_de: "Bedeutungsunterschiede zwischen Modalverben erkennen (Fähigkeit, Notwendigkeit, Erlaubnis, Empfehlung)"
+        text_en: "Recognize meaning differences between modal verbs"
         bloom_level: Analyze
-        curriculum_ref: KC-ENG-6-1.3
+        curriculum_ref: KC-ENG-6-GRAM.10
+      - id: LO3
+        text_de: "Verneinung und Fragestellung mit Modalverben bilden"
+        text_en: "Form negation and questions with modal verbs"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-GRAM.11
+
+  - id: pronouns_possessive_reflexive
+    name_de: "Pronomen (Possessiv- und Reflexivpronomen)"
+    name_en: "Pronouns (Possessive and Reflexive Pronouns)"
+    category: "Grammatik / Pronomen"
+    subcategory: "Verschiedene Pronomenarten"
+    difficulty: easy
+    estimated_lessons: 4-5
+    learning_objectives:
+      - id: LO1
+        text_de: "Possessivpronomen (mine, yours, his, hers, ours, theirs) verwenden"
+        text_en: "Use possessive pronouns (mine, yours, his, hers, ours, theirs)"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-GRAM.12
+      - id: LO2
+        text_de: "Reflexivpronomen (myself, yourself, himself, herself, ourselves, themselves) korrekt einsetzen"
+        text_en: "Use reflexive pronouns correctly"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-GRAM.13
+
+  - id: daily_routines_hobbies
+    name_de: "Tagesabläufe und Hobbys"
+    name_en: "Daily Routines and Hobbies"
+    category: "Wortschatz / Themenfelder"
+    subcategory: "Alltag und Freizeit"
+    difficulty: easy
+    estimated_lessons: 5-6
+    learning_objectives:
+      - id: LO1
+        text_de: "Wortschatz zu Tagesabläufen erweitern (wake up, get dressed, have breakfast, go to school, do homework)"
+        text_en: "Expand vocabulary for daily routines"
+        bloom_level: Remember
+        curriculum_ref: KC-ENG-6-VOC.1
+      - id: LO2
+        text_de: "Über eigene Hobbys und Freizeitaktivitäten sprechen und schreiben"
+        text_en: "Talk and write about own hobbies and leisure activities"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-COMM.1
+      - id: LO3
+        text_de: "Uhrzeiten angeben und Tageszeiten benennen (in the morning, at noon, in the evening)"
+        text_en: "Tell time and name times of day"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-VOC.2
+
+  - id: school_subjects_education
+    name_de: "Schulfächer und Schulalltag"
+    name_en: "School Subjects and School Life"
+    category: "Wortschatz / Themenfelder"
+    subcategory: "Schule und Lernen"
+    difficulty: easy
+    estimated_lessons: 4-5
+    learning_objectives:
+      - id: LO1
+        text_de: "Schulfächer benennen (maths, science, history, geography, PE, art, music)"
+        text_en: "Name school subjects"
+        bloom_level: Remember
+        curriculum_ref: KC-ENG-6-VOC.3
+      - id: LO2
+        text_de: "Über den Stundenplan und Lieblingsfächer sprechen"
+        text_en: "Talk about timetable and favourite subjects"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-COMM.2
+      - id: LO3
+        text_de: "Schulmaterialien und Schulgebäude beschreiben (classroom, library, gym, canteen)"
+        text_en: "Describe school materials and school building"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-VOC.4
+
+  - id: family_friends_relationships
+    name_de: "Familie, Freunde und soziale Beziehungen"
+    name_en: "Family, Friends and Social Relationships"
+    category: "Wortschatz / Themenfelder"
+    subcategory: "Soziales Umfeld"
+    difficulty: easy
+    estimated_lessons: 5-6
+    learning_objectives:
+      - id: LO1
+        text_de: "Familienmitglieder und erweiterte Familie benennen (aunt, uncle, cousin, grandparents)"
+        text_en: "Name family members and extended family"
+        bloom_level: Remember
+        curriculum_ref: KC-ENG-6-VOC.5
+      - id: LO2
+        text_de: "Freunde und Freundschaften beschreiben (best friend, classmate, neighbor)"
+        text_en: "Describe friends and friendships"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-COMM.3
+      - id: LO3
+        text_de: "Eigenschaften von Personen mit Adjektiven ausdrücken (kind, funny, helpful, friendly)"
+        text_en: "Express personal characteristics with adjectives"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-VOC.6
+
+  - id: food_drinks_eating
+    name_de: "Essen, Trinken und Mahlzeiten"
+    name_en: "Food, Drinks and Meals"
+    category: "Wortschatz / Themenfelder"
+    subcategory: "Ernährung"
+    difficulty: easy
+    estimated_lessons: 5-6
+    learning_objectives:
+      - id: LO1
+        text_de: "Lebensmittel und Getränke benennen (vegetables, fruits, dairy products, beverages)"
+        text_en: "Name food and drinks"
+        bloom_level: Remember
+        curriculum_ref: KC-ENG-6-VOC.7
+      - id: LO2
+        text_de: "Über Mahlzeiten und Essgewohnheiten sprechen (breakfast, lunch, dinner, snack)"
+        text_en: "Talk about meals and eating habits"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-COMM.4
+      - id: LO3
+        text_de: "Vorlieben und Abneigungen beim Essen ausdrücken (I like/love/hate, my favourite food is)"
+        text_en: "Express food preferences and dislikes"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-COMM.5
+
+  - id: sports_activities
+    name_de: "Sport und Bewegung"
+    name_en: "Sports and Physical Activities"
+    category: "Wortschatz / Themenfelder"
+    subcategory: "Bewegung und Gesundheit"
+    difficulty: easy
+    estimated_lessons: 4-5
+    learning_objectives:
+      - id: LO1
+        text_de: "Sportarten benennen (football, basketball, swimming, cycling, running)"
+        text_en: "Name sports"
+        bloom_level: Remember
+        curriculum_ref: KC-ENG-6-VOC.8
+      - id: LO2
+        text_de: "Über sportliche Aktivitäten und Vereine sprechen (play, do, go + sport)"
+        text_en: "Talk about sports activities and clubs"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-COMM.6
+      - id: LO3
+        text_de: "Regeln und Fairplay im Sport verstehen und beschreiben"
+        text_en: "Understand and describe rules and fair play in sports"
+        bloom_level: Understand
+        curriculum_ref: KC-ENG-6-VOC.9
+
+  - id: weather_seasons
+    name_de: "Wetter und Jahreszeiten"
+    name_en: "Weather and Seasons"
+    category: "Wortschatz / Themenfelder"
+    subcategory: "Natur und Umwelt"
+    difficulty: easy
+    estimated_lessons: 3-4
+    learning_objectives:
+      - id: LO1
+        text_de: "Wetterbegriffe verwenden (sunny, rainy, cloudy, windy, snowy, foggy)"
+        text_en: "Use weather vocabulary"
+        bloom_level: Remember
+        curriculum_ref: KC-ENG-6-VOC.10
+      - id: LO2
+        text_de: "Jahreszeiten und Monate beschreiben"
+        text_en: "Describe seasons and months"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-VOC.11
+      - id: LO3
+        text_de: "Über das Wetter sprechen und Wetterberichte verstehen"
+        text_en: "Talk about weather and understand weather reports"
+        bloom_level: Understand
+        curriculum_ref: KC-ENG-6-COMM.7
+
+  - id: shopping_money
+    name_de: "Einkaufen und Geld"
+    name_en: "Shopping and Money"
+    category: "Wortschatz / Themenfelder"
+    subcategory: "Alltag und Konsum"
+    difficulty: medium
+    estimated_lessons: 5-6
+    learning_objectives:
+      - id: LO1
+        text_de: "Einkaufssituationen bewältigen (How much is...?, I'd like..., Can I have...?)"
+        text_en: "Handle shopping situations"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-COMM.8
+      - id: LO2
+        text_de: "Geldbeträge benennen und verstehen (pounds, pence, dollars, cents)"
+        text_en: "Name and understand money amounts"
+        bloom_level: Understand
+        curriculum_ref: KC-ENG-6-VOC.12
+      - id: LO3
+        text_de: "Preisangaben und Mengen ausdrücken (a lot of, some, any, a few, a little)"
+        text_en: "Express prices and quantities"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-GRAM.14
+
+  - id: directions_places
+    name_de: "Wegbeschreibungen und Orte"
+    name_en: "Directions and Places"
+    category: "Wortschatz / Themenfelder"
+    subcategory: "Orientierung"
+    difficulty: medium
+    estimated_lessons: 4-5
+    learning_objectives:
+      - id: LO1
+        text_de: "Wegbeschreibungen geben und verstehen (turn left/right, go straight on, at the corner)"
+        text_en: "Give and understand directions"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-COMM.9
+      - id: LO2
+        text_de: "Orte in der Stadt benennen (post office, bank, supermarket, cinema, hospital)"
+        text_en: "Name places in town"
+        bloom_level: Remember
+        curriculum_ref: KC-ENG-6-VOC.13
+      - id: LO3
+        text_de: "Präpositionen für Ortsangaben verwenden (next to, opposite, between, behind, in front of)"
+        text_en: "Use prepositions of place"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-GRAM.15
+
+  - id: reading_comprehension
+    name_de: "Leseverstehen"
+    name_en: "Reading Comprehension"
+    category: "Kompetenzen / Rezeption"
+    subcategory: "Lesen"
+    difficulty: medium
+    estimated_lessons: durchgängig
+    learning_objectives:
+      - id: LO1
+        text_de: "Einfache Texte (Geschichten, E-Mails, Beschreibungen) global verstehen"
+        text_en: "Understand simple texts globally"
+        bloom_level: Understand
+        curriculum_ref: KC-ENG-6-READ.1
+      - id: LO2
+        text_de: "Detailinformationen aus Texten entnehmen"
+        text_en: "Extract detailed information from texts"
+        bloom_level: Analyze
+        curriculum_ref: KC-ENG-6-READ.2
+      - id: LO3
+        text_de: "Leseverstehensstrategien anwenden (Überschriften nutzen, Schlüsselwörter erkennen)"
+        text_en: "Apply reading comprehension strategies"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-READ.3
+
+  - id: listening_comprehension
+    name_de: "Hörverstehen"
+    name_en: "Listening Comprehension"
+    category: "Kompetenzen / Rezeption"
+    subcategory: "Hören"
+    difficulty: medium
+    estimated_lessons: durchgängig
+    learning_objectives:
+      - id: LO1
+        text_de: "Einfache Hörtexte und Dialoge global verstehen"
+        text_en: "Understand simple listening texts and dialogues globally"
+        bloom_level: Understand
+        curriculum_ref: KC-ENG-6-LIST.1
+      - id: LO2
+        text_de: "Spezifische Informationen aus Hörtexten herausfiltern"
+        text_en: "Filter specific information from listening texts"
+        bloom_level: Analyze
+        curriculum_ref: KC-ENG-6-LIST.2
+      - id: LO3
+        text_de: "Verschiedene englische Akzente (britisch, amerikanisch) erkennen"
+        text_en: "Recognize different English accents"
+        bloom_level: Understand
+        curriculum_ref: KC-ENG-6-LIST.3
+
+  - id: speaking_interaction
+    name_de: "Sprechen und Interaktion"
+    name_en: "Speaking and Interaction"
+    category: "Kompetenzen / Produktion"
+    subcategory: "Mündliche Kommunikation"
+    difficulty: medium
+    estimated_lessons: durchgängig
+    learning_objectives:
+      - id: LO1
+        text_de: "Einfache Dialoge zu Alltagsthemen führen"
+        text_en: "Conduct simple dialogues on everyday topics"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-SPEAK.1
+      - id: LO2
+        text_de: "Persönliche Informationen über sich selbst geben (Name, Alter, Familie, Hobbys)"
+        text_en: "Give personal information about oneself"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-SPEAK.2
+      - id: LO3
+        text_de: "Aussprache und Intonation verbessern"
+        text_en: "Improve pronunciation and intonation"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-SPEAK.3
+
+  - id: writing_production
+    name_de: "Schreiben und Textproduktion"
+    name_en: "Writing and Text Production"
+    category: "Kompetenzen / Produktion"
+    subcategory: "Schriftliche Kommunikation"
+    difficulty: medium
+    estimated_lessons: durchgängig
+    learning_objectives:
+      - id: LO1
+        text_de: "Einfache zusammenhängende Texte schreiben (E-Mails, Postkarten, kurze Beschreibungen)"
+        text_en: "Write simple coherent texts"
+        bloom_level: Create
+        curriculum_ref: KC-ENG-6-WRITE.1
+      - id: LO2
+        text_de: "Persönliche Briefe und Nachrichten verfassen"
+        text_en: "Compose personal letters and messages"
+        bloom_level: Create
+        curriculum_ref: KC-ENG-6-WRITE.2
+      - id: LO3
+        text_de: "Rechtschreibung und Zeichensetzung verbessern"
+        text_en: "Improve spelling and punctuation"
+        bloom_level: Apply
+        curriculum_ref: KC-ENG-6-WRITE.3
 
 quality_thresholds:
   factual_accuracy: 100
   age_appropriateness: 95
   clarity: 90
   bias_free: 100
-  curriculum_alignment: 100
+  curriculum_alignment: 95
+
+difficulty_distribution:
+  easy: 40
+  medium: 50
+  hard: 10
+
+blooms_taxonomy_distribution:
+  remember_understand: 35
+  apply_analyze: 50
+  evaluate_create: 15
+
+grading_scale:
+  system: "1-6"
+  scale:
+    - grade: 1
+      name: "Sehr gut"
+      min_percent: 88
+      max_percent: 100
+    - grade: 2
+      name: "Gut"
+      min_percent: 74
+      max_percent: 87
+    - grade: 3
+      name: "Befriedigend"
+      min_percent: 60
+      max_percent: 73
+    - grade: 4
+      name: "Ausreichend"
+      min_percent: 46
+      max_percent: 59
+    - grade: 5
+      name: "Mangelhaft"
+      min_percent: 20
+      max_percent: 45
+    - grade: 6
+      name: "Ungenügend"
+      min_percent: 0
+      max_percent: 19
+
+recommended_test_formats:
+  - name: "Klassenarbeit"
+    duration_minutes: 45
+    points: 50
+    description: "Standardklassenarbeit mit Grammatik, Vokabular und Textproduktion"
+  - name: "Vokabeltest"
+    duration_minutes: 15
+    points: 20
+    description: "Kurzer Test zu einem spezifischen Wortfeld"
+  - name: "Hörverständnistest"
+    duration_minutes: 30
+    points: 30
+    description: "Test mit Audio-Material und Multiple Choice / Gap-Fill"
+  - name: "Speaking Test"
+    duration_minutes: 10
+    points: 20
+    description: "Mündliche Prüfung zu zweit oder mit Lehrer"

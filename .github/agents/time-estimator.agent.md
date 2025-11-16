@@ -2,8 +2,9 @@
 name: time-estimator
 description: Estimates test completion time for different skill levels (below-average, average, advanced) with 15-20% buffer for review and unexpected delays.
 tools:
-  - codebase
-  - editFiles
+  - search/codebase
+  - edit/editFiles
+  - edit/createFile
 handoffs:
   - label: "Format Test"
     agent: formatter

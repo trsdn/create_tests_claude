@@ -1,0 +1,275 @@
+---
+estimation_session:
+  test_series: "Present Simple vs Past Progressive - 5 Variants"
+  grade: 6
+  school_type: "Gymnasium"
+  region: "Niedersachsen"
+  age_range: "11-12"
+  target_duration: 45  # minutes
+  estimation_timestamp: "2025-11-16T00:30:00Z"
+  estimator_version: "1.0"
+
+# ==========================================
+# VERSION 1 - TIMING ANALYSIS
+# ==========================================
+version_1:
+  test_id: "de-ns-gym-eng-6-tenses-v1"
+  total_points: 50
+  
+  part_1_multiple_choice:
+    questions: 12
+    points: 12
+    base_time_per_question: 1.5  # minutes
+    difficulty_breakdown:
+      easy: 6  # Q1, Q3, Q5, Q7, Q9, Q11
+      medium: 5  # Q2, Q4, Q6, Q8, Q12
+      hard: 1  # Q10
+    
+    time_calculation:
+      easy_questions: 6 * 1.5 * 0.8 = 7.2  # 6 questions * 1.5 min * 0.8 multiplier
+      medium_questions: 5 * 1.5 * 1.0 = 7.5
+      hard_questions: 1 * 1.5 * 1.5 = 2.25
+      subtotal: 16.95 min
+      school_multiplier: 16.95 * 0.9 = 15.26 min  # Gymnasium = 0.9
+    
+    estimated_time:
+      below_average: 15.26 * 1.5 = 22.9 min
+      average: 15.26 * 1.0 = 15.3 min
+      advanced: 15.26 * 0.75 = 11.5 min
+  
+  part_2_fill_blanks:
+    questions: 16
+    points: 16
+    base_time_per_question: 1.5
+    difficulty_breakdown:
+      easy: 7  # Simple present simple forms
+      medium: 8  # Past progressive with context
+      hard: 1  # Complex two-part question
+    
+    time_calculation:
+      easy: 7 * 1.5 * 0.8 = 8.4 min
+      medium: 8 * 1.5 * 1.0 = 12.0 min
+      hard: 1 * 1.5 * 1.5 = 2.25 min
+      subtotal: 22.65 min
+      school_multiplier: 22.65 * 0.9 = 20.4 min
+    
+    estimated_time:
+      below_average: 20.4 * 1.5 = 30.6 min
+      average: 20.4 * 1.0 = 20.4 min
+      advanced: 20.4 * 0.75 = 15.3 min
+  
+  part_3_transformations:
+    questions: 10
+    points: 10
+    base_time_per_question: 2.0  # Sentence transformation
+    difficulty_breakdown:
+      easy: 5  # Simple negations
+      medium: 4  # Question formation
+      hard: 1  # Error correction
+    
+    time_calculation:
+      easy: 5 * 2.0 * 0.8 = 8.0 min
+      medium: 4 * 2.0 * 1.0 = 8.0 min
+      hard: 1 * 2.0 * 1.5 = 3.0 min
+      subtotal: 19.0 min
+      school_multiplier: 19.0 * 0.9 = 17.1 min
+    
+    estimated_time:
+      below_average: 17.1 * 1.5 = 25.7 min
+      average: 17.1 * 1.0 = 17.1 min
+      advanced: 17.1 * 0.75 = 12.8 min
+  
+  part_4_reading:
+    questions: 6
+    points: 8
+    base_time: 5.0  # Reading + comprehension
+    difficulty: medium
+    
+    time_breakdown:
+      reading_text: 1.5 min
+      answering_questions: 3.5 min
+      total: 5.0 min
+      school_multiplier: 5.0 * 0.9 = 4.5 min
+    
+    estimated_time:
+      below_average: 4.5 * 1.5 = 6.8 min
+      average: 4.5 * 1.0 = 4.5 min
+      advanced: 4.5 * 0.75 = 3.4 min
+  
+  part_5_writing:
+    questions: 4
+    points: 4
+    base_time_per_sentence: 1.0  # Creative writing
+    difficulty: hard
+    
+    time_calculation:
+      writing: 4 * 1.0 * 1.5 = 6.0 min
+      school_multiplier: 6.0 * 0.9 = 5.4 min
+    
+    estimated_time:
+      below_average: 5.4 * 1.5 = 8.1 min
+      average: 5.4 * 1.0 = 5.4 min
+      advanced: 5.4 * 0.75 = 4.1 min
+  
+  total_pure_work_time:
+    below_average: 22.9 + 30.6 + 25.7 + 6.8 + 8.1 = 94.1 min
+    average: 15.3 + 20.4 + 17.1 + 4.5 + 5.4 = 62.7 min
+    advanced: 11.5 + 15.3 + 12.8 + 3.4 + 4.1 = 47.1 min
+  
+  with_20_percent_buffer:
+    below_average: 94.1 * 1.2 = 112.9 min
+    average: 62.7 * 1.2 = 75.2 min
+    advanced: 47.1 * 1.2 = 56.5 min
+  
+  feasibility_assessment:
+    status: "⚠️ NICHT MACHBAR"
+    issue: "Test zu lang für 45 Minuten"
+    average_student_needs: "75 Minuten (167% der Zielzeit)"
+    below_average_needs: "113 Minuten (251% der Zielzeit)"
+    recommendation: "REDUZIEREN auf 60% des aktuellen Umfangs"
+
+# ==========================================
+# OPTIMIERTE VERSION - EMPFEHLUNG
+# ==========================================
+recommended_adjustment:
+  current_questions: 48
+  recommended_questions: 30
+  
+  suggested_structure:
+    part_1_multiple_choice: 8  # statt 12
+    part_2_fill_blanks: 10  # statt 16
+    part_3_transformations: 6  # statt 10
+    part_4_reading: 4  # statt 6
+    part_5_writing: 2  # statt 4
+  
+  estimated_time_optimized:
+    below_average: 68 min (mit Buffer)
+    average: 45 min (mit Buffer) ✓
+    advanced: 34 min (mit Buffer)
+  
+  feasibility: "✅ MACHBAR in 45 Minuten"
+
+# ==========================================
+# VERSIONS 2-5 - QUICK ANALYSIS
+# ==========================================
+version_2:
+  test_id: "de-ns-gym-eng-6-tenses-v2"
+  total_questions: 39
+  estimated_time_average: "68 min (mit Buffer)"
+  status: "⚠️ ZU LANG - 151% der Zielzeit"
+
+version_3:
+  test_id: "de-ns-gym-eng-6-tenses-v3"
+  total_questions: 46
+  estimated_time_average: "73 min (mit Buffer)"
+  status: "⚠️ ZU LANG - 162% der Zielzeit"
+
+version_4:
+  test_id: "de-ns-gym-eng-6-tenses-v4"
+  total_questions: 40
+  estimated_time_average: "70 min (mit Buffer)"
+  status: "⚠️ ZU LANG - 156% der Zielzeit"
+
+version_5:
+  test_id: "de-ns-gym-eng-6-tenses-v5"
+  total_questions: 43
+  estimated_time_average: "71 min (mit Buffer)"
+  status: "⚠️ ZU LANG - 158% der Zielzeit"
+
+# ==========================================
+# ZUSAMMENFASSUNG & EMPFEHLUNGEN
+# ==========================================
+summary:
+  all_tests_status: "⚠️ ALLE TESTS ZU LANG FÜR 45 MINUTEN"
+  
+  problem:
+    - "Durchschnittliche Schüler benötigen 68-75 Minuten"
+    - "Leistungsschwache Schüler benötigen 95-113 Minuten"
+    - "Das ist 150-167% der verfügbaren Zeit"
+  
+  consequences:
+    - "Zeitdruck für 60-70% der Schüler"
+    - "Unvollständige Bearbeitung wahrscheinlich"
+    - "Frustration und schlechtere Noten"
+    - "Keine Zeit für Überprüfung"
+  
+  immediate_actions:
+    priority_1:
+      action: "Reduziere Fragenzahl um 35-40%"
+      target: "Von ~40-48 Fragen auf ~25-30 Fragen"
+    
+    priority_2:
+      action: "Oder verlängere Testzeit auf 60-70 Minuten"
+      note: "Falls schulorganisatorisch möglich"
+    
+    priority_3:
+      action: "Erstelle separate kürzere Tests pro Thema"
+      example: "Test 1: Multiple Choice + Fill Blanks (30 min)"
+      example2: "Test 2: Transformations + Writing (25 min)"
+
+age_appropriateness_check:
+  age_group: "11-12 Jahre"
+  max_recommended_duration: 60  # minutes für diese Altersgruppe
+  current_duration: 45
+  within_limits: true
+  
+  concentration_span:
+    optimal: "30-40 Minuten für fokussierte Arbeit"
+    acceptable: "45-60 Minuten mit kurzen Pausen"
+    problematic: ">60 Minuten ohne Pause"
+  
+  note: "Auch bei 45 Min Zielzeit: Schüler brauchen tatsächlich 70+ Min = Konzentrationsproblem!"
+
+pacing_guidance_for_teachers:
+  if_keeping_current_length:
+    warning: "⚠️ Zeitdruck ist unvermeidbar bei aktuellem Umfang"
+    
+    milestones:
+      - time: "0-12 min"
+        task: "Teil 1 (Multiple Choice)"
+        note: "Durchschnittlich 1 Min pro Frage - sehr knapp!"
+      
+      - time: "12-30 min"
+        task: "Teil 2 (Fill in Blanks)"
+        note: "18 Min für 16 Fragen - sehr schnell!"
+      
+      - time: "30-40 min"
+        task: "Teil 3 (Transformations)"
+        note: "10 Min für 10 Fragen - kaum machbar"
+      
+      - time: "40-43 min"
+        task: "Teil 4 (Reading)"
+        note: "3 Min inklusive Lesen - unrealistisch"
+      
+      - time: "43-45 min"
+        task: "Teil 5 (Writing)"
+        note: "2 Min für 4 Sätze - extrem knapp"
+    
+    reality_check: "Keine Zeit für Überprüfung oder Nachdenken!"
+
+final_recommendation:
+  verdict: "❌ TESTS MÜSSEN GEKÜRZT WERDEN"
+  
+  option_a:
+    name: "Tests kürzen (EMPFOHLEN)"
+    action: "Reduziere auf 25-30 Fragen pro Test"
+    duration: "45 Minuten"
+    feasibility: "✅ Machbar für alle Leistungsstufen"
+  
+  option_b:
+    name: "Zeit verlängern"
+    action: "Behalte aktuelle Fragenzahl"
+    duration: "70 Minuten"
+    feasibility: "✅ Machbar, aber organisatorisch schwierig"
+  
+  option_c:
+    name: "Tests aufteilen"
+    action: "2 separate Tests à 30 Minuten"
+    duration: "2x 30 Minuten"
+    feasibility: "✅ Beste Lösung für gründliche Bewertung"
+
+next_steps:
+  step_1: "Entscheide: Kürzen, Verlängern oder Aufteilen?"
+  step_2: "Erstelle gekürzte Versionen mit 25-30 Fragen"
+  step_3: "Teste erneut mit Time Estimator"
+  step_4: "Validiere mit Pilot-Test in echter Klasse"

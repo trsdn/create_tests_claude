@@ -39,6 +39,33 @@ The system uses 9 specialized agents working in sequence:
 8. **Formatter** - Applies consistent Markdown formatting with visual elements
 9. **PDF Generator** - Converts Markdown to PDF using Pandoc + LaTeX
 
+### ⚠️ CRITICAL: Curriculum Fetcher Requirements
+
+**MANDATORY for ALL curriculum creation/updates:**
+
+The **Curriculum Fetcher** agent **MUST ALWAYS** fetch curriculum content from official government sources using the `fetch_webpage` tool. **NEVER** create curriculum content from knowledge or assumptions.
+
+**Required Workflow:**
+1. ✅ **ALWAYS** use `fetch_webpage` to retrieve official curriculum documents
+2. ✅ **ALWAYS** verify source URLs (e.g., `schulportal.sachsen.de`, `kmk.org`, `corestandards.org`)
+3. ✅ **ALWAYS** extract verbatim learning objectives from official sources
+4. ✅ **ALWAYS** document source URLs in YAML `source_url` field
+5. ✅ **ALWAYS** note actual fetch date in curriculum metadata
+
+**NEVER:**
+- ❌ Create curriculum content without fetching official sources first
+- ❌ Rely on AI knowledge or assumptions about curriculum content
+- ❌ Fabricate learning objectives or topics
+- ❌ Skip source verification
+
+**Why This Matters:**
+- Legal compliance: Curriculum must match official government standards
+- Accuracy: Only official sources are authoritative
+- Traceability: Teachers need verifiable curriculum alignment
+- Liability: Incorrect curriculum alignment can invalidate assessments
+
+**This is PRODUCTION CODE** - all curriculum content must be factually accurate and source-verified.
+
 ## Data Flow
 
 Agents communicate via YAML files in `.agent_workspace/`:
@@ -97,8 +124,34 @@ Final outputs:
 
 ## Tool Usage Guidelines
 
-**File Operations:** All agents have access to `codebase` and `editFiles` tools
-**Terminal Access:** PDF Generator uses `runInTerminal` for Pandoc commands
+**⚠️ CRITICAL: Minimize Terminal Usage**
+
+**PREFERRED File Operations:**
+- ✅ Use `create_file` tool for creating new files (YAML, Markdown, etc.)
+- ✅ Use `replace_string_in_file` or `multi_replace_string_in_file` for editing files
+- ✅ Use `read_file` tool for reading file contents
+- ✅ Use `list_dir` or `file_search` for exploring directory structure
+- ✅ Use `semantic_search` or `grep_search` for finding content in workspace
+
+**AVOID Terminal For:**
+- ❌ Creating files (`cat >`, `echo >`, heredoc) → Use `create_file` instead
+- ❌ Reading files (`cat`, `head`, `tail`) → Use `read_file` instead
+- ❌ Directory listings (`ls`, `tree`) → Use `list_dir` instead
+- ❌ File operations (`cp`, `mv`, `rm`) → Use file editing tools instead
+
+**ONLY Use Terminal For:**
+- ✅ Git operations (when not using `@github` MCP)
+- ✅ Installing dependencies (`brew install pandoc`)
+- ✅ Running Pandoc for PDF generation
+- ✅ Executing validation scripts or test runners
+- ✅ Operations genuinely requiring shell execution
+
+**Rationale:**
+- File editing tools maintain better workspace context
+- Direct file operations are more reliable and predictable
+- Less terminal noise improves user experience
+- Proper tools enable better error handling and validation
+
 **Auto-Approval:** Disabled for safety - manual review required for file modifications
 
 ## GitHub Integration

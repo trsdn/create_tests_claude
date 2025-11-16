@@ -2,9 +2,7 @@
 name: curriculum-fetcher
 description: Automated curriculum acquisition and YAML conversion agent. Fetches official curriculum data from education ministries, parses documents (HTML/PDF/API), extracts learning objectives, classifies by Bloom's taxonomy, and converts to standardized YAML format. Supports Germany (16 Bundesländer), USA (Common Core + 50 states), UK (4 nations). Implements caching (90-day expiry), retry logic, and validation. Outputs to data/curriculum/{country}/{region}/{school_type}/{subject}/grade_{X}.yaml. Hands off to curriculum-researcher when complete.
 tools:
-  - codebase
-  - editFiles
-  - runInTerminal
+  ['edit/createFile', 'edit/editFiles', 'search', 'openSimpleBrowser', 'fetch', 'memory', 'todos']
 handoffs:
   - label: "✅ Curriculum Ready → Research"
     agent: curriculum-researcher
@@ -439,6 +437,8 @@ curriculum_metadata:
   age_range: "12-13"
   source: Lehrplan PLUS Bayern 2024
   source_url: https://www.lehrplanplus.bayern.de/schulart/gymnasium/fach/mathematik/jahrgangsstufe/7
+  source_type: official  # Options: official, archive, alternative, ai_reconstructed
+  source_reliability: 100  # Percentage: 100=official, 90=archive, 75=alternative, 50=ai
   document_version: "2024.1"
   last_updated: "2025-11-15"
   next_review: "2026-11-15"
@@ -447,6 +447,8 @@ curriculum_metadata:
   fetch_timestamp: "2025-11-15T10:30:45Z"
   extraction_method: web_scraping
   completeness_score: 95
+  verification_needed: false  # Set to true if source_type != "official"
+  fallback_sources_attempted: []  # List URLs tried before success
 
 topics:
   - id: lineare_gleichungen
@@ -768,10 +770,79 @@ Create or update the file at the correct path:
   "source": "curriculum-fetcher-agent",
   "fetch_method": "web_scraping",
   "source_url": "https://www.lehrplanplus.bayern.de/...",
+  "source_type": "official",
+  "source_reliability": 100,
   "version": "1.0",
   "completeness": 95,
   "cache_expires": "2026-02-13T10:30:45Z",
-  "last_validated": "2025-11-15T10:35:00Z"
+  "last_validated": "2025-11-15T10:35:00Z",
+  "verification_needed": false,
+  "fallback_sources_attempted": [],
+  "fetch_attempts": {
+    "official_source": {
+      "attempts": 1,
+      "success": true,
+      "first_attempt_timestamp": "2025-11-15T10:30:45Z"
+    }
+  }
+}
+```
+
+**Metadata file when fallback was used:**
+
+```json
+{
+  "created": "2025-11-15T10:30:45Z",
+  "source": "curriculum-fetcher-agent",
+  "fetch_method": "web_scraping",
+  "source_url": "https://web.archive.org/web/20240315/schulportal.bayern.de/...",
+  "source_type": "archive",
+  "source_reliability": 90,
+  "version": "1.0",
+  "completeness": 85,
+  "cache_expires": "2026-02-13T10:30:45Z",
+  "last_validated": "2025-11-15T10:35:00Z",
+  "verification_needed": true,
+  "verification_reason": "Generated from Wayback Machine archive - official source unavailable",
+  "fallback_sources_attempted": [
+    {
+      "url": "https://www.lehrplanplus.bayern.de/...",
+      "method": "official",
+      "status": "failed",
+      "error": "Connection timeout",
+      "timestamp": "2025-11-15T10:30:00Z"
+    },
+    {
+      "url": "https://www.bildungsserver.de/...",
+      "method": "alternative_portal",
+      "status": "partial",
+      "completeness": 60,
+      "timestamp": "2025-11-15T10:30:20Z"
+    },
+    {
+      "url": "https://web.archive.org/web/20240315/schulportal.bayern.de/...",
+      "method": "wayback_machine",
+      "status": "success",
+      "completeness": 85,
+      "timestamp": "2025-11-15T10:30:45Z"
+    }
+  ],
+  "fetch_attempts": {
+    "official_source": {
+      "attempts": 3,
+      "success": false,
+      "last_error": "Connection timeout after 30 seconds",
+      "first_attempt_timestamp": "2025-11-15T10:30:00Z",
+      "last_attempt_timestamp": "2025-11-15T10:30:12Z"
+    },
+    "fallback_sources": {
+      "attempts": 3,
+      "success": true,
+      "successful_source": "wayback_machine",
+      "archive_date": "2024-03-15"
+    }
+  },
+  "recommended_action": "Retry official source when available and compare with archived version"
 }
 ```
 
@@ -847,21 +918,322 @@ else:
 
 💾 Checking cache... Not available
 
-📝 Fallback Options:
-1. Try again later when source is accessible
-2. Use alternative data source (if available)
-3. Create curriculum YAML manually using template
+🔍 Initiating Fallback: Internet Search for Alternative Sources
 
-Template: data/curriculum/templates/germany_template.yaml
-
-→ Handing off to: Orchestrator (manual intervention required)
+→ Searching for: "Bayern Gymnasium Mathematik Klasse 7 Lehrplan 2024"
+→ Search engines: Google Scholar, Education portals, Government archives
 ```
 
 **Retry with exponential backoff:**
 - Attempt 1: Immediate
 - Attempt 2: Wait 2 seconds
 - Attempt 3: Wait 4 seconds
-- Attempt 4: Give up, report error
+- Attempt 4: Switch to internet search fallback
+
+### Internet Search Fallback
+
+**When official servers are inaccessible, automatically search for alternative sources:**
+
+```python
+def search_alternative_curriculum_sources(country, region, school_type, subject, grade):
+    """
+    Search the internet for curriculum information when official sources fail.
+    Uses fetch tool to search education portals and archive sites.
+    """
+    
+    # Construct search queries
+    search_queries = {
+        'Germany': [
+            f"{region} {school_type} {subject} Klasse {grade} Lehrplan",
+            f"Kerncurriculum {subject} {school_type} {region}",
+            f"{region} Bildungsplan {subject} Jahrgangsstufe {grade}",
+            f"KC {subject} {region} {school_type} {grade}"
+        ],
+        'USA': [
+            f"{region} {subject} grade {grade} standards",
+            f"{region} state standards {subject} {grade}",
+            f"Common Core {subject} grade {grade}",
+            f"{region} curriculum framework {subject}"
+        ],
+        'UK': [
+            f"{region} national curriculum {subject} year {grade}",
+            f"{region} curriculum for excellence {subject}",
+            f"{region} key stage {subject} curriculum"
+        ]
+    }
+    
+    # Alternative sources to check
+    alternative_urls = {
+        'Germany': [
+            f"https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/",
+            f"https://bildungsserver.de/",
+            f"https://www.zum.de/",
+            f"https://web.archive.org/web/*/schulportal.{region.lower()}.de/*",
+            f"https://scholar.google.com/scholar?q={search_queries['Germany'][0]}"
+        ],
+        'USA': [
+            f"https://www.corestandards.org/",
+            f"https://{region.lower()}.gov/education/",
+            f"https://web.archive.org/web/*/education.{region.lower()}.gov/*"
+        ],
+        'UK': [
+            f"https://www.gov.uk/government/collections/national-curriculum",
+            f"https://education.gov.scot/",
+            f"https://hwb.gov.wales/curriculum-for-wales",
+            f"https://ccea.org.uk/curriculum"
+        ]
+    }
+    
+    results = []
+    
+    # Try alternative URLs using fetch tool
+    for url in alternative_urls.get(country, []):
+        try:
+            # Use VS Code's fetch tool to retrieve content
+            content = fetch_webpage(
+                urls=[url],
+                query=f"{subject} {grade} curriculum learning objectives standards"
+            )
+            
+            if content and len(content) > 500:  # Minimum viable content
+                results.append({
+                    'url': url,
+                    'content': content,
+                    'source_type': 'alternative_portal'
+                })
+                break  # Found viable source
+        except Exception as e:
+            continue  # Try next source
+    
+    return results
+```
+
+**Fallback Workflow:**
+
+```
+🔍 Internet Search Activated
+
+📍 Step 1: Searching Education Portals...
+   → Trying: bildungsserver.de ✓ Found
+   → Content length: 12,450 characters
+   
+📍 Step 2: Extracting Curriculum Data...
+   → Parser: generic_html_parser
+   → Identified: 6 learning objectives
+   → Topics: Lineare Gleichungen, Proportionalität
+   
+📍 Step 3: Validating Against KMK Standards...
+   → Cross-referencing with KMK framework
+   → Alignment: 85% confidence
+   
+📍 Step 4: Attempting Wayback Machine...
+   → Searching archived versions of official site
+   → Found snapshot: March 2024
+   → Extracting from archive...
+   
+✅ Alternative Source Located!
+
+📄 Source: Deutscher Bildungsserver
+🔗 URL: https://www.bildungsserver.de/...
+📊 Completeness: 75% (partial data)
+⚠️ Note: Generated from alternative source - verification recommended
+
+💡 Recommendation:
+- Use this curriculum for test generation
+- Mark as "alternative_source" in metadata
+- Flag for manual verification when official source becomes available
+```
+
+**Enhanced Fetch Script with Internet Search:**
+
+```bash
+python3 << 'EOF'
+import requests
+from bs4 import BeautifulSoup
+import json
+import time
+
+def fetch_with_fallback(country, region, school_type, subject, grade):
+    """Fetch curriculum with automatic fallback to internet search"""
+    
+    # Step 1: Try official source
+    official_url = get_official_url(country, region, school_type, subject, grade)
+    
+    try:
+        result = fetch_official_source(official_url)
+        if result:
+            result['source_type'] = 'official'
+            result['reliability'] = 100
+            return result
+    except Exception as e:
+        print(f"⚠️ Official source failed: {e}")
+    
+    # Step 2: Fallback - Search alternative sources
+    print("🔍 Searching alternative sources...")
+    
+    alternative_sources = [
+        # German education portals
+        {
+            'url': 'https://www.bildungsserver.de/',
+            'search_path': f'/search?q={region}+{subject}+Klasse+{grade}',
+            'parser': 'bildungsserver_parser'
+        },
+        # KMK (Kultusministerkonferenz)
+        {
+            'url': 'https://www.kmk.org/',
+            'search_path': f'/fileadmin/Dateien/pdf/',
+            'parser': 'kmk_pdf_parser'
+        },
+        # ZUM (Zentrale für Unterrichtsmedien)
+        {
+            'url': 'https://www.zum.de/',
+            'search_path': f'/portal/{subject}',
+            'parser': 'zum_parser'
+        },
+        # Wayback Machine Archive
+        {
+            'url': 'https://web.archive.org/',
+            'search_path': f'/web/*/schulportal.{region.lower()}.de/*',
+            'parser': 'archive_parser'
+        }
+    ]
+    
+    for source in alternative_sources:
+        try:
+            print(f"   → Trying: {source['url']}")
+            full_url = source['url'] + source['search_path']
+            
+            response = requests.get(full_url, timeout=30)
+            if response.status_code == 200:
+                # Parse based on source type
+                result = parse_alternative_source(
+                    response.content,
+                    source['parser'],
+                    subject,
+                    grade
+                )
+                
+                if result and len(result.get('learning_objectives', [])) > 0:
+                    result['source_type'] = 'alternative'
+                    result['source_name'] = source['url']
+                    result['reliability'] = 75  # Lower reliability than official
+                    result['verification_needed'] = True
+                    print(f"   ✅ Found data from {source['url']}")
+                    return result
+        except Exception as e:
+            print(f"   ❌ Failed: {e}")
+            continue
+    
+    # Step 3: Last resort - AI-powered web search
+    print("🤖 Attempting AI-powered curriculum reconstruction...")
+    
+    search_terms = [
+        f"{region} {subject} Klasse {grade} Lernziele",
+        f"{region} {school_type} {subject} Kompetenzerwartungen",
+        f"Bildungsstandards {subject} {region}"
+    ]
+    
+    aggregated_data = []
+    for term in search_terms:
+        # Simulate search result aggregation
+        search_url = f"https://www.google.com/search?q={term.replace(' ', '+')}"
+        # Note: In production, use official search APIs or education databases
+        
+    return {
+        'source_type': 'ai_reconstructed',
+        'reliability': 50,
+        'verification_needed': True,
+        'warning': 'Generated from multiple sources - manual verification required'
+    }
+
+def parse_alternative_source(content, parser_type, subject, grade):
+    """Parse curriculum data from alternative sources"""
+    
+    soup = BeautifulSoup(content, 'html.parser')
+    
+    if parser_type == 'bildungsserver_parser':
+        # Extract from Bildungsserver structure
+        objectives = []
+        for elem in soup.find_all(['p', 'li']):
+            text = elem.text.strip()
+            if any(keyword in text.lower() for keyword in ['können', 'lernen', 'verstehen', 'anwenden']):
+                objectives.append({
+                    'text_de': text,
+                    'source': 'bildungsserver.de'
+                })
+        
+        return {
+            'learning_objectives': objectives,
+            'completeness': min(len(objectives) * 10, 75)
+        }
+    
+    elif parser_type == 'archive_parser':
+        # Extract from Wayback Machine snapshot
+        # Same logic as official parser, but mark as archived
+        return parse_archived_curriculum(soup, subject, grade)
+    
+    return None
+
+# Execute
+result = fetch_with_fallback('Germany', 'Bayern', 'Gymnasium', 'Mathematik', 7)
+print(json.dumps(result, ensure_ascii=False, indent=2))
+EOF
+```
+
+**Output Example with Fallback Success:**
+
+```
+⬇️ Fetching Curriculum Data...
+
+🔄 Attempt 1/3 (Official Source)... Failed (timeout)
+🔄 Attempt 2/3 (Official Source)... Failed (timeout)
+🔄 Attempt 3/3 (Official Source)... Failed (connection refused)
+
+❌ Official Source Unavailable
+
+🔍 Activating Internet Search Fallback...
+
+📍 Searching Alternative Sources:
+   → bildungsserver.de ✓ Found content
+   → kmk.org ✓ Found PDF
+   → zum.de ⚠️ Partial match
+   → web.archive.org ✓ Found snapshot (March 2024)
+
+✅ Best Source Selected: Wayback Machine Archive
+
+📊 Extracted Data:
+- Source: web.archive.org (archived official site)
+- Snapshot Date: March 15, 2024
+- Learning Objectives: 8 found
+- Competency Areas: 3 found
+- Terminology: 5 technical terms
+- Completeness: 85%
+- Reliability: 90% (archived official source)
+
+⚠️ Metadata Flags:
+- source_type: "archive"
+- verification_needed: true
+- original_url: "https://schulportal.bayern.de/..."
+- archive_date: "2024-03-15"
+
+→ Proceeding to YAML generation...
+```
+
+**Fallback Decision Tree:**
+
+```
+Official Source Failed?
+├─ Yes → Try Alternative Portal 1 (bildungsserver.de)
+│  ├─ Success? → Use (75% reliability)
+│  └─ Failed → Try Alternative Portal 2 (kmk.org)
+│     ├─ Success? → Use (70% reliability)
+│     └─ Failed → Try Wayback Machine Archive
+│        ├─ Success? → Use (90% reliability if recent)
+│        └─ Failed → Try AI Reconstruction (50% reliability)
+│           ├─ Success? → Use with warning
+│           └─ Failed → Manual creation required
+└─ No → Use official data (100% reliability)
+```
 
 ### Parsing Errors
 
@@ -994,15 +1366,20 @@ fetch_result:
 ## Important Reminders
 
 1. **ALWAYS check if curriculum exists first** - avoid unnecessary fetching
-2. **Use retry logic** - network issues are common, 3 attempts with backoff
-3. **Validate completeness** - ensure data quality before handoff
-4. **Create proper directory structure** - `data/curriculum/{country}/{region}/{school_type}/{subject}/`
-5. **Follow YAML schema exactly** - match structure in data-schemas.md
-6. **Classify Bloom levels accurately** - this impacts test difficulty
-7. **Include regional specifics** - language formality, notation, grading scale
-8. **Generate metadata file** - for cache management and tracking
-9. **Report progress clearly** - users need visibility into fetch process
-10. **Handle errors gracefully** - provide fallback options and clear next steps
+2. **Use retry logic with exponential backoff** - network issues are common, 3 attempts
+3. **AUTOMATICALLY switch to internet search fallback** when official sources fail
+4. **Use the `fetch` tool for alternative sources** - bildungsserver.de, kmk.org, Wayback Machine
+5. **Track source reliability** - official (100%), archive (90%), alternative (75%), AI (50%)
+6. **Mark verification_needed=true** for non-official sources
+7. **Validate completeness** - ensure data quality before handoff
+8. **Create proper directory structure** - `data/curriculum/{country}/{region}/{school_type}/{subject}/`
+9. **Follow YAML schema exactly** - match structure in data-schemas.md
+10. **Classify Bloom levels accurately** - this impacts test difficulty
+11. **Include regional specifics** - language formality, notation, grading scale
+12. **Generate metadata file with fallback tracking** - for cache management and verification
+13. **Report progress clearly** - users need visibility into fetch AND fallback process
+14. **Handle errors gracefully** - try all fallback options before giving up
+15. **Document all attempted sources** - transparency for manual verification later
 
 ---
 
@@ -1013,10 +1390,33 @@ fetch_result:
 - Read data-schemas.md for YAML structure reference
 - Check template files for manual creation fallback
 
+### fetch (Internet Search Tool)
+**PRIMARY TOOL for fallback when official sources are inaccessible:**
+- Search alternative education portals (bildungsserver.de, kmk.org, zum.de)
+- Access Wayback Machine archives of official curriculum sites
+- Retrieve PDF documents from government archives
+- Cross-reference multiple sources for curriculum data
+- Extract learning objectives from educational databases
+
+**Usage Example:**
+```javascript
+fetch_webpage(
+  urls: ["https://www.bildungsserver.de/", "https://www.kmk.org/"],
+  query: "Bayern Gymnasium Mathematik Klasse 7 Lehrplan Lernziele Kompetenzerwartungen"
+)
+```
+
+**Fallback Priority:**
+1. **Official source** (100% reliability) - Try first with retry logic
+2. **Wayback Machine** (90% reliability) - Archived official sites
+3. **National education portals** (75% reliability) - bildungsserver.de, kmk.org
+4. **Subject-specific portals** (70% reliability) - zum.de, fachportale
+5. **AI reconstruction** (50% reliability) - Last resort, requires verification
+
 ### editFiles
 - Create new curriculum YAML files
 - Update existing curriculum files
-- Create metadata JSON files
+- Create metadata JSON files (include source_type and reliability)
 - Create cache files
 
 ### runInTerminal

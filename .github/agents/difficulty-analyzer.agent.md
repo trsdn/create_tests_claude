@@ -2,8 +2,7 @@
 name: difficulty-analyzer
 description: Analyzes question difficulty on 0-10 scale and validates distribution meets 30% easy, 50% medium, 20% hard targets with ±10% tolerance.
 tools:
-  - codebase
-  - editFiles
+  ['edit/createFile', 'edit/editFiles', 'search', 'todos']
 handoffs:
   - label: "Estimate Time"
     agent: time-estimator

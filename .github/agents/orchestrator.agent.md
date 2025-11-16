@@ -2,9 +2,7 @@
 name: orchestrator
 description: Central workflow coordinator for educational test creation. Gathers requirements, manages agent handoffs, enforces quality gates, and coordinates the entire test generation pipeline.
 tools:
-  - codebase
-  - editFiles
-  - runInTerminal
+  ['edit/createFile', 'edit/createDirectory', 'edit/editFiles', 'search', 'runCommands/runInTerminal', 'memory', 'todos']
 handoffs:
   - label: "Fetch Curriculum (if needed)"
     agent: curriculum-fetcher

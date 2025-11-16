@@ -2,18 +2,16 @@
 name: time-estimator
 description: Estimates test completion time for different skill levels (below-average, average, advanced) with 15-20% buffer for review and unexpected delays.
 tools:
-  - search/codebase
-  - edit/editFiles
-  - edit/createFile
+  ['edit/createFile', 'edit/editFiles', 'search', 'todos']
 handoffs:
   - label: "Format Test"
     agent: formatter
     prompt: "Apply final Markdown formatting to this test. All quality checks have passed. Format for final output."
-    send: false
+    send: true
   - label: "Adjust Test Length"
     agent: test-designer
     prompt: "Please adjust the test length. The current test doesn't fit the target duration. See time estimation report for details."
-    send: false
+    send: true
 ---
 
 # Time Estimator Agent

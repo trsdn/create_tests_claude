@@ -2,8 +2,7 @@
 name: content-validator
 description: Validates test content for factual accuracy, age-appropriateness, clarity, bias, and curriculum alignment. Enforces quality thresholds before test approval.
 tools:
-  - codebase
-  - editFiles
+  ['edit/createFile', 'edit/editFiles', 'search/codebase', 'todos']
 handoffs:
   - label: "Analyze Difficulty"
     agent: difficulty-analyzer

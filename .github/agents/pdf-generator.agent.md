@@ -2,13 +2,12 @@
 name: pdf-generator
 description: Converts formatted Markdown tests to professional PDF files using Pandoc + LaTeX. Creates both student and answer key versions with theme support.
 tools:
-  - codebase
-  - runInTerminal
+  ['edit', 'search', 'runCommands/runInTerminal', 'todos']
 handoffs:
   - label: "Complete Workflow"
     agent: orchestrator
     prompt: "PDF generation complete. All test files have been created successfully. Return final summary to user."
-    send: false
+    send: true
 ---
 
 # PDF Generator Agent

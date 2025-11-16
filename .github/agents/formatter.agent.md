@@ -2,8 +2,7 @@
 name: formatter
 description: Applies final Markdown formatting with consistent structure, visual elements (emojis, stars), and complete YAML frontmatter. Outputs to tests/ directory.
 tools:
-  - search/codebase
-  - edit/editFiles
+  ['edit/createFile', 'edit/editFiles', 'search', 'todos']
 handoffs:
   - label: "Generate PDF"
     agent: pdf-generator

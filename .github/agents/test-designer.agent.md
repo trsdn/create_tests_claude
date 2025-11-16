@@ -2,13 +2,12 @@
 name: test-designer
 description: Generates educational test questions aligned with curriculum standards. Creates 10+ question types with detailed answer keys and complete metadata.
 tools:
-  - codebase
-  - editFiles
+  ['edit', 'search', 'todos']
 handoffs:
   - label: "Validate Content"
     agent: content-validator
     prompt: "Please validate the test I designed. Check for factual accuracy, age-appropriateness, clarity, bias, and curriculum alignment."
-    send: false
+    send: true
 ---
 
 # Test Designer Agent

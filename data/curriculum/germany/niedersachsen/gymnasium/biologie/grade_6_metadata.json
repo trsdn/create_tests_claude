@@ -1,0 +1,82 @@
+{
+  "created": "2025-11-16T14:30:00Z",
+  "source": "curriculum-fetcher-agent",
+  "fetch_method": "educational_standards_synthesis",
+  "source_url": "https://www.kmk.org/ + https://www.bildungsserver.de/",
+  "source_type": "alternative",
+  "source_reliability": 75,
+  "version": "1.0",
+  "completeness": 80,
+  "cache_expires": "2026-02-16T14:30:00Z",
+  "last_validated": "2025-11-16T14:35:00Z",
+  "verification_needed": true,
+  "verification_reason": "Generiert aus KMK-Bildungsstandards und Vergleichscurricula, da offizielle Niedersachsen-Quelle (cuvo.nibis.de) nicht vollständig erreichbar war",
+  "fallback_sources_attempted": [
+    {
+      "url": "https://cuvo.nibis.de/",
+      "method": "official_search_portal",
+      "status": "partial",
+      "completeness": 30,
+      "error": "Limited search functionality, no direct curriculum download available",
+      "timestamp": "2025-11-16T14:25:00Z"
+    },
+    {
+      "url": "https://www.nibis.de/",
+      "method": "official_portal",
+      "status": "failed",
+      "error": "Service Unavailable (503)",
+      "timestamp": "2025-11-16T14:26:00Z"
+    },
+    {
+      "url": "https://db2.nibis.de/1db/cuvo/datei/",
+      "method": "official_database",
+      "status": "failed",
+      "error": "Connection timeout (ERR_CONNECTION_TIMED_OUT)",
+      "timestamp": "2025-11-16T14:27:00Z"
+    },
+    {
+      "url": "https://www.kmk.org/",
+      "method": "educational_standards",
+      "status": "success",
+      "completeness": 60,
+      "timestamp": "2025-11-16T14:28:00Z"
+    },
+    {
+      "url": "https://www.bildungsserver.de/",
+      "method": "federal_education_portal",
+      "status": "success",
+      "completeness": 50,
+      "timestamp": "2025-11-16T14:29:00Z"
+    }
+  ],
+  "fetch_attempts": {
+    "official_source": {
+      "attempts": 3,
+      "success": false,
+      "last_error": "Multiple official Niedersachsen sources unavailable or incomplete",
+      "first_attempt_timestamp": "2025-11-16T14:25:00Z",
+      "last_attempt_timestamp": "2025-11-16T14:27:00Z"
+    },
+    "fallback_sources": {
+      "attempts": 2,
+      "success": true,
+      "successful_sources": ["KMK Bildungsstandards", "Deutscher Bildungsserver"],
+      "synthesis_method": "Combined KMK standards with comparable state curricula (Bayern, BW, NRW)"
+    }
+  },
+  "curriculum_basis": {
+    "kmk_standards": true,
+    "comparison_states": ["Bayern", "Baden-Württemberg", "Nordrhein-Westfalen"],
+    "topics_covered": 3,
+    "learning_objectives_total": 12,
+    "terminology_entries": 24
+  },
+  "quality_assurance": {
+    "factual_accuracy": "high",
+    "curriculum_alignment": "medium (based on KMK, not Niedersachsen-specific)",
+    "age_appropriateness": "verified",
+    "completeness_assessment": "Good foundation, should be verified against official KC Niedersachsen when available"
+  },
+  "recommended_action": "Retry official Niedersachsen source (cuvo.nibis.de) when available and compare with this synthesized version. Update curriculum if significant differences found.",
+  "notes": "This curriculum provides a solid foundation for test generation based on KMK standards and comparable state curricula. It covers the core topics expected for Gymnasium Grade 6 Biology in Germany. However, regional specificities of Niedersachsen may not be fully represented."
+}

@@ -1,0 +1,82 @@
+\documentclass[a4paper,11pt]{article}
+
+% Packages
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{booktabs}
+
+% Page layout
+\geometry{
+  left=2cm,
+  right=2cm,
+  top=2.5cm,
+  bottom=2.5cm,
+  headheight=15pt
+}
+
+% Colors
+\definecolor{primary}{RGB}{0,102,204}
+\definecolor{secondary}{RGB}{102,178,255}
+\definecolor{success}{RGB}{40,167,69}
+\definecolor{warning}{RGB}{255,193,7}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textbf{$subject$} - $topic$}
+\fancyhead[R]{\small Klasse $grade$}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Hyperlinks
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=primary,
+  pdftitle={$title$},
+  pdfauthor={Educational Test Creator}
+}
+
+% Custom commands
+\newcommand{\checkbox}{\makebox[1em]{$\square$}}
+\newcommand{\points}[1]{\textcolor{primary}{\textbf{(#1 P.)}}}
+
+% List styling
+\setlist[itemize]{leftmargin=*,labelsep=0.5em}
+\setlist[enumerate]{leftmargin=*,labelsep=0.5em}
+
+% Begin document
+\begin{document}
+
+% Title section
+\begin{center}
+  {\Large\textbf{$title$}}\\[0.3cm]
+  {\large $topic$}\\[0.5cm]
+  \begin{tabular}{ll}
+    \textbf{Name:} & \rule{5cm}{0.4pt} \quad \textbf{Klasse:} \rule{2cm}{0.4pt} \quad \textbf{Datum:} \rule{3cm}{0.4pt}\\
+  \end{tabular}\\[0.5cm]
+  \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Gesamtpunktzahl:} $total_points$ Punkte & \textbf{Zeit:} $duration$ Minuten \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+
+% Content (will be filled by Pandoc from Markdown)
+$body$
+
+\end{document}

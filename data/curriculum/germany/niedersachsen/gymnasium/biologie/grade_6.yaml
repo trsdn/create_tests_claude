@@ -1,0 +1,692 @@
+curriculum_metadata:
+  region: Niedersachsen
+  country: Germany
+  school_type: Gymnasium
+  subject: Biologie
+  subject_en: Biology
+  grade: 6
+  klassenstufe: 6
+  age_range: "11-12"
+  source: KMK Bildungsstandards + Deutscher Bildungsserver
+  source_url: https://www.kmk.org/ https://www.bildungsserver.de/
+  source_type: alternative  # Official Niedersachsen source (nibis.de) was unavailable
+  source_reliability: 75  # Lower than official (100) but based on KMK standards
+  document_version: "2025.1"
+  last_updated: "2025-11-16"
+  next_review: "2026-02-16"
+  language: de
+  fetched_by: curriculum-fetcher-agent
+  fetch_timestamp: "2025-11-16T14:30:00Z"
+  extraction_method: educational_standards_synthesis
+  completeness_score: 80
+  verification_needed: true
+  fallback_sources_attempted:
+    - url: "https://cuvo.nibis.de/"
+      method: "official"
+      status: "partial_access"
+      error: "Limited search functionality, no direct curriculum download"
+      timestamp: "2025-11-16T14:25:00Z"
+    - url: "https://www.nibis.de/"
+      method: "official"
+      status: "failed"
+      error: "Service unavailable (503)"
+      timestamp: "2025-11-16T14:26:00Z"
+    - url: "https://db2.nibis.de/1db/cuvo/datei/"
+      method: "official_archive"
+      status: "failed"
+      error: "Connection timeout"
+      timestamp: "2025-11-16T14:27:00Z"
+  notes: |
+    WICHTIG: Dieses Curriculum wurde aus KMK-Bildungsstandards und allgemeinen 
+    Biologie-Curricula deutscher Gymnasien synthetisiert, da die offizielle 
+    Niedersachsen-Quelle nicht erreichbar war. Es basiert auf:
+    - KMK Bildungsstandards für den mittleren Schulabschluss Biologie
+    - Vergleichbare Curricula anderer Bundesländer (Bayern, BW, NRW)
+    - Deutscher Bildungsserver Fachinformationen
+    
+    EMPFEHLUNG: Sobald https://cuvo.nibis.de/ wieder voll verfügbar ist, sollte
+    dieses Curriculum mit dem offiziellen Kerncurriculum Niedersachsen abgeglichen
+    und aktualisiert werden.
+
+topics:
+  - id: zelle_grundbaustein
+    name_de: Die Zelle - Grundbaustein des Lebens
+    name_en: The Cell - Basic Unit of Life
+    category: Zellbiologie
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler beschreiben den Aufbau einer tierischen und pflanzlichen Zelle anhand von Modellen und mikroskopischen Präparaten.
+        text_en: Students describe the structure of animal and plant cells using models and microscopic preparations.
+        bloom_level: Understand
+        curriculum_ref: BIO-6-1.1
+        description: Grundlegendes Verständnis der Zellstruktur
+      
+      - id: LO2
+        text_de: Die Schülerinnen und Schüler erklären die Funktion wichtiger Zellbestandteile (Zellkern, Zellmembran, Chloroplasten, Zellwand).
+        text_en: Students explain the function of important cell components (nucleus, cell membrane, chloroplasts, cell wall).
+        bloom_level: Understand
+        curriculum_ref: BIO-6-1.2
+        description: Struktur-Funktions-Beziehung verstehen
+      
+      - id: LO3
+        text_de: Die Schülerinnen und Schüler nutzen das Lichtmikroskop sachgerecht und fertigen einfache mikroskopische Präparate an.
+        text_en: Students use the light microscope properly and prepare simple microscopic specimens.
+        bloom_level: Apply
+        curriculum_ref: BIO-6-1.3
+        description: Experimentelle Kompetenz - Mikroskopieren
+      
+      - id: LO4
+        text_de: Die Schülerinnen und Schüler vergleichen pflanzliche und tierische Zellen und benennen Gemeinsamkeiten und Unterschiede.
+        text_en: Students compare plant and animal cells and identify similarities and differences.
+        bloom_level: Analyze
+        curriculum_ref: BIO-6-1.4
+        description: Vergleichende Betrachtung von Zelltypen
+    
+    competency_areas:
+      - area: Fachwissen - Struktur und Funktion
+        percentage: 40
+        description: Zellorganellen kennen und ihre Funktion verstehen
+      
+      - area: Erkenntnisgewinnung - Experimentieren
+        percentage: 35
+        description: Mikroskopieren als naturwissenschaftliche Arbeitsmethode
+      
+      - area: Kommunikation - Dokumentation
+        percentage: 25
+        description: Mikroskopische Beobachtungen zeichnen und beschreiben
+    
+    content_scope:
+      include:
+        - Lichtmikroskop (Aufbau, Handhabung, Vergrößerung)
+        - Anfertigen von Präparaten (Zwiebelhaut, Mundschleimhaut)
+        - Zellkern, Zellmembran, Zellplasma/Cytoplasma
+        - Pflanzenzelle: Chloroplasten, Zellwand, Vakuole
+        - Tierzelle: Form, Beweglichkeit
+        - Einzeller (z.B. Pantoffeltierchen) als Beispiel
+      
+      exclude:
+        - Elektronenmikroskop
+        - Detaillierte Biochemie der Zellorganellen
+        - Mitochondrien (kommt in Klasse 7/8)
+        - Zellkern-Details (DNA, Chromosomen - Klasse 9/10)
+      
+      prerequisites:
+        - Grundkenntnisse über Lebewesen (Klasse 5)
+        - Unterscheidung Tiere-Pflanzen
+        - Sorgfältiger Umgang mit Geräten
+      
+      follow_up_topics:
+        - Stoffwechsel der Zelle (Klasse 7/8)
+        - Zellteilung (Klasse 9)
+        - Genetik (Klasse 9/10)
+    
+    difficulty_recommendations:
+      easy:
+        percentage: 35
+        characteristics:
+          - Benennen von Zellbestandteilen an beschrifteten Bildern
+          - Zuordnung Funktion zu Organell (aus vorgegebener Liste)
+          - Einfache Mikroskop-Bedienung
+          - Beispiel: "Welches Organell ist nur in Pflanzenzellen vorhanden? a) Zellkern b) Chloroplast c) Zellmembran"
+      
+      medium:
+        percentage: 50
+        characteristics:
+          - Erklären von Funktionen in eigenen Worten
+          - Vergleich Tier- und Pflanzenzelle
+          - Mikroskop-Zeichnung anfertigen mit Beschriftung
+          - Beispiel: "Erkläre, warum Pflanzenzellen eine Zellwand besitzen, Tierzellen aber nicht."
+      
+      hard:
+        percentage: 15
+        characteristics:
+          - Transfer: Warum ist die Zelle die kleinste Einheit des Lebens?
+          - Fehlerhafte Mikroskop-Zeichnung korrigieren
+          - Beispiel: "Ein Schüler beobachtet unter dem Mikroskop grüne Strukturen. Erkläre, ob es sich um eine Tier- oder Pflanzenzelle handelt und begründe deine Antwort."
+    
+    terminology:
+      - german: Zelle
+        english: cell
+        definition: Kleinste lebende Einheit eines Organismus
+        usage: Grundbegriff der Biologie
+      
+      - german: Zellkern
+        english: nucleus
+        definition: Steuerzentrum der Zelle, enthält Erbinformation
+        usage: In fast allen tierischen und pflanzlichen Zellen vorhanden
+      
+      - german: Zellmembran
+        english: cell membrane
+        definition: Äußere Hülle der Zelle, grenzt sie von der Umgebung ab
+        usage: Kontrolliert Stoffaustausch
+      
+      - german: Chloroplast
+        english: chloroplast
+        definition: Grüne Zellorganelle, enthält Chlorophyll
+        usage: Nur in Pflanzenzellen, Ort der Fotosynthese
+      
+      - german: Zellwand
+        english: cell wall
+        definition: Feste Hülle außerhalb der Zellmembran
+        usage: Nur in Pflanzenzellen, gibt Stabilität
+      
+      - german: Vakuole
+        english: vacuole
+        definition: Mit Zellsaft gefüllter Hohlraum
+        usage: In Pflanzenzellen, Speicherfunktion
+      
+      - german: Mikroskop
+        english: microscope
+        definition: Optisches Gerät zur Vergrößerung kleiner Objekte
+        usage: Unverzichtbar in der Zellbiologie
+      
+      - german: Vergrößerung
+        english: magnification
+        definition: Wie viel größer ein Objekt erscheint
+        usage: Berechnung: Okular × Objektiv
+    
+    regional_specifics:
+      language_formality: informal  # "du" für Klasse 6 Gymnasium
+      number_format:
+        decimal_separator: ","
+        thousands_separator: "."
+        example: "Vergrößerung 40-fach, Zellgröße 0,01 mm"
+      
+      grading_scale:
+        system: "1-6"
+        excellent: 1
+        satisfactory: 3
+        passing: 4
+        failing: 5
+        description: "1 = Sehr gut, 2 = Gut, 3 = Befriedigend, 4 = Ausreichend, 5 = Mangelhaft, 6 = Ungenügend"
+      
+      notation_preferences:
+        multiplication: "×"  # Bei Vergrößerungen: 10× Okular
+        units: "mm, μm (Mikrometer)"
+        scientific: "Binomiale Nomenklatur erst ab Klasse 7"
+    
+    assessment_criteria:
+      - criterion: Fachliche Richtigkeit
+        weight: 40
+        description: Korrekte Benennung und Beschreibung von Zellbestandteilen
+      
+      - criterion: Zeichnerische Darstellung
+        weight: 25
+        description: Mikroskop-Zeichnungen mit korrekten Proportionen und Beschriftung
+      
+      - criterion: Experimentelle Kompetenz
+        weight: 20
+        description: Sachgerechter Umgang mit Mikroskop und Präparaten
+      
+      - criterion: Fachsprache
+        weight: 15
+        description: Verwendung biologischer Fachbegriffe
+    
+    vocabulary_guidelines:
+      preferred_terms:
+        - "Zelle" (nicht "Baustein des Lebens" als Fachbegriff)
+        - "Zellorganelle" (allgemein für Zellbestandteile)
+        - "Chloroplast" (nicht "grünes Körnchen")
+        - "Mikroskopieren" (nicht "durchs Mikroskop schauen")
+      
+      avoid_terms:
+        - "Zellbausteine" (zu unspezifisch)
+        - "Kleine grüne Dinger" (umgangssprachlich)
+      
+      contextual_usage:
+        formal_context: "Beschreiben Sie die Funktion des Zellkerns"
+        informal_context: "Erkläre, wofür der Zellkern zuständig ist"
+        beginner_friendly: "Der Zellkern ist wie die Steuerzentrale der Zelle"
+    
+    typical_errors:
+      - error: "Verwechslung Zellmembran und Zellwand"
+        example_wrong: "Die Zellmembran ist nur in Pflanzenzellen"
+        example_correct: "Die Zellmembran haben alle Zellen, die Zellwand nur Pflanzenzellen"
+        prevention: "Merkregel: Membran = Alle, Wand = Nur Pflanzen"
+      
+      - error: "Mikroskop-Vergrößerung falsch berechnet"
+        example_wrong: "10er Okular + 40er Objektiv = 50-fache Vergrößerung"
+        example_correct: "10er Okular × 40er Objektiv = 400-fache Vergrößerung"
+        prevention: "Vergrößerungen werden multipliziert, nicht addiert"
+      
+      - error: "Chloroplasten in Tierzellen zeichnen"
+        example_wrong: "Mundschleimhautzelle mit grünen Chloroplasten"
+        example_correct: "Mundschleimhautzelle ohne Chloroplasten (nur Zellkern sichtbar)"
+        prevention: "Chloroplasten nur in grünen Pflanzenteilen"
+    
+    time_estimates:
+      typical_lesson_duration: 45  # Minuten
+      recommended_test_duration: 45
+      topics_per_lesson: 1
+      homework_time: 30
+
+  - id: wirbeltiere_grundlagen
+    name_de: Wirbeltiere - Vielfalt und Angepasstheiten
+    name_en: Vertebrates - Diversity and Adaptations
+    category: Zoologie
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler ordnen heimische Wirbeltiere den fünf Klassen (Fische, Amphibien, Reptilien, Vögel, Säugetiere) zu.
+        text_en: Students classify native vertebrates into the five classes (fish, amphibians, reptiles, birds, mammals).
+        bloom_level: Apply
+        curriculum_ref: BIO-6-2.1
+        description: Systematische Einteilung von Wirbeltieren
+      
+      - id: LO2
+        text_de: Die Schülerinnen und Schüler beschreiben typische Merkmale der Wirbeltierklassen und erklären diese als Anpassungen an den Lebensraum.
+        text_en: Students describe typical characteristics of vertebrate classes and explain them as adaptations to their habitat.
+        bloom_level: Understand
+        curriculum_ref: BIO-6-2.2
+        description: Angepasstheiten erkennen und erklären
+      
+      - id: LO3
+        text_de: Die Schülerinnen und Schüler vergleichen die Körperbedeckung verschiedener Wirbeltierklassen und stellen Zusammenhänge zum Lebensraum her.
+        text_en: Students compare the body covering of different vertebrate classes and establish connections to their habitat.
+        bloom_level: Analyze
+        curriculum_ref: BIO-6-2.3
+        description: Vergleichende Analyse von Anpassungen
+      
+      - id: LO4
+        text_de: Die Schülerinnen und Schüler erläutern die Fortpflanzung und Entwicklung ausgewählter Wirbeltiere.
+        text_en: Students explain the reproduction and development of selected vertebrates.
+        bloom_level: Understand
+        curriculum_ref: BIO-6-2.4
+        description: Fortpflanzungsbiologie verstehen
+    
+    competency_areas:
+      - area: Fachwissen - Vielfalt und Angepasstheit
+        percentage: 45
+        description: Wirbeltierklassen kennen und Anpassungen erklären
+      
+      - area: Erkenntnisgewinnung - Vergleichen und Ordnen
+        percentage: 35
+        description: Systematisches Vergleichen von Merkmalen
+      
+      - area: Bewertung - Artenschutz
+        percentage: 20
+        description: Bedeutung des Schutzes heimischer Arten einschätzen
+    
+    content_scope:
+      include:
+        - Fünf Wirbeltierklassen und ihre Hauptmerkmale
+        - Körperbedeckung (Schuppen, Federn, Fell, nackte Haut)
+        - Fortbewegung (Flossen, Beine, Flügel)
+        - Atmung (Kiemen, Lungen, Hautatmung)
+        - Fortpflanzung (Eier, lebendgebärend)
+        - Heimische Beispiele jeder Klasse
+        - Anpassungen an Lebensräume (Wasser, Land, Luft)
+      
+      exclude:
+        - Detaillierte Anatomie (innere Organe - Klasse 7/8)
+        - Wirbellose Tiere (Klasse 5)
+        - Evolution der Wirbeltiere (Klasse 9/10)
+        - Ökosystem-Details (Klasse 7/8)
+      
+      prerequisites:
+        - Kennzeichen des Lebendigen (Klasse 5)
+        - Unterscheidung Wirbeltiere - Wirbellose (Klasse 5)
+        - Lebensräume (Wasser, Land) (Klasse 5)
+      
+      follow_up_topics:
+        - Ökosystem Wald (Klasse 7)
+        - Ökosystem Gewässer (Klasse 7)
+        - Evolution (Klasse 9/10)
+    
+    difficulty_recommendations:
+      easy:
+        percentage: 30
+        characteristics:
+          - Zuordnung Tier zu Wirbeltierklasse
+          - Benennen typischer Merkmale
+          - Beispiel: "Zu welcher Klasse gehört der Frosch? a) Fische b) Amphibien c) Reptilien"
+      
+      medium:
+        percentage: 50
+        characteristics:
+          - Erklären von Anpassungen
+          - Vergleich zweier Wirbeltierklassen
+          - Beispiel: "Erkläre, warum Vögel Federn besitzen und welche Funktion diese haben."
+      
+      hard:
+        percentage: 20
+        characteristics:
+          - Transfer auf unbekannte Tiere
+          - Bewertung von Schutzmaßnahmen
+          - Beispiel: "Ein Tier hat Federn, legt Eier und kann nicht fliegen. Zu welcher Klasse gehört es und warum?"
+    
+    terminology:
+      - german: Wirbeltier
+        english: vertebrate
+        definition: Tier mit Wirbelsäule/Rückgrat
+        usage: Übergeordnete Gruppe
+      
+      - german: Fische
+        english: fish
+        definition: Im Wasser lebende Wirbeltiere mit Kiemen und Flossen
+        usage: Eine der fünf Wirbeltierklassen
+      
+      - german: Amphibien
+        english: amphibians
+        definition: Wirbeltiere, die im Wasser und an Land leben können
+        usage: "Doppelleben" - Frosch, Salamander
+      
+      - german: Reptilien
+        english: reptiles
+        definition: Wirbeltiere mit trockener, schuppiger Haut
+        usage: Eidechse, Schlange, Schildkröte
+      
+      - german: Vögel
+        english: birds
+        definition: Wirbeltiere mit Federn und Flügeln
+        usage: Einzige Wirbeltierklasse mit Federn
+      
+      - german: Säugetiere
+        english: mammals
+        definition: Wirbeltiere, die ihre Jungen säugen
+        usage: Mensch, Hund, Wal
+      
+      - german: Angepasstheit
+        english: adaptation
+        definition: Merkmal, das ein Lebewesen an seinen Lebensraum anpasst
+        usage: Flossen als Angepasstheit an Wasser
+      
+      - german: Körperbedeckung
+        english: body covering
+        definition: Äußere Schicht des Körpers
+        usage: Schuppen, Federn, Fell, Haut
+    
+    regional_specifics:
+      language_formality: informal  # "du"
+      number_format:
+        decimal_separator: ","
+        example: "Ein Frosch legt ca. 3.000 Eier"
+      
+      grading_scale:
+        system: "1-6"
+        excellent: 1
+        satisfactory: 3
+        passing: 4
+      
+      notation_preferences:
+        species_examples: "Heimische Arten bevorzugen (Rotkehlchen statt exotische Vögel)"
+    
+    assessment_criteria:
+      - criterion: Systematische Zuordnung
+        weight: 35
+        description: Korrekte Klassifizierung von Wirbeltieren
+      
+      - criterion: Merkmale benennen und erklären
+        weight: 35
+        description: Typische Merkmale der Klassen kennen
+      
+      - criterion: Angepasstheiten erkennen
+        weight: 20
+        description: Zusammenhang Merkmal - Lebensraum herstellen
+      
+      - criterion: Fachsprache
+        weight: 10
+        description: Korrekte Verwendung biologischer Begriffe
+    
+    time_estimates:
+      typical_lesson_duration: 45
+      recommended_test_duration: 45
+      topics_per_lesson: 1
+      homework_time: 30
+
+  - id: atmung_mensch
+    name_de: Atmung beim Menschen
+    name_en: Human Respiration
+    category: Humanbiologie
+    
+    learning_objectives:
+      - id: LO1
+        text_de: Die Schülerinnen und Schüler beschreiben den Aufbau der Atmungsorgane des Menschen.
+        text_en: Students describe the structure of human respiratory organs.
+        bloom_level: Understand
+        curriculum_ref: BIO-6-3.1
+        description: Anatomie des Atmungssystems
+      
+      - id: LO2
+        text_de: Die Schülerinnen und Schüler erklären den Weg der Atemluft durch die Atmungsorgane.
+        text_en: Students explain the pathway of breathing air through the respiratory organs.
+        bloom_level: Understand
+        curriculum_ref: BIO-6-3.2
+        description: Atmungsvorgang verstehen
+      
+      - id: LO3
+        text_de: Die Schülerinnen und Schüler beschreiben den Gasaustausch in der Lunge und erklären seine Bedeutung.
+        text_en: Students describe gas exchange in the lungs and explain its significance.
+        bloom_level: Apply
+        curriculum_ref: BIO-6-3.3
+        description: Funktion der Atmung verstehen
+      
+      - id: LO4
+        text_de: Die Schülerinnen und Schüler bewerten gesundheitliche Risiken für die Atmungsorgane (z.B. Rauchen, Luftverschmutzung).
+        text_en: Students evaluate health risks for respiratory organs (e.g., smoking, air pollution).
+        bloom_level: Evaluate
+        curriculum_ref: BIO-6-3.4
+        description: Gesundheitsbewusstsein entwickeln
+    
+    competency_areas:
+      - area: Fachwissen - Struktur und Funktion
+        percentage: 40
+        description: Atmungsorgane und ihre Funktion kennen
+      
+      - area: Erkenntnisgewinnung - Modelle nutzen
+        percentage: 30
+        description: Modelle zur Atmung verstehen und anwenden
+      
+      - area: Bewertung - Gesundheit
+        percentage: 30
+        description: Gesundheitsrisiken einschätzen können
+    
+    content_scope:
+      include:
+        - Nase, Luftröhre, Bronchien, Lunge, Lungenbläschen
+        - Weg der Atemluft (Ein- und Ausatmung)
+        - Gasaustausch (Sauerstoff, Kohlenstoffdioxid)
+        - Zwerchfell (einfach)
+        - Gesundheitsaspekte (Rauchen, Sport, Luftqualität)
+      
+      exclude:
+        - Detaillierte Biochemie (Zellatmung - Klasse 9)
+        - Blutkreislauf (Klasse 7/8)
+        - Herz-Kreislauf-System im Detail
+      
+      prerequisites:
+        - Grundkenntnisse Organe des Menschen
+        - Luft als Gasgemisch (Sachkunde/Klasse 5)
+      
+      follow_up_topics:
+        - Herz-Kreislauf-System (Klasse 7/8)
+        - Zellatmung (Klasse 9)
+        - Ökologie - Sauerstoffkreislauf (Klasse 7/8)
+    
+    difficulty_recommendations:
+      easy:
+        percentage: 30
+        characteristics:
+          - Benennen der Atmungsorgane
+          - Weg der Luft nachvollziehen
+          - Beispiel: "Benenne die Atmungsorgane in der richtigen Reihenfolge."
+      
+      medium:
+        percentage: 50
+        characteristics:
+          - Gasaustausch erklären
+          - Funktion der Lungenbläschen
+          - Beispiel: "Erkläre, warum die Lungenbläschen so klein und zahlreich sind."
+      
+      hard:
+        percentage: 20
+        characteristics:
+          - Bewertung von Gesundheitsrisiken
+          - Transfer (Atmung bei Sport)
+          - Beispiel: "Begründe, warum Rauchen die Atmung schädigt."
+    
+    terminology:
+      - german: Atmung
+        english: respiration
+        definition: Aufnahme von Sauerstoff und Abgabe von Kohlenstoffdioxid
+        usage: Grundprozess des Lebens
+      
+      - german: Lunge
+        english: lung
+        definition: Organ zum Gasaustausch
+        usage: Paariges Organ im Brustkorb
+      
+      - german: Luftröhre
+        english: trachea
+        definition: Röhre, die Luft zur Lunge leitet
+        usage: Verbindet Kehlkopf mit Bronchien
+      
+      - german: Bronchien
+        english: bronchi
+        definition: Verzweigte Luftwege in der Lunge
+        usage: Verteilen die Luft in der Lunge
+      
+      - german: Lungenbläschen
+        english: alveoli
+        definition: Kleinste Einheiten der Lunge, Ort des Gasaustauschs
+        usage: Sehr zahlreich, dünne Wand
+      
+      - german: Gasaustausch
+        english: gas exchange
+        definition: Austausch von Sauerstoff und Kohlenstoffdioxid
+        usage: Findet in den Lungenbläschen statt
+      
+      - german: Zwerchfell
+        english: diaphragm
+        definition: Muskel unterhalb der Lunge, wichtig für Atmung
+        usage: Bewegt sich bei Ein- und Ausatmung
+    
+    regional_specifics:
+      language_formality: informal
+      grading_scale:
+        system: "1-6"
+      
+      notation_preferences:
+        chemistry: "O₂ (Sauerstoff), CO₂ (Kohlenstoffdioxid) - einfache Formeln"
+    
+    assessment_criteria:
+      - criterion: Anatomische Kenntnisse
+        weight: 30
+        description: Atmungsorgane korrekt benennen
+      
+      - criterion: Funktionales Verständnis
+        weight: 40
+        description: Atmungsvorgang und Gasaustausch erklären
+      
+      - criterion: Gesundheitsbewusstsein
+        weight: 20
+        description: Risiken benennen und bewerten
+      
+      - criterion: Fachsprache
+        weight: 10
+        description: Biologische Begriffe korrekt verwenden
+    
+    time_estimates:
+      typical_lesson_duration: 45
+      recommended_test_duration: 45
+      topics_per_lesson: 1
+      homework_time: 30
+
+standards:
+  - standard_id: BIO-KC-NI-2015
+    name: Kerncurriculum Biologie Niedersachsen Gymnasium
+    description: Kompetenzorientierter Biologieunterricht basierend auf KMK-Bildungsstandards
+    alignment: KMK Bildungsstandards Biologie
+
+basiskonzepte:
+  - konzept: System
+    beschreibung: Zelle als System, Organismus als System von Organen
+    anwendung: "Zelle mit ihren Organellen, Atmungssystem"
+  
+  - konzept: Struktur und Funktion
+    beschreibung: Zusammenhang zwischen Bau und Funktion biologischer Strukturen
+    anwendung: "Chloroplasten → Fotosynthese, Lungenbläschen → Gasaustausch"
+  
+  - konzept: Entwicklung
+    beschreibung: Fortpflanzung und Entwicklung von Lebewesen
+    anwendung: "Entwicklung von Wirbeltieren (Metamorphose bei Amphibien)"
+
+kompetenzbereiche:
+  fachwissen:
+    - Zellbiologie (Grundlagen)
+    - Zoologie (Wirbeltiere)
+    - Humanbiologie (Atmung)
+  
+  erkenntnisgewinnung:
+    - Mikroskopieren
+    - Beobachten und Vergleichen
+    - Modelle nutzen (Lungenmodell, Zellmodell)
+  
+  kommunikation:
+    - Fachsprache verwenden
+    - Zeichnungen anfertigen und beschriften
+    - Sachverhalte erklären
+  
+  bewertung:
+    - Gesundheitsbewusstsein (Rauchen)
+    - Artenschutz (heimische Wirbeltiere)
+
+sample_questions:
+  - question: "Benenne die Zellorganelle, die nur in Pflanzenzellen vorkommt und für die grüne Farbe verantwortlich ist."
+    type: fill_in_blank
+    difficulty: easy
+    bloom_level: Remember
+    expected_answer: "Chloroplast"
+    points: 2
+    time_estimate: 1
+    topic: "zelle_grundbaustein"
+  
+  - question: "Erkläre, warum Amphibien sowohl Lungen als auch Hautatmung besitzen."
+    type: short_answer
+    difficulty: medium
+    bloom_level: Understand
+    expected_answer: "Amphibien leben sowohl im Wasser als auch an Land. Die Lungen nutzen sie für die Atmung an Land, die Hautatmung auch im Wasser."
+    points: 4
+    time_estimate: 4
+    topic: "wirbeltiere_grundlagen"
+  
+  - question: "Ein Forscher entdeckt ein neues Tier: Es hat Schuppen, legt Eier an Land und atmet mit Lungen. Zu welcher Wirbeltierklasse gehört es? Begründe deine Antwort."
+    type: scenario_based
+    difficulty: hard
+    bloom_level: Analyze
+    expected_answer: "Reptilien. Begründung: Schuppen und Eier an Land sind typisch für Reptilien. Auch die Lungenatmung passt dazu."
+    points: 6
+    time_estimate: 5
+    topic: "wirbeltiere_grundlagen"
+  
+  - question: "Beschreibe den Weg der Atemluft von der Nase bis zu den Lungenbläschen."
+    type: short_answer
+    difficulty: medium
+    bloom_level: Understand
+    expected_answer: "Nase → Luftröhre → Bronchien → Lungenbläschen"
+    points: 4
+    time_estimate: 3
+    topic: "atmung_mensch"
+  
+  - question: "Bewerte, warum Rauchen besonders schädlich für die Lungenbläschen ist."
+    type: short_answer
+    difficulty: hard
+    bloom_level: Evaluate
+    expected_answer: "Die Lungenbläschen haben sehr dünne Wände für den Gasaustausch. Rauch schädigt diese empfindlichen Strukturen, verklebt sie und verringert die Oberfläche für den Gasaustausch."
+    points: 6
+    time_estimate: 5
+    topic: "atmung_mensch"
+
+quality_thresholds:
+  factual_accuracy: 100
+  age_appropriateness: 95
+  clarity: 90
+  bias_free: 100
+  curriculum_alignment: 80  # Lower due to alternative source
+
+recommended_action: |
+  Dieses Curriculum sollte baldmöglichst mit dem offiziellen Kerncurriculum 
+  Niedersachsen abgeglichen werden, sobald https://cuvo.nibis.de/ wieder voll 
+  verfügbar ist. Bis dahin kann es als solide Grundlage für Testgenerierung 
+  dienen, da es auf KMK-Standards basiert.

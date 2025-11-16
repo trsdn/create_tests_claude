@@ -1,0 +1,107 @@
+\documentclass[a4paper,11pt]{article}
+
+% Packages
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+
+% Page layout
+\geometry{
+  left=2cm,
+  right=2cm,
+  top=2.5cm,
+  bottom=2.5cm,
+  headheight=15pt
+}
+
+% Colors - Answer Key Theme
+\definecolor{correct}{RGB}{40,167,69}
+\definecolor{incorrect}{RGB}{220,53,69}
+\definecolor{info}{RGB}{23,162,184}
+\definecolor{header}{RGB}{52,58,64}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textbf{LÖSUNGSSCHLÜSSEL} - $subject$}
+\fancyhead[R]{\small Klasse $grade$}
+\fancyfoot[C]{\thepage}
+\fancyfoot[L]{\small\textcolor{correct}{\textbf{✓ Answer Key}}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Hyperlinks
+\hypersetup{
+  colorlinks=true,
+  linkcolor=info,
+  urlcolor=info,
+  pdftitle={$title$ - Lösungen},
+  pdfauthor={Educational Test Creator}
+}
+
+% Custom commands
+\newcommand{\correctanswer}[1]{\textcolor{correct}{\textbf{✓ #1}}}
+\newcommand{\wronganswer}[1]{\textcolor{incorrect}{\textbf{✗ #1}}}
+\newcommand{\points}[1]{\textcolor{info}{\textbf{(#1 P.)}}}
+
+% Answer box environment
+\newtcolorbox{answerbox}[1][]{
+  colback=correct!5!white,
+  colframe=correct!75!black,
+  title={\textbf{Lösung}},
+  #1
+}
+
+% Explanation box environment
+\newtcolorbox{explanationbox}[1][]{
+  colback=info!5!white,
+  colframe=info!75!black,
+  title={\textbf{Begründung}},
+  #1
+}
+
+% List styling
+\setlist[itemize]{leftmargin=*,labelsep=0.5em}
+\setlist[enumerate]{leftmargin=*,labelsep=0.5em}
+
+% Begin document
+\begin{document}
+
+% Title section
+\begin{center}
+  \colorbox{correct!20}{
+    \parbox{0.95\textwidth}{
+      \centering
+      {\Large\textbf{LÖSUNGSSCHLÜSSEL}}\\[0.2cm]
+      {\large $title$}\\[0.2cm]
+      {\normalsize $topic$}
+    }
+  }
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{tabular}{|l|l|}
+  \hline
+  \textbf{Test-ID:} $test_id$ & \textbf{Gesamtpunktzahl:} $total_points$ Punkte\\
+  \hline
+\end{tabular}
+
+\vspace{0.5cm}
+
+% Content (will be filled by Pandoc from Markdown)
+$body$
+
+\end{document}

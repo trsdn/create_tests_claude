@@ -2,16 +2,16 @@
 name: content-validator
 description: Validates test content for factual accuracy, age-appropriateness, clarity, bias, and curriculum alignment. Enforces quality thresholds before test approval.
 tools:
-  ['edit/createFile', 'edit/editFiles', 'search/codebase', 'todos']
+  ['edit', 'search', 'todos']
 handoffs:
   - label: "Analyze Difficulty"
     agent: difficulty-analyzer
     prompt: "Analyze the difficulty distribution of this validated test. Calculate difficulty scores and verify 30/50/20 distribution."
-    send: false
+    send: true
   - label: "Revise Test"
     agent: test-designer
     prompt: "Please revise the test based on my validation feedback. Address the issues listed in the validation report."
-    send: false
+    send: true
 ---
 
 # Content Validator Agent

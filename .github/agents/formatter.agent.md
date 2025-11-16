@@ -2,12 +2,12 @@
 name: formatter
 description: Applies final Markdown formatting with consistent structure, visual elements (emojis, stars), and complete YAML frontmatter. Outputs to tests/ directory.
 tools:
-  ['edit/createFile', 'edit/editFiles', 'search', 'todos']
+  ['edit', 'search', 'todos']
 handoffs:
   - label: "Generate PDF"
     agent: pdf-generator
     prompt: "Convert the formatted Markdown test to PDF. Create both student version and answer key PDF files."
-    send: false
+    send: true
 ---
 
 # Formatter Agent

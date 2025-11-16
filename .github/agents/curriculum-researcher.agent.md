@@ -2,12 +2,12 @@
 name: curriculum-researcher
 description: Researches educational curriculum standards by reading YAML files and extracting learning objectives, standards, and regional specifications for test creation.
 tools:
-  ['edit/createFile', 'edit/editFiles', 'search', 'openSimpleBrowser', 'fetch', 'todos']
+  ['edit', 'search', 'openSimpleBrowser', 'fetch', 'todos']
 handoffs:
   - label: "Hand off to Test Designer"
     agent: test-designer
     prompt: "Design test questions based on the curriculum research I completed. Review the curriculum research output and create aligned test questions."
-    send: false
+    send: true
 ---
 
 # Curriculum Research Agent

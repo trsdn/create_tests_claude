@@ -2,16 +2,16 @@
 name: difficulty-analyzer
 description: Analyzes question difficulty on 0-10 scale and validates distribution meets 30% easy, 50% medium, 20% hard targets with ±10% tolerance.
 tools:
-  ['edit/createFile', 'edit/editFiles', 'search', 'todos']
+  ['edit', 'search', 'todos']
 handoffs:
   - label: "Estimate Time"
     agent: time-estimator
     prompt: "Estimate the completion time for this test at different skill levels. Use the difficulty analysis to inform your time calculations."
-    send: false
+    send: true
   - label: "Adjust Difficulty"
     agent: test-designer
     prompt: "Please adjust the test difficulty distribution. The current distribution doesn't meet the 30/50/20 target. See difficulty analysis report for details."
-    send: false
+    send: true
 ---
 
 # Difficulty Analyzer Agent

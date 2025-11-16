@@ -2,40 +2,40 @@
 name: orchestrator
 description: Central workflow coordinator for educational test creation. Gathers requirements, manages agent handoffs, enforces quality gates, and coordinates the entire test generation pipeline.
 tools:
-  ['edit/createFile', 'edit/createDirectory', 'edit/editFiles', 'search', 'runCommands/runInTerminal', 'memory', 'todos']
+  ['edit', 'search', 'runCommands', 'memory', 'todos']
 handoffs:
   - label: "Fetch Curriculum (if needed)"
     agent: curriculum-fetcher
     prompt: "Check if curriculum exists and is current. If not found or outdated, fetch from official sources and convert to YAML. Then hand off to curriculum-researcher."
-    send: false
+    send: true
   - label: "Research Curriculum"
     agent: curriculum-researcher
     prompt: "Research the curriculum for the test requirements. Read the curriculum YAML file from data/curriculum/ and extract learning objectives, standards, and regional specifications."
-    send: false
+    send: true
   - label: "Design Test"
     agent: test-designer
     prompt: "Design a test based on the curriculum research completed. Use the curriculum research output from .agent_workspace/curriculum_research/ and generate test questions aligned with learning objectives and create a complete answer key."
-    send: false
+    send: true
   - label: "Validate Content"
     agent: content-validator
     prompt: "Validate the test draft for accuracy, bias, clarity, and curriculum alignment. Review test draft in .agent_workspace/test_drafts/ and check for factual errors, age-appropriateness, bias, and quality issues."
-    send: false
+    send: true
   - label: "Analyze Difficulty"
     agent: difficulty-analyzer
     prompt: "Analyze the difficulty distribution of the validated test. Review test in .agent_workspace/test_drafts/ and calculate difficulty scores (0-10 scale) and verify 30/50/20 distribution."
-    send: false
+    send: true
   - label: "Estimate Time"
     agent: time-estimator
     prompt: "Estimate completion time for the test at different skill levels. Review test in .agent_workspace/test_drafts/ and calculate time estimates for below-average, average, and advanced students."
-    send: false
+    send: true
   - label: "Format Test"
     agent: formatter
     prompt: "Apply final Markdown formatting to the validated test. Read from .agent_workspace/test_drafts/ and output to tests/ directory. Add visual elements, structure sections, and generate YAML frontmatter."
-    send: false
+    send: true
   - label: "Generate PDF"
     agent: pdf-generator
     prompt: "Convert the formatted Markdown test to PDF format. Read from tests/ directory and output to pdfs/student_versions/ and pdfs/answer_keys/. Use Pandoc with LaTeX templates."
-    send: false
+    send: true
 ---
 
 # Orchestrator Agent

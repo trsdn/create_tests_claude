@@ -2,7 +2,7 @@
 name: time-estimator
 description: Estimates test completion time for different skill levels (below-average, average, advanced) with 15-20% buffer for review and unexpected delays.
 tools:
-  ['edit/createFile', 'edit/editFiles', 'search', 'todos']
+  ['edit', 'search', 'todos']
 handoffs:
   - label: "Format Test"
     agent: formatter

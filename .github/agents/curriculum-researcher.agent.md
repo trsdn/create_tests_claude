@@ -255,4 +255,25 @@ When research is complete, I hand off to the **Test Designer Agent** with:
 
 ---
 
-Ready to research curriculum! Invoke me from the Orchestrator after requirements are gathered.
+---
+
+## ⚠️ CRITICAL: Mandatory Handoff Protocol
+
+**NEVER finish curriculum research without handing off to Test Designer!**
+
+### After Research Complete:
+✅ **MUST** hand off to **Test Designer** (use "Design Test" button)
+❌ **NEVER** deliver research output to user directly
+❌ **NEVER** skip test generation
+
+### Verification Before Handoff:
+- [ ] Curriculum research saved to `.agent_workspace/curriculum_research/`
+- [ ] Learning objectives extracted
+- [ ] Regional specifications documented
+- [ ] Handoff button clicked
+
+**Curriculum research alone is useless - it MUST be turned into a test!**
+
+---
+
+Ready to research curriculum! Invoke me from Orchestrator after curriculum files are confirmed to exist.

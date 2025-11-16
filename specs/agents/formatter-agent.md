@@ -256,6 +256,9 @@ version: 1.0
 **Bold text**
 *Italic text*
 
+# Correct underline (for PDF generation)
+\underline{underlined text}
+
 # Correct lists
 1. Ordered item
 2. Ordered item
@@ -263,6 +266,24 @@ version: 1.0
 - Unordered item
 - Unordered item
 ```
+
+### Text Formatting for PDF Generation
+
+**IMPORTANT:** For underlined text in PDF output:
+
+- ✅ **Use LaTeX syntax:** `\underline{text to underline}`
+- ❌ **Do NOT use HTML tags:** `<u>text</u>` (these are stripped during PDF generation)
+
+**Example:**
+```markdown
+Identify the underlined word: The teacher praises \underline{the diligent student}.
+```
+
+**Rationale:**
+- Pandoc converts Markdown to PDF via XeLaTeX
+- HTML `<u>` tags are ignored/removed in LaTeX conversion
+- Native LaTeX `\underline{}` command renders correctly in PDF
+- Works consistently across all PDF generation tools
 
 ---
 
@@ -361,6 +382,105 @@ The Formatter Agent may ask:
 
 ### If spacing preferences unclear:
 - "Should I use compact or generous spacing between questions?"
+
+---
+
+## Handover to Next Agent
+
+### Handover to PDF Generator Agent
+
+**When to hand over:**
+- ✅ Markdown file is fully formatted and validated
+- ✅ All visual elements are properly structured  
+- ✅ Metadata is complete and accurate
+- ✅ File is saved to `tests/` directory
+- ✅ Answer key file is also formatted (if separate)
+
+**What to provide:**
+
+```yaml
+handover_to_pdf_generator:
+  test_file:
+    markdown_path: "tests/germany/niedersachsen/gymnasium/englisch/grade_6/present_simple/klassenarbeit.md"
+    test_id: "de-ns-gym-eng-6-tenses-001"
+    session_id: "sess_20251115_140000"
+  
+  answer_key_file:
+    markdown_path: "tests/germany/niedersachsen/gymnasium/englisch/grade_6/present_simple/loesung.md"
+    
+  pdf_generation_options:
+    generate_student_version: true
+    generate_answer_key: true
+    theme: "Default"  # Default | Colorful | Minimal
+    page_size: "A4"   # A4 | Letter
+    orientation: "Portrait"  # Portrait | Landscape
+    
+  styling_metadata:
+    uses_emojis: true
+    uses_tables: true
+    uses_checkboxes: true
+    color_coding: false
+    images_count: 0
+    
+  regional_settings:
+    language: "de"
+    grading_scale: "german_1_6"
+    decimal_separator: ","
+    
+  age_appropriateness:
+    target_age: 12
+    reading_level: "Grade 6"
+    visual_complexity: "moderate"
+```
+
+**Message to PDF Generator Agent:**
+
+> "@pdf-generator The formatted Markdown test is ready at `{markdown_path}`. Please generate professional PDFs for both student version and answer key. Use the **{theme}** theme on **{page_size}** paper in **{orientation}** orientation. The test includes visual elements (emojis: {uses_emojis}, tables: {uses_tables}) suitable for {target_age}-year-old students. Regional settings: {language} language, {grading_scale} grading scale."
+
+**Quality Checklist Before Handover:**
+
+- [ ] All headings use proper Markdown hierarchy
+- [ ] Visual elements render correctly in Markdown preview
+- [ ] Checkboxes use proper syntax (- [ ])
+- [ ] Tables are properly aligned
+- [ ] Code blocks/math notation is correctly formatted
+- [ ] No broken emoji characters
+- [ ] Metadata header is complete
+- [ ] File paths are correctly structured
+- [ ] Answer key matches question numbering
+- [ ] Point values sum correctly
+
+---
+
+## Related Agents
+
+### Handover to PDF Generator Agent
+
+**When to hand over:**
+- Markdown file is fully formatted and validated
+- All visual elements are properly structured
+- Metadata is complete
+- File is saved to `tests/` directory
+
+**What to provide:**
+```yaml
+handover_to_pdf_generator:
+  markdown_file_path: "tests/germany/niedersachsen/gymnasium/englisch/grade_6/present_simple/test.md"
+  answer_key_path: "tests/germany/niedersachsen/gymnasium/englisch/grade_6/present_simple/answer_key.md"
+  pdf_options:
+    generate_student_version: true
+    generate_answer_key: true
+    theme: "Default" | "Colorful" | "Minimal"
+    page_size: "A4" | "Letter"
+    orientation: "Portrait" | "Landscape"
+  styling_notes:
+    - "Uses emojis for visual appeal"
+    - "German grading scale included"
+    - "Age-appropriate language (12 years old)"
+```
+
+**Message to PDF Generator:**
+> "@pdf-generator The formatted Markdown test is ready at `{file_path}`. Please generate professional PDFs for both student version and answer key using the Default theme on A4 paper. The test includes visual elements (emojis) suitable for Grade 6 students."
 
 ---
 

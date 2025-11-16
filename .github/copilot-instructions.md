@@ -77,7 +77,39 @@ Agents communicate via YAML files in `.agent_workspace/`:
 
 Final outputs:
 - Markdown tests → `tests/{country}/{region}/{school_type}/{subject}/{grade}/{topic}/`
-- PDF files → `pdfs/student_versions/` and `pdfs/answer_keys/`
+- PDF files → Same location as Markdown files (co-located)
+
+### ⚠️ CRITICAL: Mandatory Agent Handoffs
+
+**EVERY agent MUST hand off to the next agent in the pipeline!**
+
+**Required Workflow Chain:**
+```
+Orchestrator → Curriculum Fetcher → Curriculum Researcher → Test Designer
+           → Content Validator → Difficulty Analyzer → Time Estimator
+           → Formatter → PDF Generator → Orchestrator (final delivery)
+```
+
+**Revision Loops (when quality gates fail):**
+```
+Content Validator → Test Designer → Content Validator (re-validate!)
+Difficulty Analyzer → Test Designer → Content Validator → Difficulty Analyzer (re-check!)
+Time Estimator → Test Designer → Content Validator → Difficulty Analyzer → Time Estimator (re-check!)
+```
+
+**‼️ NEVER skip agents or deliver incomplete tests to users!**
+
+Each agent has a **mandatory handoff protocol** section at the end of their definition with:
+- ✅ What they MUST do after completing their work
+- ❌ What they must NEVER do (skip steps, deliver directly to user)
+- Verification checklist before handoff
+
+**If you invoke an agent directly (not through Orchestrator):**
+- ⚠️ The agent may skip handoffs and deliver incomplete work
+- ⚠️ Quality gates may be bypassed
+- ⚠️ Tests may fail validation or have incorrect difficulty distribution
+
+**Best Practice:** ALWAYS start with `@orchestrator` to ensure complete workflow execution.
 
 ## Key Standards
 

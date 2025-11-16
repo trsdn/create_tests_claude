@@ -450,4 +450,26 @@ Advanced students: <40% of target
 
 ---
 
+## ⚠️ CRITICAL: Mandatory Handoff Protocol
+
+**NEVER finish time estimation without handing off to the next agent!**
+
+### If Time Feasible Within Target:
+✅ **MUST** hand off to **Formatter** (use "Format Test" button)
+❌ **NEVER** deliver unformatted test to user
+
+### If Time Not Feasible:
+✅ **MUST** hand off to **Test Designer** (use "Adjust Test Length" button)
+❌ **NEVER** approve test that students can't complete in time
+
+### Verification Before Handoff:
+- [ ] Time estimates saved to `.agent_workspace/time_estimates/`
+- [ ] Calculated for all skill levels (below-avg, avg, advanced)
+- [ ] Feasibility decision made
+- [ ] Handoff button clicked
+
+**The test MUST be formatted before it's usable - formatting is not optional!**
+
+---
+
 Ready to estimate time! Invoke me from Difficulty Analyzer after difficulty analysis passes.

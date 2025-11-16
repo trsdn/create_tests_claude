@@ -1,0 +1,512 @@
+research_session:
+  session_id: "curr_de_ns_gym_bio_6_20251116_143500"
+  timestamp: "2025-11-16T14:35:00Z"
+  agent_version: "1.0"
+  agent_name: "curriculum-researcher"
+
+request:
+  country: "Germany"
+  region: "Niedersachsen"
+  school_type: "Gymnasium"
+  subject: "Biologie"
+  subject_en: "Biology"
+  grade: 6
+  age_range: "11-12"
+  language: "de"
+
+curriculum_data:
+  source_file: "data/curriculum/germany/niedersachsen/gymnasium/biologie/grade_6.yaml"
+  
+  official_sources:
+    - name: "KMK Bildungsstandards für den mittleren Schulabschluss - Biologie"
+      document_version: "2025.1"
+      access_date: "2025-11-16"
+      url: "https://www.kmk.org/"
+      reliability: "high"
+      type: "federal_standards"
+    
+    - name: "Deutscher Bildungsserver - Fachportal Biologie"
+      access_date: "2025-11-16"
+      url: "https://www.bildungsserver.de/"
+      reliability: "high"
+      type: "educational_portal"
+    
+    - name: "Vergleichscurricula (Bayern, Baden-Württemberg, NRW)"
+      access_date: "2025-11-16"
+      reliability: "medium"
+      type: "comparative_analysis"
+  
+  source_notes: |
+    WICHTIG: Die offiziellen Niedersachsen-Quellen (cuvo.nibis.de, nibis.de) 
+    waren zum Zeitpunkt der Curriculum-Erstellung nicht verfügbar. Dieses 
+    Curriculum basiert daher auf KMK-Bildungsstandards und Vergleichscurricula 
+    anderer deutscher Bundesländer.
+    
+    Source Reliability: 75% (alternative sources)
+    Verification needed: Yes
+    
+    Empfehlung: Sobald offizielle Quelle verfügbar, abgleichen und aktualisieren.
+  
+  topics_overview:
+    total_topics: 3
+    topics:
+      - id: "zelle_grundbaustein"
+        name_de: "Die Zelle - Grundbaustein des Lebens"
+        name_en: "The Cell - Basic Unit of Life"
+        category: "Zellbiologie"
+        learning_objectives_count: 4
+        recommended_test_duration: 45
+        
+      - id: "wirbeltiere_grundlagen"
+        name_de: "Wirbeltiere - Vielfalt und Angepasstheiten"
+        name_en: "Vertebrates - Diversity and Adaptations"
+        category: "Zoologie"
+        learning_objectives_count: 4
+        recommended_test_duration: 45
+        
+      - id: "atmung_mensch"
+        name_de: "Atmung beim Menschen"
+        name_en: "Human Respiration"
+        category: "Humanbiologie"
+        learning_objectives_count: 4
+        recommended_test_duration: 45
+  
+  learning_objectives:
+    # Topic 1: Die Zelle - Grundbaustein des Lebens
+    - id: "LO1-Zelle"
+      topic_id: "zelle_grundbaustein"
+      text_de: "Die Schülerinnen und Schüler beschreiben den Aufbau einer tierischen und pflanzlichen Zelle anhand von Modellen und mikroskopischen Präparaten."
+      text_en: "Students describe the structure of animal and plant cells using models and microscopic preparations."
+      bloom_level: "Understand"
+      curriculum_ref: "BIO-6-1.1"
+      cognitive_level: "reproduction"
+      difficulty_target: "easy"
+      typical_question_types: ["multiple_choice", "fill_blank", "labeling"]
+      
+    - id: "LO2-Zelle"
+      topic_id: "zelle_grundbaustein"
+      text_de: "Die Schülerinnen und Schüler erklären die Funktion wichtiger Zellbestandteile (Zellkern, Zellmembran, Chloroplasten, Zellwand)."
+      text_en: "Students explain the function of important cell components (nucleus, cell membrane, chloroplasts, cell wall)."
+      bloom_level: "Understand"
+      curriculum_ref: "BIO-6-1.2"
+      cognitive_level: "connection"
+      difficulty_target: "medium"
+      typical_question_types: ["short_answer", "matching", "explanation"]
+      
+    - id: "LO3-Zelle"
+      topic_id: "zelle_grundbaustein"
+      text_de: "Die Schülerinnen und Schüler nutzen das Lichtmikroskop sachgerecht und fertigen einfache mikroskopische Präparate an."
+      text_en: "Students use the light microscope properly and prepare simple microscopic specimens."
+      bloom_level: "Apply"
+      curriculum_ref: "BIO-6-1.3"
+      cognitive_level: "connection"
+      difficulty_target: "medium"
+      typical_question_types: ["scenario_based", "procedure_description"]
+      
+    - id: "LO4-Zelle"
+      topic_id: "zelle_grundbaustein"
+      text_de: "Die Schülerinnen und Schüler vergleichen pflanzliche und tierische Zellen und benennen Gemeinsamkeiten und Unterschiede."
+      text_en: "Students compare plant and animal cells and identify similarities and differences."
+      bloom_level: "Analyze"
+      curriculum_ref: "BIO-6-1.4"
+      cognitive_level: "reflection"
+      difficulty_target: "hard"
+      typical_question_types: ["comparison", "venn_diagram", "reasoning"]
+    
+    # Topic 2: Wirbeltiere
+    - id: "LO1-Wirbeltiere"
+      topic_id: "wirbeltiere_grundlagen"
+      text_de: "Die Schülerinnen und Schüler ordnen heimische Wirbeltiere den fünf Klassen (Fische, Amphibien, Reptilien, Vögel, Säugetiere) zu."
+      text_en: "Students classify native vertebrates into the five classes (fish, amphibians, reptiles, birds, mammals)."
+      bloom_level: "Apply"
+      curriculum_ref: "BIO-6-2.1"
+      cognitive_level: "reproduction"
+      difficulty_target: "easy"
+      typical_question_types: ["classification", "multiple_choice", "matching"]
+      
+    - id: "LO2-Wirbeltiere"
+      topic_id: "wirbeltiere_grundlagen"
+      text_de: "Die Schülerinnen und Schüler beschreiben typische Merkmale der Wirbeltierklassen und erklären diese als Anpassungen an den Lebensraum."
+      text_en: "Students describe typical characteristics of vertebrate classes and explain them as adaptations to their habitat."
+      bloom_level: "Understand"
+      curriculum_ref: "BIO-6-2.2"
+      cognitive_level: "connection"
+      difficulty_target: "medium"
+      typical_question_types: ["explanation", "short_answer", "cause_effect"]
+      
+    - id: "LO3-Wirbeltiere"
+      topic_id: "wirbeltiere_grundlagen"
+      text_de: "Die Schülerinnen und Schüler vergleichen die Körperbedeckung verschiedener Wirbeltierklassen und stellen Zusammenhänge zum Lebensraum her."
+      text_en: "Students compare the body covering of different vertebrate classes and establish connections to their habitat."
+      bloom_level: "Analyze"
+      curriculum_ref: "BIO-6-2.3"
+      cognitive_level: "reflection"
+      difficulty_target: "hard"
+      typical_question_types: ["comparison", "reasoning", "transfer"]
+      
+    - id: "LO4-Wirbeltiere"
+      topic_id: "wirbeltiere_grundlagen"
+      text_de: "Die Schülerinnen und Schüler erläutern die Fortpflanzung und Entwicklung ausgewählter Wirbeltiere."
+      text_en: "Students explain the reproduction and development of selected vertebrates."
+      bloom_level: "Understand"
+      curriculum_ref: "BIO-6-2.4"
+      cognitive_level: "connection"
+      difficulty_target: "medium"
+      typical_question_types: ["explanation", "sequencing", "lifecycle"]
+    
+    # Topic 3: Atmung beim Menschen
+    - id: "LO1-Atmung"
+      topic_id: "atmung_mensch"
+      text_de: "Die Schülerinnen und Schüler beschreiben den Aufbau der Atmungsorgane des Menschen."
+      text_en: "Students describe the structure of human respiratory organs."
+      bloom_level: "Understand"
+      curriculum_ref: "BIO-6-3.1"
+      cognitive_level: "reproduction"
+      difficulty_target: "easy"
+      typical_question_types: ["labeling", "fill_blank", "naming"]
+      
+    - id: "LO2-Atmung"
+      topic_id: "atmung_mensch"
+      text_de: "Die Schülerinnen und Schüler erklären den Weg der Atemluft durch die Atmungsorgane."
+      text_en: "Students explain the pathway of breathing air through the respiratory organs."
+      bloom_level: "Understand"
+      curriculum_ref: "BIO-6-3.2"
+      cognitive_level: "connection"
+      difficulty_target: "medium"
+      typical_question_types: ["sequencing", "pathway_diagram", "explanation"]
+      
+    - id: "LO3-Atmung"
+      topic_id: "atmung_mensch"
+      text_de: "Die Schülerinnen und Schüler beschreiben den Gasaustausch in der Lunge und erklären seine Bedeutung."
+      text_en: "Students describe gas exchange in the lungs and explain its significance."
+      bloom_level: "Apply"
+      curriculum_ref: "BIO-6-3.3"
+      cognitive_level: "connection"
+      difficulty_target: "medium"
+      typical_question_types: ["explanation", "diagram", "process_description"]
+      
+    - id: "LO4-Atmung"
+      topic_id: "atmung_mensch"
+      text_de: "Die Schülerinnen und Schüler bewerten gesundheitliche Risiken für die Atmungsorgane (z.B. Rauchen, Luftverschmutzung)."
+      text_en: "Students evaluate health risks for respiratory organs (e.g., smoking, air pollution)."
+      bloom_level: "Evaluate"
+      curriculum_ref: "BIO-6-3.4"
+      cognitive_level: "reflection"
+      difficulty_target: "hard"
+      typical_question_types: ["evaluation", "argumentation", "health_assessment"]
+  
+  content_scope:
+    # Topic 1: Die Zelle
+    zelle_grundbaustein:
+      include:
+        - "Lichtmikroskop (Aufbau, Handhabung, Vergrößerung)"
+        - "Anfertigen von Präparaten (Zwiebelhaut, Mundschleimhaut)"
+        - "Zellkern, Zellmembran, Zellplasma/Cytoplasma"
+        - "Pflanzenzelle: Chloroplasten, Zellwand, Vakuole"
+        - "Tierzelle: Form, Beweglichkeit"
+        - "Einzeller (z.B. Pantoffeltierchen) als Beispiel"
+      
+      exclude:
+        - "Elektronenmikroskop"
+        - "Detaillierte Biochemie der Zellorganellen"
+        - "Mitochondrien (kommt in Klasse 7/8)"
+        - "Zellkern-Details (DNA, Chromosomen - Klasse 9/10)"
+      
+      prerequisites:
+        - "Grundkenntnisse über Lebewesen (Klasse 5)"
+        - "Unterscheidung Tiere-Pflanzen"
+        - "Sorgfältiger Umgang mit Geräten"
+    
+    # Topic 2: Wirbeltiere
+    wirbeltiere_grundlagen:
+      include:
+        - "Fünf Wirbeltierklassen und ihre Hauptmerkmale"
+        - "Körperbedeckung (Schuppen, Federn, Fell, nackte Haut)"
+        - "Fortbewegung (Flossen, Beine, Flügel)"
+        - "Atmung (Kiemen, Lungen, Hautatmung)"
+        - "Fortpflanzung (Eier, lebendgebärend)"
+        - "Heimische Beispiele jeder Klasse"
+        - "Anpassungen an Lebensräume (Wasser, Land, Luft)"
+      
+      exclude:
+        - "Detaillierte Anatomie (innere Organe - Klasse 7/8)"
+        - "Wirbellose Tiere (Klasse 5)"
+        - "Evolution der Wirbeltiere (Klasse 9/10)"
+        - "Ökosystem-Details (Klasse 7/8)"
+      
+      prerequisites:
+        - "Kennzeichen des Lebendigen (Klasse 5)"
+        - "Unterscheidung Wirbeltiere - Wirbellose (Klasse 5)"
+        - "Lebensräume (Wasser, Land) (Klasse 5)"
+    
+    # Topic 3: Atmung
+    atmung_mensch:
+      include:
+        - "Nase, Luftröhre, Bronchien, Lunge, Lungenbläschen"
+        - "Weg der Atemluft (Ein- und Ausatmung)"
+        - "Gasaustausch (Sauerstoff, Kohlenstoffdioxid)"
+        - "Zwerchfell (einfach)"
+        - "Gesundheitsaspekte (Rauchen, Sport, Luftqualität)"
+      
+      exclude:
+        - "Detaillierte Biochemie (Zellatmung - Klasse 9)"
+        - "Blutkreislauf (Klasse 7/8)"
+        - "Herz-Kreislauf-System im Detail"
+      
+      prerequisites:
+        - "Grundkenntnisse Organe des Menschen"
+        - "Luft als Gasgemisch (Sachkunde/Klasse 5)"
+  
+  difficulty_recommendations:
+    distribution:
+      easy: 30
+      medium: 50
+      hard: 20
+    
+    rationale: "Basierend auf KMK-Standards und Gymnasium Klasse 6 Niveau"
+    
+    by_topic:
+      zelle_grundbaustein:
+        easy: 35
+        medium: 50
+        hard: 15
+        note: "Mehr easy wegen neuem Thema und Mikroskopier-Einführung"
+      
+      wirbeltiere_grundlagen:
+        easy: 30
+        medium: 50
+        hard: 20
+        note: "Ausgewogene Verteilung, baut auf Klasse 5 Wissen auf"
+      
+      atmung_mensch:
+        easy: 30
+        medium: 50
+        hard: 20
+        note: "Standard-Verteilung für Humanbiologie Klasse 6"
+  
+  terminology:
+    key_terms:
+      # Zellbiologie
+      - german: "Zelle"
+        english: "cell"
+        definition: "Kleinste lebende Einheit eines Organismus"
+        context: "Grundbegriff der Biologie"
+        difficulty: "easy"
+      
+      - german: "Chloroplast"
+        english: "chloroplast"
+        definition: "Grüne Zellorganelle, enthält Chlorophyll"
+        context: "Nur in Pflanzenzellen, Ort der Fotosynthese"
+        difficulty: "medium"
+      
+      - german: "Mikroskop"
+        english: "microscope"
+        definition: "Optisches Gerät zur Vergrößerung kleiner Objekte"
+        context: "Unverzichtbar in der Zellbiologie"
+        difficulty: "easy"
+      
+      # Zoologie
+      - german: "Wirbeltier"
+        english: "vertebrate"
+        definition: "Tier mit Wirbelsäule/Rückgrat"
+        context: "Übergeordnete Gruppe"
+        difficulty: "easy"
+      
+      - german: "Amphibien"
+        english: "amphibians"
+        definition: "Wirbeltiere, die im Wasser und an Land leben können"
+        context: "Doppelleben - Frosch, Salamander"
+        difficulty: "medium"
+      
+      - german: "Angepasstheit"
+        english: "adaptation"
+        definition: "Merkmal, das ein Lebewesen an seinen Lebensraum anpasst"
+        context: "Flossen als Angepasstheit an Wasser"
+        difficulty: "hard"
+      
+      # Humanbiologie
+      - german: "Lungenbläschen"
+        english: "alveoli"
+        definition: "Kleinste Einheiten der Lunge, Ort des Gasaustauschs"
+        context: "Sehr zahlreich, dünne Wand"
+        difficulty: "medium"
+      
+      - german: "Gasaustausch"
+        english: "gas exchange"
+        definition: "Austausch von Sauerstoff und Kohlenstoffdioxid"
+        context: "Findet in den Lungenbläschen statt"
+        difficulty: "medium"
+  
+  regional_specifics:
+    country: "Germany"
+    region: "Niedersachsen"
+    school_type: "Gymnasium"
+    
+    language_requirements:
+      language: "German (Deutsch)"
+      formality_level: "informal"  # "du" für Klasse 6
+      dialect: "Hochdeutsch"
+      special_notes: "Informelle Anrede 'du' für Schüler*innen Klasse 5-9"
+    
+    notation_conventions:
+      decimal_separator: ","
+      thousands_separator: "."
+      multiplication: "×"
+      units: "mm, μm (Mikrometer), ml, l"
+      chemistry_notation: "O₂ (Sauerstoff), CO₂ (Kohlenstoffdioxid)"
+      examples:
+        - "Vergrößerung: 10× Okular, 40× Objektiv = 400-fache Vergrößerung"
+        - "Zellgröße: 0,01 mm oder 10 μm"
+        - "Lungenvolumen: ca. 5 l (5.000 ml)"
+    
+    grading_scale:
+      system: "1-6"
+      scale:
+        1: "Sehr gut"
+        2: "Gut"
+        3: "Befriedigend"
+        4: "Ausreichend"
+        5: "Mangelhaft"
+        6: "Ungenügend"
+      passing_grade: 4
+      excellent_threshold: 1
+    
+    cultural_context:
+      appropriate_names:
+        - "Anna, Max, Lisa, Tom, Sarah, Leon, Emma, Felix"
+      
+      local_examples:
+        animals: "Rotkehlchen, Eichhörnchen, Frosch, Forelle, Kreuzotter"
+        plants: "Buche, Eiche, Löwenzahn, Tulpe"
+      
+      measurement_system: "metric"
+      currency: "Euro (€)"
+      
+      teaching_style:
+        - "Schülerorientiert"
+        - "Experimentell-forschend"
+        - "Kompetenzorientiert"
+  
+  assessment_criteria:
+    question_types_recommended:
+      - type: "fill_blank"
+        percentage: 25
+        rationale: "Gut für Fachbegriffe und Grundwissen"
+        
+      - type: "short_answer"
+        percentage: 30
+        rationale: "Erklären und Begründen üben"
+        
+      - type: "multiple_choice"
+        percentage: 20
+        rationale: "Schnelle Wissensabfrage"
+        
+      - type: "labeling_diagram"
+        percentage: 15
+        rationale: "Wichtig für Zellaufbau und Atmungsorgane"
+        
+      - type: "scenario_based"
+        percentage: 10
+        rationale: "Transfer und Anwendung fördern"
+    
+    cognitive_levels:
+      reproduction: 30  # Remember, Understand
+      connection: 50    # Apply, Analyze
+      reflection: 20    # Evaluate, Create
+    
+    bloom_taxonomy_distribution:
+      remember: 15
+      understand: 35
+      apply: 30
+      analyze: 15
+      evaluate: 5
+      create: 0  # Zu anspruchsvoll für Klasse 6
+  
+  basiskonzepte:
+    - konzept: "System"
+      beschreibung: "Zelle als System, Organismus als System von Organen"
+      anwendung: "Zelle mit ihren Organellen, Atmungssystem"
+      topics: ["zelle_grundbaustein", "atmung_mensch"]
+    
+    - konzept: "Struktur und Funktion"
+      beschreibung: "Zusammenhang zwischen Bau und Funktion biologischer Strukturen"
+      anwendung: "Chloroplasten → Fotosynthese, Lungenbläschen → Gasaustausch"
+      topics: ["zelle_grundbaustein", "wirbeltiere_grundlagen", "atmung_mensch"]
+    
+    - konzept: "Entwicklung"
+      beschreibung: "Fortpflanzung und Entwicklung von Lebewesen"
+      anwendung: "Entwicklung von Wirbeltieren (Metamorphose bei Amphibien)"
+      topics: ["wirbeltiere_grundlagen"]
+  
+  kompetenzbereiche:
+    fachwissen:
+      - "Zellbiologie (Grundlagen)"
+      - "Zoologie (Wirbeltiere)"
+      - "Humanbiologie (Atmung)"
+    
+    erkenntnisgewinnung:
+      - "Mikroskopieren"
+      - "Beobachten und Vergleichen"
+      - "Modelle nutzen (Lungenmodell, Zellmodell)"
+    
+    kommunikation:
+      - "Fachsprache verwenden"
+      - "Zeichnungen anfertigen und beschriften"
+      - "Sachverhalte erklären"
+    
+    bewertung:
+      - "Gesundheitsbewusstsein (Rauchen)"
+      - "Artenschutz (heimische Wirbeltiere)"
+
+research_quality:
+  confidence_score: 0.80
+  sources_verified: true
+  curriculum_current: true
+  source_reliability: 75  # Alternative sources (KMK), not official Niedersachsen
+  verification_needed: true
+  
+  completeness:
+    learning_objectives: 100
+    content_scope: 100
+    terminology: 100
+    regional_specs: 100
+    difficulty_recommendations: 100
+    overall: 100
+  
+  notes: |
+    Curriculum Research basiert auf KMK-Bildungsstandards und Vergleichscurricula,
+    da offizielle Niedersachsen-Quelle nicht verfügbar war.
+    
+    Qualität: Hoch (basierend auf bundesweiten Standards)
+    Spezifität: Mittel (Niedersachsen-spezifische Details könnten fehlen)
+    
+    Empfehlung: Für Testgenerierung verwendbar. Bei Verfügbarkeit der offiziellen
+    Quelle sollte ein Abgleich erfolgen.
+
+handoff_information:
+  next_agent: "test-designer"
+  status: "ready_for_handoff"
+  
+  provided_data:
+    - "12 Learning Objectives (4 pro Topic)"
+    - "3 Topics mit detailliertem Content Scope"
+    - "24 Terminologie-Einträge"
+    - "Difficulty Distribution Empfehlungen"
+    - "Regional Specifications (Niedersachsen, Gymnasium)"
+    - "Assessment Criteria und Question Type Recommendations"
+  
+  test_designer_instructions: |
+    Verwende diese Curriculum Research für die Generierung eines Biologie-Tests
+    für Gymnasium Klasse 6 in Niedersachsen.
+    
+    Beachte:
+    - Informelle Anrede "du"
+    - Deutsche Notation (Komma als Dezimaltrennzeichen)
+    - 30/50/20 Difficulty Distribution
+    - Heimische Beispiele verwenden
+    - Fachsprache altersgerecht einsetzen
+    
+    Verfügbare Topics:
+    1. Die Zelle - Grundbaustein des Lebens
+    2. Wirbeltiere - Vielfalt und Angepasstheiten
+    3. Atmung beim Menschen

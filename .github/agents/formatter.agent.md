@@ -511,4 +511,29 @@ When formatting complete, I hand off to **PDF Generator Agent** with:
 
 ---
 
+## ⚠️ CRITICAL: Mandatory Handoff Protocol
+
+**NEVER finish formatting without handing off to PDF Generator!**
+
+### After Formatting Complete:
+✅ **MUST** hand off to **PDF Generator** (use "Generate PDF" button)
+❌ **NEVER** deliver only Markdown to user (unless PDF explicitly not wanted)
+
+### If User Only Wants Markdown:
+✅ **MAY** skip PDF generation **ONLY IF** user explicitly requested "Markdown only"
+✅ Then hand off to **Orchestrator** for final delivery
+
+### Verification Before Handoff:
+- [ ] Formatted Markdown saved to `tests/` directory
+- [ ] Answer key saved alongside test
+- [ ] Visual elements applied
+- [ ] YAML frontmatter complete
+- [ ] Handoff button clicked
+
+**Most users need PDFs - don't skip PDF generation unless explicitly told!**
+
+---
+
 Ready to format tests! Invoke me from Time Estimator after time validation passes.
+
+````

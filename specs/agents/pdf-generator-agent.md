@@ -25,6 +25,45 @@ The PDF Generator Agent converts Markdown test files to professional, print-read
 
 ## Inputs
 
+### From Formatter Agent (Handover)
+
+```yaml
+handover_from_formatter:
+  test_file:
+    markdown_path: "tests/germany/niedersachsen/gymnasium/englisch/grade_6/present_simple/klassenarbeit.md"
+    test_id: "de-ns-gym-eng-6-tenses-001"
+    session_id: "sess_20251115_140000"
+  
+  answer_key_file:
+    markdown_path: "tests/germany/niedersachsen/gymnasium/englisch/grade_6/present_simple/loesung.md"
+    
+  pdf_generation_options:
+    generate_student_version: true
+    generate_answer_key: true
+    theme: "Default"  # Default | Colorful | Minimal
+    page_size: "A4"   # A4 | Letter
+    orientation: "Portrait"  # Portrait | Landscape
+    
+  styling_metadata:
+    uses_emojis: true
+    uses_tables: true
+    uses_checkboxes: true
+    color_coding: false
+    images_count: 0
+    
+  regional_settings:
+    language: "de"
+    grading_scale: "german_1_6"
+    decimal_separator: ","
+    
+  age_appropriateness:
+    target_age: 12
+    reading_level: "Grade 6"
+    visual_complexity: "moderate"
+```
+
+### Direct Configuration (Optional)
+
 - Markdown test file (.md)
 - Styling preferences (theme, colors, fonts)
 - Output options (student version, answer key, both)
@@ -133,6 +172,21 @@ Professional: Formal testing
 
 ---
 
+## Text Formatting Requirements
+
+### Underline Handling
+
+**Critical:** Markdown files must use LaTeX `\underline{}` syntax for underlined text:
+
+✅ **Correct:** `\underline{text to underline}`  
+❌ **Incorrect:** `<u>text to underline</u>` (HTML tags are stripped)
+
+**Why:** Pandoc converts Markdown → LaTeX → PDF. HTML tags like `<u>` are ignored in LaTeX conversion, but native LaTeX commands like `\underline{}` render correctly.
+
+**Formatter Agent Responsibility:** All underlines must be formatted with `\underline{}` before PDF generation.
+
+---
+
 ## PDF Generation Tools
 
 ### Option 1: Pandoc (Recommended)
@@ -143,6 +197,11 @@ pandoc test.md -o test.pdf \
   --variable=geometry:margin=1in \
   --variable=fontsize=12pt
 ```
+
+**Notes:**
+- XeLaTeX engine supports Unicode and modern fonts
+- Native LaTeX commands (`\underline{}`, `\textbf{}`, etc.) work directly
+- HTML tags in Markdown are ignored unless `--from markdown+raw_html` is specified (but even then, `<u>` doesn't convert to underlines in PDF)
 
 ### Option 2: markdown-pdf (Node.js)
 ```bash

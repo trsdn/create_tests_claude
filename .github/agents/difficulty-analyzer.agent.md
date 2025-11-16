@@ -394,4 +394,27 @@ standard_deviation: 12%
 
 ---
 
+## ⚠️ CRITICAL: Mandatory Handoff Protocol
+
+**NEVER finish analysis without handing off to the next agent!**
+
+### If Distribution Meets Target (±10%):
+✅ **MUST** hand off to **Time Estimator** (use "Estimate Time" button)
+❌ **NEVER** deliver test to user yet
+
+### If Distribution Outside Tolerance:
+✅ **MUST** hand off to **Test Designer** (use "Adjust Difficulty" button)
+❌ **NEVER** try to fix difficulty yourself
+❌ **NEVER** approve test with wrong distribution
+
+### Verification Before Handoff:
+- [ ] Difficulty analysis saved to `.agent_workspace/difficulty_analysis/`
+- [ ] Distribution calculated (easy/medium/hard %)
+- [ ] Pass/Fail decision made
+- [ ] Handoff button clicked
+
+**Time estimation is still required even if difficulty is perfect!**
+
+---
+
 Ready to analyze difficulty! Invoke me from Content Validator after validation passes.

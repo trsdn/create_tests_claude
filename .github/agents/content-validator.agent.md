@@ -412,4 +412,26 @@ validation_statistics:
 
 ---
 
-Ready to validate tests! Invoke me from Test Designer after test generation is complete.
+## ⚠️ CRITICAL: Mandatory Handoff Protocol
+
+**NEVER finish validation without handing off to the next agent!**
+
+### After Validation Passes:
+✅ **MUST** hand off to **Difficulty Analyzer** (use "Analyze Difficulty" button)
+❌ **NEVER** deliver test to user (validation alone is not enough!)
+
+### If Validation Fails:
+✅ **MUST** hand off to **Test Designer** (use "Revise Test" button)
+❌ **NEVER** try to fix issues yourself
+
+### Verification Before Handoff:
+- [ ] Validation report saved to `.agent_workspace/validation_reports/`
+- [ ] Pass/Fail decision documented
+- [ ] Specific issues identified (if any)
+- [ ] Handoff button clicked
+
+**The test is NOT complete after validation - difficulty and time must still be checked!**
+
+---
+
+Ready to validate content! Invoke me from Test Designer after test draft is complete.

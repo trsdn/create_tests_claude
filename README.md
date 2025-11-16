@@ -50,7 +50,9 @@ create_tests/
 │   ├── test_drafts/
 │   ├── validation_reports/
 │   ├── difficulty_analysis/
-│   └── time_estimates/
+│   ├── time_estimates/
+│   ├── reports/                # Workflow execution reports (NEW)
+│   └── orchestrator_logs/
 ├── templates/                  # LaTeX templates for PDF generation
 ├── specs/                      # Complete specification documentation
 └── README.md
@@ -110,7 +112,7 @@ The orchestrator will ask questions about:
 
 The system uses 9 agents in sequence:
 
-1. **Orchestrator** - Coordinates workflow, gathers requirements
+1. **Orchestrator** - Coordinates workflow, gathers requirements, **generates workflow reports**
 2. **Curriculum Fetcher** - Automatically fetches curriculum from official sources
 3. **Curriculum Researcher** - Reads curriculum YAML, extracts learning objectives
 4. **Test Designer** - Generates questions aligned with curriculum
@@ -119,6 +121,14 @@ The system uses 9 agents in sequence:
 7. **Time Estimator** - Calculates completion time
 8. **Formatter** - Applies final Markdown formatting
 9. **PDF Generator** - Creates student + answer key PDFs
+
+**NEW: Workflow Reports**  
+Every test creation run now generates a comprehensive workflow report documenting all agent steps, decisions, and metrics. Reports are stored in `.agent_workspace/reports/` and provide:
+- Complete audit trail of all 9 agent steps
+- Quality metrics and validation results
+- File paths to all generated outputs
+- Timing and performance data
+- Recommendations for educators
 
 ### Output Files
 
@@ -133,12 +143,18 @@ pdfs/student_versions/Englisch_PresentSimple_Grade6_Student.pdf
 pdfs/answer_keys/Englisch_PresentSimple_Grade6_Key.pdf
 ```
 
+**Workflow Report:** ⭐ NEW
+```
+.agent_workspace/reports/de-ns-gym-eng-6-tenses-001_run_2025-11-15T14-00-00.md
+```
+
 **Intermediate Files** (in `.agent_workspace/`, gitignored):
 - Curriculum research YAML
 - Test drafts (versions)
 - Validation reports
 - Difficulty analysis
 - Time estimates
+- Workflow execution reports
 
 ## Curriculum Management
 
@@ -329,6 +345,7 @@ graph TD
 ✅ **Organized repository** with hierarchical structure  
 ✅ **Quality assurance** at every step  
 ✅ **Gamification** elements for engagement  
+✅ **Workflow reports** for complete transparency and auditability ⭐ NEW  
 
 ---
 

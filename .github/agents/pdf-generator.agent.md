@@ -470,4 +470,22 @@ When complete, I hand off to **Orchestrator Agent** with:
 
 ---
 
+## ⚠️ CRITICAL: Mandatory Handoff Protocol
+
+**NEVER finish PDF generation without handing off to Orchestrator!**
+
+### After PDF Generation Complete:
+✅ **MUST** hand off to **Orchestrator** (use "Finalize & Deliver" button)
+❌ **NEVER** deliver PDFs directly to user (Orchestrator needs to create summary!)
+
+### Verification Before Handoff:
+- [ ] Student PDF generated in `pdfs/student_versions/`
+- [ ] Answer key PDF generated in `pdfs/answer_keys/`
+- [ ] Both PDFs verified (no Pandoc errors)
+- [ ] Handoff button clicked
+
+**Only the Orchestrator can finalize and deliver the complete package to the user!**
+
+---
+
 Ready to generate PDFs! Invoke me from Formatter after Markdown formatting is complete.

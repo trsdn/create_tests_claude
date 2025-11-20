@@ -1,41 +1,46 @@
 # Educational Test Creator 🎓
 
-An AI-powered educational test creation system using 9 specialized GitHub Copilot custom agents to generate curriculum-aligned assessments for children ages 6-19.
+An AI-powered educational test creation system using **Claude Code** with 9 specialized agents to generate curriculum-aligned assessments for children ages 6-19.
 
 ## Overview
 
-This system creates high-quality educational tests for multiple education systems (Germany, USA, UK) with professional Markdown and PDF outputs. It uses a sophisticated multi-agent workflow to ensure accuracy, age-appropriateness, and curriculum alignment.
+This system creates high-quality educational tests for multiple education systems (Germany, USA, UK) with professional Markdown and PDF outputs. Optimized for **Claude Code**, it uses a sophisticated multi-agent workflow to ensure accuracy, age-appropriateness, and curriculum alignment.
+
+**Key Innovation:** This repository leverages Claude Code's powerful Task tool and slash commands for a hybrid approach - providing both automated workflows and manual agent control.
 
 ## Features
 
-- **9 Specialized AI Agents** working in coordinated workflow
+- **9 Specialized AI Agents** orchestrated via Claude Code's Task tool
+- **Hybrid Interface**: Automated workflows + slash commands for manual control
 - **Multi-Country Support**: Germany (16 states), USA (50 states), UK (4 nations)
 - **10+ Question Types**: Multiple choice, fill-in-blanks, matching, ordering, short answer, and more
-- **Automatic Curriculum Fetching**: Scrapes official education websites and converts to YAML
+- **Automatic Curriculum Fetching**: Uses WebFetch to retrieve from official education websites
 - **Quality Validation**: 5-dimension quality checks (accuracy, clarity, bias, age-appropriateness, alignment)
 - **Difficulty Analysis**: Automated 0-10 scoring with balanced distribution (30% easy, 50% medium, 20% hard)
 - **Time Estimation**: Calculates completion time for different skill levels
 - **Professional PDFs**: Student versions + answer keys with customizable themes
 - **Bloom's Taxonomy**: Aligned question distribution across cognitive levels
+- **Comprehensive Audit Trails**: Complete workflow reports for every test generation
 
 ---
 
 ## Directory Structure
 
 ```
-create_tests/
-├── .github/
-│   ├── agents/                 # 9 custom agent definitions
-│   │   ├── orchestrator.agent.md
-│   │   ├── curriculum-fetcher.agent.md
-│   │   ├── curriculum-researcher.agent.md
-│   │   ├── test-designer.agent.md
-│   │   ├── content-validator.agent.md
-│   │   ├── difficulty-analyzer.agent.md
-│   │   ├── time-estimator.agent.md
-│   │   ├── formatter.agent.md
-│   │   └── pdf-generator.agent.md
-│   └── copilot-instructions.md # Repository-wide instructions
+create_tests_claude/
+├── .claude/
+│   ├── instructions.md         # Repository-wide Claude Code instructions
+│   ├── agents/                 # Agent definitions for Task tool
+│   │   ├── orchestrator.md
+│   │   ├── curriculum-fetcher.md
+│   │   ├── test-designer.md
+│   │   └── ... (9 total agents)
+│   └── commands/               # Slash commands for manual workflows
+│       ├── create-test.md      # Main test creation command
+│       ├── fetch-curriculum.md # Curriculum fetching only
+│       ├── validate-test.md    # Validate existing test
+│       ├── generate-pdf.md     # PDF generation only
+│       └── analyze-difficulty.md # Difficulty analysis only
 ├── data/
 │   └── curriculum/             # Curriculum YAML files
 │       ├── germany/            # By country/region/school/subject/grade
@@ -62,7 +67,7 @@ create_tests/
 
 ### Prerequisites
 
-- **GitHub Copilot** with custom agents support (VS Code)
+- **Claude Code CLI** installed and authenticated
 - **Pandoc** (for PDF generation): `brew install pandoc`
 - **LaTeX** (for PDF generation): `brew install --cask basictex` or `brew install mactex`
 
@@ -70,43 +75,55 @@ create_tests/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/create_tests.git
-   cd create_tests
+   git clone https://github.com/yourusername/create_tests_claude.git
+   cd create_tests_claude
    ```
 
 2. **Verify setup:**
    ```bash
-   # Check that custom agents are recognized
-   ls .github/agents/
-   
+   # Check Claude Code is working
+   claude --version
+
    # Verify Pandoc installation (optional, for PDF output)
    pandoc --version
    pdflatex --version
+
+   # Check Claude Code can see the configuration
+   ls .claude/
    ```
 
 3. **Start creating tests:**
-   - Open VS Code with GitHub Copilot
-   - In Copilot Chat, invoke: `@orchestrator`
-   - Provide test requirements or let it guide you through reverse interviewing
+   - Open the repository in your terminal
+   - Run: `claude`
+   - Type: `/create-test`
+   - Claude will guide you through requirements gathering
 
 ## Usage
 
 ### Creating a Test
 
-**Option 1: Direct request**
+**Option 1: Use the main slash command (Recommended)**
 ```
-@orchestrator Create a 45-minute test for Gymnasium Niedersachsen, Grade 6, English, topic: Present Simple vs Past Progressive
+/create-test
 ```
-
-**Option 2: Let orchestrator guide you**
-```
-@orchestrator I need to create a Klassenarbeit
-```
-The orchestrator will ask questions about:
-- Country and region
+The orchestrator will guide you through:
+- Country and region selection
 - School type and grade
 - Subject and topic
-- Duration and difficulty
+- Duration and difficulty preferences
+
+**Option 2: Natural language request**
+```
+Create a 45-minute test for Gymnasium Niedersachsen, Grade 6, English, topic: Present Simple vs Past Progressive
+```
+
+**Option 3: Individual workflows**
+```
+/fetch-curriculum   # Just fetch curriculum
+/validate-test      # Validate an existing test
+/generate-pdf       # Convert markdown to PDF
+/analyze-difficulty # Check difficulty distribution
+```
 
 ### Agent Workflow
 
@@ -167,15 +184,21 @@ data/curriculum/germany/niedersachsen/gymnasium/englisch/grade_6.yaml
 
 ### Fetching New Curriculum
 
-The Curriculum Fetcher agent can automatically fetch curriculum:
+Fetch curriculum using the slash command or natural request:
 ```
-@curriculum-fetcher Fetch curriculum for Bayern Gymnasium Grade 8 Mathematics
+/fetch-curriculum
+```
+Or:
+```
+Fetch curriculum for Bayern Gymnasium Grade 8 Mathematics
 ```
 
 Supports:
 - **Germany**: Official Kerncurriculum websites for all 16 states
 - **USA**: Common Core, NGSS, state standards
 - **UK**: National Curriculum for England/Scotland/Wales/Northern Ireland
+
+**⚠️ CRITICAL:** Curriculum is ALWAYS fetched from official government sources using WebFetch, never created from AI knowledge.
 
 ## Quality Standards
 
@@ -228,29 +251,29 @@ Supports:
 
 ## Development
 
-### Agent Tool Configuration
+### Agent Architecture
 
-Each agent has specific tools:
-- **codebase**: Read files and search
-- **editFiles**: Create/modify files
-- **runInTerminal**: Execute shell commands (Pandoc, git)
+**Hybrid Approach:**
+- **Orchestrator** coordinates via Task tool
+- **Specialized Agents** launched as needed for specific tasks
+- **Slash Commands** for manual workflow control
 
-Example:
-```yaml
----
-name: test-designer
-tools:
-  - codebase
-  - editFiles
----
-```
+**Claude Code Tools Used:**
+- **Task** - Launch specialized agents
+- **Read/Write/Edit** - File operations
+- **WebFetch** - Retrieve curriculum from official sources
+- **Grep/Glob** - Search and find files
+- **Bash** - Shell operations (git, pandoc)
+- **AskUserQuestion** - Interactive requirements gathering
+- **TodoWrite** - Track workflow progress
 
-### Testing Changes
+### Customizing Agents
 
-1. Modify agent definitions in `.github/agents/`
-2. Test with a sample request through `@orchestrator`
-3. Check intermediate outputs in `.agent_workspace/`
-4. Validate final test meets quality thresholds
+1. Modify agent definitions in `.claude/agents/`
+2. Update slash commands in `.claude/commands/`
+3. Test with: `/create-test`
+4. Check intermediate outputs in `.agent_workspace/`
+5. Validate final test meets quality thresholds
 
 ---
 
@@ -282,7 +305,8 @@ MIT License - See LICENSE file for details
 
 ## Acknowledgments
 
-- Built with **GitHub Copilot Custom Agents**
+- Built with **Claude Code** by Anthropic
+- Powered by **Claude Sonnet 4.5** for intelligent agent orchestration
 - PDF generation via **Pandoc** and **LaTeX**
 - Curriculum sources: Official education ministry websites
 

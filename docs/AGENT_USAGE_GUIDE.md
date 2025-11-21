@@ -2,52 +2,46 @@
 
 ## ⚠️ Critical Rules for Using Agents
 
-### Rule #1: ALWAYS Start with @orchestrator
+### Rule #1: Use Natural Language Requests
 
 ❌ **DON'T DO THIS:**
 ```
-@test-designer create a math test for grade 7
-@content-validator check this test
-@difficulty-analyzer analyze difficulty
+Run test-designer for grade 7
+Check this test with content-validator
+Analyze difficulty manually
 ```
 
 ✅ **DO THIS:**
 ```
-@orchestrator create a math test for grade 7
+Create a math test for grade 7 with linear equations
 ```
 
 **Why?**
-- Orchestrator ensures ALL agents run in correct order
+- Claude automatically orchestrates all agents in correct order
 - Quality gates are enforced
 - No steps are accidentally skipped
 - Complete workflow tracking and reporting
 
 ---
 
-## Rule #2: Trust the Handoff Chain
+## Rule #2: Trust the Automated Workflow
 
-Each agent is configured to automatically hand off to the next agent. **Don't interrupt the workflow!**
+The system automatically runs all agents in sequence. **Let Claude coordinate the workflow!**
 
-**Correct Workflow (Automatic):**
+**Automatic Workflow:**
 ```
-You: @orchestrator create test for Gymnasium Grade 7 Math (Linear Equations)
+You: Create a test for Gymnasium Grade 7 Math (Linear Equations)
 
-↓ (Orchestrator gathers requirements)
-↓ (Hands off to Curriculum Researcher)
+↓ (Claude orchestrates requirements gathering)
+↓ (Curriculum Fetcher retrieves official curriculum)
 ↓ (Curriculum Researcher extracts learning objectives)
-↓ (Hands off to Test Designer)
 ↓ (Test Designer creates questions)
-↓ (Hands off to Content Validator)
 ↓ (Content Validator checks quality)
-↓ (Hands off to Difficulty Analyzer)
 ↓ (Difficulty Analyzer checks distribution)
-↓ (Hands off to Time Estimator)
 ↓ (Time Estimator calculates time)
-↓ (Hands off to Formatter)
 ↓ (Formatter applies final formatting)
-↓ (Hands off to PDF Generator)
 ↓ (PDF Generator creates PDFs)
-↓ (Hands off back to Orchestrator)
+↓ (Workflow report generated)
 
 Orchestrator: ✅ Test complete! Here are your files...
 ```

@@ -1,17 +1,17 @@
 # Educational Test Creator 🎓
 
-An AI-powered educational test creation system using **Claude Code** with 9 specialized agents to generate curriculum-aligned assessments for children ages 6-19.
+An AI-powered educational test creation system using **Claude** with 9 specialized agents to generate curriculum-aligned assessments for children ages 6-19.
 
 ## Overview
 
-This system creates high-quality educational tests for multiple education systems (Germany, USA, UK) with professional Markdown and PDF outputs. Optimized for **Claude Code**, it uses a sophisticated multi-agent workflow to ensure accuracy, age-appropriateness, and curriculum alignment.
+This system creates high-quality educational tests for multiple education systems (Germany, USA, UK) with professional Markdown and PDF outputs. It uses a sophisticated multi-agent workflow to ensure accuracy, age-appropriateness, and curriculum alignment.
 
-**Key Innovation:** This repository leverages Claude Code's powerful Task tool and slash commands for a hybrid approach - providing both automated workflows and manual agent control.
+**Key Innovation:** Automated multi-agent workflow with intelligent curriculum fetching and comprehensive quality validation.
 
 ## Features
 
-- **9 Specialized AI Agents** orchestrated via Claude Code's Task tool
-- **Hybrid Interface**: Automated workflows + slash commands for manual control
+- **9 Specialized AI Agents** working in coordinated workflow
+- **Automated Workflows**: Complete test creation from curriculum to PDF
 - **Multi-Country Support**: Germany (16 states), USA (50 states), UK (4 nations)
 - **10+ Question Types**: Multiple choice, fill-in-blanks, matching, ordering, short answer, and more
 - **Automatic Curriculum Fetching**: Uses WebFetch to retrieve from official education websites
@@ -28,19 +28,15 @@ This system creates high-quality educational tests for multiple education system
 
 ```
 create_tests_claude/
-├── .claude/
-│   ├── instructions.md         # Repository-wide Claude Code instructions
-│   ├── agents/                 # Agent definitions for Task tool
-│   │   ├── orchestrator.md
-│   │   ├── curriculum-fetcher.md
-│   │   ├── test-designer.md
+├── specs/                      # Agent specifications and workflow documentation
+│   ├── agents/                 # Individual agent definitions
+│   │   ├── orchestrator-agent.md
+│   │   ├── curriculum-fetcher-agent.md
+│   │   ├── test-designer-agent.md
 │   │   └── ... (9 total agents)
-│   └── commands/               # Slash commands for manual workflows
-│       ├── create-test.md      # Main test creation command
-│       ├── fetch-curriculum.md # Curriculum fetching only
-│       ├── validate-test.md    # Validate existing test
-│       ├── generate-pdf.md     # PDF generation only
-│       └── analyze-difficulty.md # Difficulty analysis only
+│   ├── main-spec.md
+│   ├── agent-collaboration.md
+│   └── implementation-guide.md
 ├── data/
 │   └── curriculum/             # Curriculum YAML files
 │       ├── germany/            # By country/region/school/subject/grade
@@ -67,7 +63,8 @@ create_tests_claude/
 
 ### Prerequisites
 
-- **Claude Code CLI** installed and authenticated
+- **Claude** (API or desktop app) with access to tools and file operations
+- **Python 3.8+** for workflow automation scripts
 - **Pandoc** (for PDF generation): `brew install pandoc`
 - **LaTeX** (for PDF generation): `brew install --cask basictex` or `brew install mactex`
 
@@ -81,48 +78,37 @@ create_tests_claude/
 
 2. **Verify setup:**
    ```bash
-   # Check Claude Code is working
-   claude --version
-
    # Verify Pandoc installation (optional, for PDF output)
    pandoc --version
    pdflatex --version
 
-   # Check Claude Code can see the configuration
-   ls .claude/
+   # Check repository structure
+   ls specs/agents/
    ```
 
 3. **Start creating tests:**
-   - Open the repository in your terminal
-   - Run: `claude`
-   - Type: `/create-test`
-   - Claude will guide you through requirements gathering
+   - Open this repository in Claude (desktop or API)
+   - Describe your test requirements in natural language
+   - Claude will orchestrate all 9 agents to create your test
+   - Review outputs in `tests/` and `pdfs/` directories
 
 ## Usage
 
 ### Creating a Test
 
-**Option 1: Use the main slash command (Recommended)**
-```
-/create-test
-```
-The orchestrator will guide you through:
-- Country and region selection
-- School type and grade
-- Subject and topic
-- Duration and difficulty preferences
-
-**Option 2: Natural language request**
+**Natural language request (Recommended):**
 ```
 Create a 45-minute test for Gymnasium Niedersachsen, Grade 6, English, topic: Present Simple vs Past Progressive
 ```
 
-**Option 3: Individual workflows**
+Claude will automatically orchestrate all agents and guide you through any missing information.
+
+**Specific workflow requests:**
 ```
-/fetch-curriculum   # Just fetch curriculum
-/validate-test      # Validate an existing test
-/generate-pdf       # Convert markdown to PDF
-/analyze-difficulty # Check difficulty distribution
+Fetch the curriculum for Grade 6 Biology in Niedersachsen
+Validate the existing test in tests/germany/niedersachsen/gymnasium/deutsch/klasse_6/
+Generate a PDF for the markdown test file at [path]
+Analyze the difficulty distribution of this test
 ```
 
 ### Agent Workflow
@@ -139,8 +125,8 @@ The system uses 9 agents in sequence:
 8. **Formatter** - Applies final Markdown formatting
 9. **PDF Generator** - Creates student + answer key PDFs
 
-**NEW: Workflow Reports**  
-Every test creation run now generates a comprehensive workflow report documenting all agent steps, decisions, and metrics. Reports are stored in `.agent_workspace/reports/` and provide:
+**Workflow Reports**  
+Every test creation generates a comprehensive workflow report documenting all agent steps, decisions, and metrics. Reports are stored in `.agent_workspace/reports/` and provide:
 - Complete audit trail of all 9 agent steps
 - Quality metrics and validation results
 - File paths to all generated outputs

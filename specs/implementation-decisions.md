@@ -5,9 +5,9 @@ version: 1.0
 date: 2025-11-15
 status: Decided
 related:
+  - agent-collaboration.md
   - implementation-guide.md
   - data-schemas.md
-  - github-copilot-customization.md
 ---
 
 # Implementation Decisions
@@ -27,7 +27,7 @@ This document records the critical technical decisions made for implementing the
 |---|---------------|--------|-----------|
 | 1 | Curriculum Data Source | **A) Static Repository Files** | Fast, reliable, offline capable |
 | 2 | PDF Generation Tool | **A) Pandoc + LaTeX** | Professional quality, excellent math rendering |
-| 3 | Agent Environment | **A) GitHub Copilot Chat Agents** | Native integration, leverages existing AI |
+| 3 | Agent Environment | **Claude with Multi-Agent Workflow** | Powerful reasoning, excellent tool use |
 | 4 | Answer Key Format | **C) Detailed Step-by-Step** | Excellent for learning, clear pedagogy |
 
 ---

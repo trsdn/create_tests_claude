@@ -274,11 +274,15 @@
 **Beispiele für Orchestrator-Befehle:**
 
 ```
-@orchestrator Erstelle eine Klassenarbeit zum Thema "modal_verbs_can_must_may" für Klasse 6 Englisch Niedersachsen
+## Example Requests
 
-@orchestrator Generiere einen Vokabeltest zu "food_drinks" für Gymnasium Niedersachsen Klasse 6
+```
+Create a test on "modal_verbs_can_must_may" for Grade 6 English in Niedersachsen
 
-@orchestrator Erstelle einen 20-Minuten-Test über "daily_routines" und "hobbies_free_time" für Englisch Klasse 6
+Generate a vocabulary test for "food_drinks" for Gymnasium Niedersachsen Grade 6
+
+Create a 20-minute test covering "daily_routines" and "hobbies_free_time" for English Grade 6
+```
 ```
 
 **Topic IDs für Tests verwenden:**

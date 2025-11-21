@@ -1,0 +1,195 @@
+research_session:
+  session_id: "curr_de_ns_gym_wn_6_20251120"
+  timestamp: "2025-11-20T10:00:00Z"
+  agent_version: "1.0"
+
+request:
+  country: "Germany"
+  region: "Niedersachsen"
+  school_type: "Gymnasium"
+  subject: "Werte und Normen"
+  grade: 6
+  topic: "Freundschaft und Vertrauen"
+
+curriculum_data:
+  source_file: "data/curriculum/germany/niedersachsen/gymnasium/werte_und_normen/grade_6.yaml"
+  source_url: "https://cuvo.nibis.de/index.php?p=download&upload=129"
+  last_updated: "2025-11-20"
+
+  learning_objectives:
+    - id: "LO-WN-NS-G6-009"
+      text: "Die Schülerinnen und Schüler beschreiben verschiedene Aspekte von Freundschaft"
+      topic: "Zusammenleben"
+      bloom_level: "understand"
+      difficulty: "easy"
+      details: "Merkmale von Freundschaft, Unterschied zu Bekanntschaft, Bedeutung von Vertrauen und Loyalität"
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-010"
+      text: "Die Schülerinnen und Schüler reflektieren über Freundschaft und deren Bedeutung"
+      topic: "Zusammenleben"
+      bloom_level: "evaluate"
+      difficulty: "easy"
+      details: "Eigene Erfahrungen mit Freundschaft, Konflikte in Freundschaften, Wert von Freundschaft im Leben"
+      prerequisites: ["LO-WN-NS-G6-009"]
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-014"
+      text: "Die Schülerinnen und Schüler unterscheiden zwischen Wahrheit und Lüge und reflektieren über Ehrlichkeit"
+      topic: "Moral und Ethik"
+      bloom_level: "evaluate"
+      difficulty: "medium"
+      details: "Bedeutung von Wahrheit, Notlügen und ihre Rechtfertigung, Konsequenzen von Lügen"
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-003"
+      text: "Die Schülerinnen und Schüler erkennen und analysieren Ursachen von Konflikten"
+      topic: "Moral und Ethik"
+      bloom_level: "analyze"
+      difficulty: "medium"
+      details: "Verschiedene Konfliktarten (Interessenkonflikte, Wertekonflikte, Ressourcenkonflikte), Analyse von Konfliktsituationen"
+      time_estimate: "10 Stunden"
+
+    - id: "LO-WN-NS-G6-004"
+      text: "Die Schülerinnen und Schüler entwickeln konstruktive Lösungsstrategien für Konflikte"
+      topic: "Moral und Ethik"
+      bloom_level: "create"
+      difficulty: "medium"
+      details: "Strategien der Konfliktlösung (Kompromiss, Mediation, Gewaltfreie Kommunikation), praktische Anwendung"
+      prerequisites: ["LO-WN-NS-G6-003"]
+      time_estimate: "10 Stunden"
+
+    - id: "LO-WN-NS-G6-015"
+      text: "Die Schülerinnen und Schüler erkennen und benennen unterschiedliche Gefühle"
+      topic: "Identität und Rolle"
+      bloom_level: "understand"
+      difficulty: "easy"
+      details: "Basisemotionen, Auslöser von Gefühlen, angemessener Umgang mit Emotionen"
+      time_estimate: "6 Stunden"
+
+    - id: "LO-WN-NS-G6-002"
+      text: "Die Schülerinnen und Schüler reflektieren über eigene Wertvorstellungen und deren Herkunft"
+      topic: "Werte"
+      bloom_level: "evaluate"
+      difficulty: "medium"
+      details: "Nachdenken über eigene Prioritäten, Einfluss von Familie, Freunden, Medien auf Wertbildung"
+      prerequisites: ["LO-WN-NS-G6-001"]
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-013"
+      text: "Die Schülerinnen und Schüler bewerten moralisch relevante Handlungen nach verschiedenen Kriterien"
+      topic: "Moral und Ethik"
+      bloom_level: "evaluate"
+      difficulty: "hard"
+      details: "Absicht vs. Folgen, Goldene Regel, moralische Dilemmata einfacher Art"
+      time_estimate: "10 Stunden"
+
+  content_scope:
+    include:
+      - "Merkmale echter Freundschaft"
+      - "Vertrauen als Grundlage von Freundschaft"
+      - "Loyalität und ihre Grenzen"
+      - "Ehrlichkeit in Freundschaften"
+      - "Konflikte in Freundschaften und deren Lösung"
+      - "Unterschied zwischen Freundschaft und Bekanntschaft"
+      - "Umgang mit Enttäuschungen"
+      - "Bedeutung von Vertrauen im Alltag"
+      - "Notlügen und ihre ethische Bewertung"
+      - "Empathie und Perspektivwechsel"
+      - "Goldene Regel in Freundschaften"
+
+    exclude:
+      - "Komplexe philosophische Theorien"
+      - "Romantische Beziehungen (zu komplex für Klasse 6)"
+      - "Online-Freundschaften und soziale Medien (anderes Thema)"
+      - "Geschlechterrollen in Freundschaften (anderes Thema)"
+
+    prerequisites:
+      - "Grundverständnis von sozialen Beziehungen"
+      - "Eigene Erfahrungen mit Freundschaften"
+      - "Verständnis für Gefühle und Emotionen"
+      - "Grundlegende moralische Unterscheidungen"
+
+  difficulty_recommendations:
+    distribution:
+      easy: 30
+      medium: 50
+      hard: 20
+
+  terminology:
+    - term: "Freundschaft"
+      definition: "Eine enge persönliche Beziehung, die auf gegenseitigem Vertrauen beruht"
+      example: "Echte Freundschaft erkennt man auch in schwierigen Zeiten."
+
+    - term: "Vertrauen"
+      definition: "Die Überzeugung, dass jemand verlässlich ist"
+      example: "Ohne Vertrauen gibt es keine echte Freundschaft."
+
+    - term: "Loyalität"
+      definition: "Die Treue zu einer Person oder Gruppe"
+      example: "Loyalität bedeutet, zu seinen Freunden zu stehen."
+
+    - term: "Empathie"
+      definition: "Die Fähigkeit, sich in andere hineinzuversetzen und ihre Gefühle nachzuvollziehen"
+      example: "Empathie hilft uns, andere besser zu verstehen."
+
+    - term: "Ehrlichkeit"
+      definition: "Die Eigenschaft, die Wahrheit zu sagen und nicht zu täuschen"
+      example: "Ehrlichkeit ist die Grundlage für Vertrauen."
+
+    - term: "Konflikt"
+      definition: "Eine Auseinandersetzung zwischen Personen mit unterschiedlichen Interessen oder Meinungen"
+      example: "Konflikte sind normal und können konstruktiv gelöst werden."
+
+    - term: "Kompromiss"
+      definition: "Eine Einigung, bei der beide Seiten Zugeständnisse machen"
+      example: "Ein guter Kompromiss berücksichtigt die Interessen aller Beteiligten."
+
+    - term: "Goldene Regel"
+      definition: "Das ethische Prinzip: Behandle andere so, wie du selbst behandelt werden möchtest"
+      example: "Die Goldene Regel findet sich in fast allen Kulturen."
+
+    - term: "Notlüge"
+      definition: "Eine Lüge, die aus Höflichkeit oder zum Schutz anderer erzählt wird"
+      example: "Ob Notlügen moralisch erlaubt sind, ist umstritten."
+
+  regional_specifications:
+    language: "de"
+    formality: "du"  # Grade 6 uses informal
+
+    grading:
+      type: "1-6"
+      scale_description: "1=Sehr gut, 2=Gut, 3=Befriedigend, 4=Ausreichend, 5=Mangelhaft, 6=Ungenügend"
+      passing_grade: 4
+
+    cultural_context:
+      common_names: ["Emma", "Mia", "Hannah", "Sophia", "Lea", "Ben", "Jonas", "Leon", "Paul", "Finn"]
+      measurement_system: "metric"
+      currency: "Euro (€)"
+      paper_size: "A4"
+
+  assessment_criteria:
+    question_types_recommended:
+      - type: "multiple_choice"
+        percentage: 15
+      - type: "short_answer"
+        percentage: 25
+      - type: "scenario_analysis"
+        percentage: 30
+      - type: "reflection"
+        percentage: 20
+      - type: "discussion"
+        percentage: 10
+
+    cognitive_levels:
+      understand: 30
+      apply: 30
+      analyze: 25
+      evaluate: 15
+
+research_quality:
+  confidence_score: 0.98
+  sources_verified: true
+  curriculum_current: true
+  learning_objectives_count: 8
+  completeness: "complete"

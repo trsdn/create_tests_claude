@@ -1,0 +1,168 @@
+test_metadata:
+  test_id: "de-ns-gym-wn-6-freundschaft-001"
+  draft_version: 1
+  created: "2025-11-20T10:00:00Z"
+
+  questions:
+    - id: "Q1"
+      type: "multiple_choice"
+      difficulty: 2
+      bloom_level: "understand"
+      points: 4
+      estimated_time: 3
+      learning_objective: "LO-WN-NS-G6-009"
+
+    - id: "Q2"
+      type: "true_false_with_justification"
+      difficulty: 2
+      bloom_level: "understand"
+      points: 3
+      estimated_time: 3
+      learning_objective: "LO-WN-NS-G6-009"
+
+    - id: "Q3"
+      type: "comparison_table"
+      difficulty: 3
+      bloom_level: "understand"
+      points: 5
+      estimated_time: 4
+      learning_objective: "LO-WN-NS-G6-009"
+
+    - id: "Q4"
+      type: "matching"
+      difficulty: 2
+      bloom_level: "understand"
+      points: 6
+      estimated_time: 3
+      learning_objective: "LO-WN-NS-G6-015"
+
+    - id: "Q5"
+      type: "scenario_analysis"
+      difficulty: 5
+      bloom_level: "analyze"
+      points: 6
+      estimated_time: 5
+      learning_objective: "LO-WN-NS-G6-003"
+
+    - id: "Q6"
+      type: "ethical_dilemma"
+      difficulty: 6
+      bloom_level: "evaluate"
+      points: 7
+      estimated_time: 6
+      learning_objective: "LO-WN-NS-G6-014"
+
+    - id: "Q7"
+      type: "problem_solving"
+      difficulty: 6
+      bloom_level: "create"
+      points: 6
+      estimated_time: 5
+      learning_objective: "LO-WN-NS-G6-004"
+
+    - id: "Q8"
+      type: "position_with_justification"
+      difficulty: 5
+      bloom_level: "evaluate"
+      points: 5
+      estimated_time: 4
+      learning_objective: "LO-WN-NS-G6-013"
+
+    - id: "Q9"
+      type: "empathy_scenario"
+      difficulty: 5
+      bloom_level: "apply"
+      points: 6
+      estimated_time: 4
+      learning_objective: "LO-WN-NS-G6-015"
+
+    - id: "Q10"
+      type: "moral_dilemma"
+      difficulty: 8
+      bloom_level: "evaluate"
+      points: 7
+      estimated_time: 7
+      learning_objective: "LO-WN-NS-G6-013"
+
+    - id: "Q11"
+      type: "personal_reflection"
+      difficulty: 7
+      bloom_level: "evaluate"
+      points: 5
+      estimated_time: 6
+      learning_objective: "LO-WN-NS-G6-010"
+
+    - id: "Q12"
+      type: "creative_writing"
+      difficulty: 8
+      bloom_level: "create"
+      points: 3
+      estimated_time: 5
+      learning_objective: "LO-WN-NS-G6-010"
+      bonus: true
+
+  summary:
+    total_points: 60
+    total_time: 45
+    question_count: 11
+    bonus_questions: 1
+
+    difficulty_breakdown:
+      easy:
+        points: 18
+        percentage: 30
+        questions: [1, 2, 3, 4]
+      medium:
+        points: 30
+        percentage: 50
+        questions: [5, 6, 7, 8, 9]
+      hard:
+        points: 12
+        percentage: 20
+        questions: [10, 11]
+
+    bloom_breakdown:
+      understand:
+        points: 18
+        percentage: 30
+        questions: [1, 2, 3, 4]
+      apply:
+        points: 6
+        percentage: 10
+        questions: [9]
+      analyze:
+        points: 6
+        percentage: 10
+        questions: [5]
+      evaluate:
+        points: 24
+        percentage: 40
+        questions: [6, 8, 10, 11]
+      create:
+        points: 6
+        percentage: 10
+        questions: [7]
+
+    question_type_breakdown:
+      multiple_choice: 1
+      true_false_with_justification: 1
+      comparison_table: 1
+      matching: 1
+      scenario_analysis: 1
+      ethical_dilemma: 1
+      problem_solving: 1
+      position_with_justification: 1
+      empathy_scenario: 1
+      moral_dilemma: 1
+      personal_reflection: 1
+      creative_writing: 1
+
+    learning_objectives_coverage:
+      "LO-WN-NS-G6-009": [1, 2, 3]
+      "LO-WN-NS-G6-010": [11, 12]
+      "LO-WN-NS-G6-014": [6]
+      "LO-WN-NS-G6-003": [5]
+      "LO-WN-NS-G6-004": [7]
+      "LO-WN-NS-G6-015": [4, 9]
+      "LO-WN-NS-G6-002": [10]
+      "LO-WN-NS-G6-013": [6, 8, 10]

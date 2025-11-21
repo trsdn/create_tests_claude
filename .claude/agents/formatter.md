@@ -194,7 +194,153 @@ prerequisite_knowledge:
 - Zeige deinen Lösungsweg 📝
 ```
 
-## Step 5: Structure Student Version
+## Step 5: Calculate Regional Grading Scale
+
+**IMPORTANT:** Use the correct grading scale (Bewertungsschlüssel) for each German region:
+
+### Niedersachsen Gymnasium Grading Scale:
+```
+Note 1 (Sehr gut): 92-100% of total points
+Note 2 (Gut): 80-90% of total points
+Note 3 (Befriedigend): 60-78% of total points
+Note 4 (Ausreichend): 45-58% of total points
+Note 5 (Mangelhaft): 17-43% of total points
+Note 6 (Ungenügend): 0-15% of total points
+```
+
+**Calculation Example for 60 points:**
+- Note 1: 55-60 Punkte (92-100%)
+- Note 2: 48-54 Punkte (80-90%)
+- Note 3: 36-47 Punkte (60-78%)
+- Note 4: 27-35 Punkte (45-58%)
+- Note 5: 10-26 Punkte (17-43%)
+- Note 6: 0-9 Punkte (0-15%)
+
+### Bayern Gymnasium Grading Scale:
+```
+Note 1: 100-90%
+Note 2: 89-80%
+Note 3: 79-67%
+Note 4: 66-50%
+Note 5: 49-30%
+Note 6: 29-0%
+```
+
+### Other Regions:
+Check official guidelines or use Niedersachsen scale as default for Gymnasiums.
+
+## Step 6: Ensure Adequate Write Space
+
+**CRITICAL:** Provide sufficient space for handwritten answers.
+
+**Line Rendering Best Practices:**
+- **For answer lines:** Use `\hrulefill` (LaTeX command that renders as full-width horizontal line in PDF)
+- **For table cells:** Use escaped underscores `\_\_\_\_\_` (at least 25 underscores)
+- **For short fields:** Use escaped underscores `\_\_\_\_\_` (Name, Datum, etc.)
+- **DO NOT use:** Plain underscores `___` alone (they disappear or render incorrectly in PDFs)
+
+**Why `\hrulefill`?**
+- Renders as professional horizontal lines in PDF
+- Full-width across the page
+- Consistent appearance
+- Perfect for handwritten answers
+
+### Short Answer (1-2 sentences):
+```markdown
+**Antwort:**
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+```
+(Minimum 3 lines - use `\hrulefill` for PDF compatibility)
+
+### Detailed Answer (3-5 sentences):
+```markdown
+**Antwort:**
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+```
+(Minimum 6 lines - use `\hrulefill` for PDF compatibility)
+
+### Extended Writing (5+ sentences):
+```markdown
+**Antwort:**
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+```
+(Minimum 10 lines - use `\hrulefill` for PDF compatibility)
+
+### Multi-Step Problems:
+```markdown
+Schritt 1:
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+
+Schritt 2:
+
+\hrulefill
+
+\hrulefill
+
+\hrulefill
+```
+(3 lines per step minimum - use `\hrulefill` for PDF compatibility)
+
+### Table Fill-ins:
+```markdown
+| Column 1 | Column 2 |
+|----------|----------|
+| 1. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ | 1. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ |
+| 2. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ | 2. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ |
+```
+(Use escaped underscores `\_` - at least 25 per cell for table compatibility)
+
+### Short Fill-in Fields (Name, Datum, single values):
+```markdown
+**Name:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ **Datum:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Wert 1: \hrulefill
+
+Wert 2: \hrulefill
+```
+(Use escaped underscores `\_` for short fields, `\hrulefill` for full-width lines)
+
+## Step 7: Structure Student Version
 
 **Complete Student Test Structure:**
 
@@ -256,16 +402,24 @@ prerequisite_knowledge:
 
 ---
 
+**Gesamtpunktzahl: ______ / 60 Punkte**
+
+**Note:** ________
+
+---
+
 ## 📊 Bewertungsschlüssel
 
-| Punkte | Note | Bewertung |
-|--------|------|-----------|
-| 54-60 | 1 | Sehr gut 🌟🌟🌟 |
-| 48-53 | 2 | Gut ⭐⭐ |
-| 42-47 | 3 | Befriedigend ⭐ |
-| 36-41 | 4 | Ausreichend ✓ |
-| 30-35 | 5 | Mangelhaft |
-| 0-29  | 6 | Ungenügend |
+| Punkte | Note | Bewertung | Prozent |
+|--------|------|-----------|---------|
+| 55-60 | 1 | Sehr gut | 92-100% |
+| 48-54 | 2 | Gut | 80-90% |
+| 36-47 | 3 | Befriedigend | 60-78% |
+| 27-35 | 4 | Ausreichend | 45-58% |
+| 10-26 | 5 | Mangelhaft | 17-43% |
+| 0-9 | 6 | Ungenügend | 0-15% |
+
+_Notenschlüssel für Niedersachsen Gymnasium Sekundarstufe I_
 
 ---
 
@@ -281,7 +435,7 @@ prerequisite_knowledge:
 **Viel Erfolg! Du schaffst das! 💪**
 ```
 
-## Step 6: Structure Answer Key
+## Step 8: Structure Answer Key
 
 **Complete Answer Key Structure:**
 
@@ -402,7 +556,7 @@ Bei richtigem Ergebnis aber fehlendem Lösungsweg: Schüler ermutigen, Zwischens
 **Ende der Musterlösung**
 ```
 
-## Step 7: Create Files and Save
+## Step 9: Create Files and Save
 
 Use **Write** tool to save:
 
@@ -414,7 +568,7 @@ Create directories first if needed:
 mkdir -p tests/germany/bayern/gymnasium/mathematik/grade_7/algebra
 ```
 
-## Step 8: Verify Formatting
+## Step 10: Verify Formatting
 
 **Quality Checklist:**
 
@@ -429,8 +583,10 @@ mkdir -p tests/germany/bayern/gymnasium/mathematik/grade_7/algebra
 ✓ Age-appropriate language and emojis
 ✓ Proper line spacing and structure
 ✓ No formatting errors
+✓ Regional grading scale correctly calculated
+✓ Adequate write space for all answer types
 
-## Step 9: Report to Orchestrator
+## Step 11: Report to Orchestrator
 
 ```markdown
 ✅ **Formatting Complete**

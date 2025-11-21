@@ -1,478 +1,672 @@
----
-curriculum_metadata:
-  region: Niedersachsen
-  country: Germany
-  school_type: Gymnasium
-  subject: Englisch
-  subject_en: English
-  grade: 6
-  klassenstufe: 6
-  age_range: "11-12"
-  source: Kerncurriculum Englisch Gymnasium Niedersachsen (Sek I)
-  source_url: https://www.nibis.de/englisch_3241
-  source_verification: "Referenz-basiert - offizielle Quelle nicht direkt abrufbar"
-  fetch_date: "2025-11-15"
-  completeness_score: 95
-  language: "German (instruction), English (content)"
+curriculum:
+  metadata:
+    country: "Germany"
+    region: "Niedersachsen"
+    school_type: "Gymnasium"
+    subject: "Englisch"
+    grade: 6
+    grade_range: "5-6"
+    source_url: "https://cuvo.nibis.de/cuvo.php?p=download&upload=139"
+    source_document: "Kerncurriculum für das Gymnasium Schuljahrgänge 5-10 - Englisch"
+    fetch_date: "2025-11-20"
+    last_updated: "2025-11-20"
+    completeness_score: 75
+    language: "de"
+    cefr_level: "A1"
+    verification_status: "needs_manual_verification"
 
-topics:
-  - id: present_simple_vs_past_progressive
-    name_de: "Present Simple vs. Past Progressive"
-    name_en: "Present Simple vs. Past Progressive"
-    category: "Grammatik / Zeitformen"
-    subcategory: "Gegenwartsformen und Vergangenheitsformen"
-    difficulty: medium
-    estimated_lessons: 8-10
-    learning_objectives:
-      - id: LO1
-        text_de: "Present Simple für Gewohnheiten, Routinen und allgemeine Fakten verwenden"
-        text_en: "Use Present Simple for habits, routines and general facts"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-GRAM.1
-      - id: LO2
-        text_de: "Past Progressive für Handlungen zu einem bestimmten Zeitpunkt in der Vergangenheit bilden und anwenden"
-        text_en: "Form and use Past Progressive for actions at a specific time in the past"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-GRAM.2
-      - id: LO3
-        text_de: "Signalwörter für Present Simple (always, usually, never, often) und Past Progressive (while, when, at that moment) erkennen und zuordnen"
-        text_en: "Recognize and assign signal words for Present Simple and Past Progressive"
-        bloom_level: Understand
-        curriculum_ref: KC-ENG-6-GRAM.3
+  learning_objectives:
+    - id: "LO-ENG-NS-G6-001"
+      text: "Die Schülerinnen und Schüler verstehen einfache mündliche Äußerungen zu vertrauten Themen"
+      topic: "Hörverstehen"
+      bloom_level: "understand"
+      difficulty: "easy"
+      cefr_level: "A1"
+      details: "Globalverstehen von Dialogen über Familie, Schule, Hobbys, Alltag"
+      time_estimate: "fortlaufend"
 
-  - id: going_to_future
-    name_de: "Going-to-Future"
-    name_en: "Going-to-Future"
-    category: "Grammatik / Zeitformen"
-    subcategory: "Zukunftsformen"
-    difficulty: easy
-    estimated_lessons: 5-6
-    learning_objectives:
-      - id: LO1
-        text_de: "Going-to-Future für geplante Handlungen und Absichten bilden"
-        text_en: "Form going-to-future for planned actions and intentions"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-GRAM.4
-      - id: LO2
-        text_de: "Unterschied zwischen will-future und going-to-future verstehen"
-        text_en: "Understand difference between will-future and going-to-future"
-        bloom_level: Understand
-        curriculum_ref: KC-ENG-6-GRAM.5
+    - id: "LO-ENG-NS-G6-002"
+      text: "Die Schülerinnen und Schüler entnehmen spezifische Informationen aus kurzen Hörtexten"
+      topic: "Hörverstehen"
+      bloom_level: "understand"
+      difficulty: "medium"
+      cefr_level: "A1"
+      details: "Detailverstehen: Namen, Zahlen, Zeiten, Orte heraushören"
+      prerequisites: ["LO-ENG-NS-G6-001"]
+      time_estimate: "10 Stunden"
 
-  - id: comparison_adjectives
-    name_de: "Steigerung von Adjektiven (Komparativ und Superlativ)"
-    name_en: "Comparison of Adjectives (Comparative and Superlative)"
-    category: "Grammatik / Adjektive"
-    subcategory: "Steigerungsformen"
-    difficulty: medium
-    estimated_lessons: 6-7
-    learning_objectives:
-      - id: LO1
-        text_de: "Regelmäßige Steigerungsformen mit -er/-est bilden"
-        text_en: "Form regular comparative and superlative with -er/-est"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-GRAM.6
-      - id: LO2
-        text_de: "Unregelmäßige Steigerungsformen (good-better-best, bad-worse-worst) anwenden"
-        text_en: "Apply irregular comparative and superlative forms"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-GRAM.7
-      - id: LO3
-        text_de: "Verwendung von more/most bei langen Adjektiven verstehen"
-        text_en: "Understand use of more/most with long adjectives"
-        bloom_level: Understand
-        curriculum_ref: KC-ENG-6-GRAM.8
+    - id: "LO-ENG-NS-G6-003"
+      text: "Die Schülerinnen und Schüler lesen und verstehen kurze einfache Texte zu vertrauten Themen"
+      topic: "Leseverstehen"
+      bloom_level: "understand"
+      difficulty: "easy"
+      cefr_level: "A1"
+      details: "Geschichten, E-Mails, kurze Beschreibungen, Schilder"
+      time_estimate: "15 Stunden"
 
-  - id: modal_verbs
-    name_de: "Modalverben (can, must, should, may)"
-    name_en: "Modal Verbs (can, must, should, may)"
-    category: "Grammatik / Verben"
-    subcategory: "Hilfsverben"
-    difficulty: medium
-    estimated_lessons: 7-8
-    learning_objectives:
-      - id: LO1
-        text_de: "Modalverben can, must, should, may korrekt verwenden"
-        text_en: "Use modal verbs can, must, should, may correctly"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-GRAM.9
-      - id: LO2
-        text_de: "Bedeutungsunterschiede zwischen Modalverben erkennen (Fähigkeit, Notwendigkeit, Erlaubnis, Empfehlung)"
-        text_en: "Recognize meaning differences between modal verbs"
-        bloom_level: Analyze
-        curriculum_ref: KC-ENG-6-GRAM.10
-      - id: LO3
-        text_de: "Verneinung und Fragestellung mit Modalverben bilden"
-        text_en: "Form negation and questions with modal verbs"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-GRAM.11
+    - id: "LO-ENG-NS-G6-004"
+      text: "Die Schülerinnen und Schüler erschließen unbekannte Wörter aus dem Kontext"
+      topic: "Leseverstehen"
+      bloom_level: "apply"
+      difficulty: "medium"
+      cefr_level: "A1"
+      details: "Worterschließungsstrategien, Internationalismen erkennen"
+      time_estimate: "8 Stunden"
 
-  - id: pronouns_possessive_reflexive
-    name_de: "Pronomen (Possessiv- und Reflexivpronomen)"
-    name_en: "Pronouns (Possessive and Reflexive Pronouns)"
-    category: "Grammatik / Pronomen"
-    subcategory: "Verschiedene Pronomenarten"
-    difficulty: easy
-    estimated_lessons: 4-5
-    learning_objectives:
-      - id: LO1
-        text_de: "Possessivpronomen (mine, yours, his, hers, ours, theirs) verwenden"
-        text_en: "Use possessive pronouns (mine, yours, his, hers, ours, theirs)"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-GRAM.12
-      - id: LO2
-        text_de: "Reflexivpronomen (myself, yourself, himself, herself, ourselves, themselves) korrekt einsetzen"
-        text_en: "Use reflexive pronouns correctly"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-GRAM.13
+    - id: "LO-ENG-NS-G6-005"
+      text: "Die Schülerinnen und Schüler schreiben kurze einfache Texte über sich selbst"
+      topic: "Schreiben"
+      bloom_level: "apply"
+      difficulty: "medium"
+      cefr_level: "A1"
+      details: "Steckbrief, kurze Vorstellung, persönliche Angaben"
+      time_estimate: "8 Stunden"
 
-  - id: daily_routines_hobbies
-    name_de: "Tagesabläufe und Hobbys"
-    name_en: "Daily Routines and Hobbies"
-    category: "Wortschatz / Themenfelder"
-    subcategory: "Alltag und Freizeit"
-    difficulty: easy
-    estimated_lessons: 5-6
-    learning_objectives:
-      - id: LO1
-        text_de: "Wortschatz zu Tagesabläufen erweitern (wake up, get dressed, have breakfast, go to school, do homework)"
-        text_en: "Expand vocabulary for daily routines"
-        bloom_level: Remember
-        curriculum_ref: KC-ENG-6-VOC.1
-      - id: LO2
-        text_de: "Über eigene Hobbys und Freizeitaktivitäten sprechen und schreiben"
-        text_en: "Talk and write about own hobbies and leisure activities"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-COMM.1
-      - id: LO3
-        text_de: "Uhrzeiten angeben und Tageszeiten benennen (in the morning, at noon, in the evening)"
-        text_en: "Tell time and name times of day"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-VOC.2
+    - id: "LO-ENG-NS-G6-006"
+      text: "Die Schülerinnen und Schüler verfassen kurze Mitteilungen und Nachrichten"
+      topic: "Schreiben"
+      bloom_level: "apply"
+      difficulty: "medium"
+      cefr_level: "A1"
+      details: "E-Mails, Postkarten, SMS, kurze Notizen"
+      time_estimate: "10 Stunden"
 
-  - id: school_subjects_education
-    name_de: "Schulfächer und Schulalltag"
-    name_en: "School Subjects and School Life"
-    category: "Wortschatz / Themenfelder"
-    subcategory: "Schule und Lernen"
-    difficulty: easy
-    estimated_lessons: 4-5
-    learning_objectives:
-      - id: LO1
-        text_de: "Schulfächer benennen (maths, science, history, geography, PE, art, music)"
-        text_en: "Name school subjects"
-        bloom_level: Remember
-        curriculum_ref: KC-ENG-6-VOC.3
-      - id: LO2
-        text_de: "Über den Stundenplan und Lieblingsfächer sprechen"
-        text_en: "Talk about timetable and favourite subjects"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-COMM.2
-      - id: LO3
-        text_de: "Schulmaterialien und Schulgebäude beschreiben (classroom, library, gym, canteen)"
-        text_en: "Describe school materials and school building"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-VOC.4
+    - id: "LO-ENG-NS-G6-007"
+      text: "Die Schülerinnen und Schüler beschreiben Personen, Orte und Dinge in einfachen Worten"
+      topic: "Schreiben"
+      bloom_level: "apply"
+      difficulty: "medium"
+      cefr_level: "A1"
+      details: "Einfache Beschreibungen mit Adjektiven und Präpositionen"
+      time_estimate: "10 Stunden"
 
-  - id: family_friends_relationships
-    name_de: "Familie, Freunde und soziale Beziehungen"
-    name_en: "Family, Friends and Social Relationships"
-    category: "Wortschatz / Themenfelder"
-    subcategory: "Soziales Umfeld"
-    difficulty: easy
-    estimated_lessons: 5-6
-    learning_objectives:
-      - id: LO1
-        text_de: "Familienmitglieder und erweiterte Familie benennen (aunt, uncle, cousin, grandparents)"
-        text_en: "Name family members and extended family"
-        bloom_level: Remember
-        curriculum_ref: KC-ENG-6-VOC.5
-      - id: LO2
-        text_de: "Freunde und Freundschaften beschreiben (best friend, classmate, neighbor)"
-        text_en: "Describe friends and friendships"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-COMM.3
-      - id: LO3
-        text_de: "Eigenschaften von Personen mit Adjektiven ausdrücken (kind, funny, helpful, friendly)"
-        text_en: "Express personal characteristics with adjectives"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-VOC.6
+    - id: "LO-ENG-NS-G6-008"
+      text: "Die Schülerinnen und Schüler stellen sich und andere vor und beantworten einfache Fragen zur Person"
+      topic: "Sprechen"
+      bloom_level: "apply"
+      difficulty: "easy"
+      cefr_level: "A1"
+      details: "Name, Alter, Herkunft, Familie, Hobbys"
+      time_estimate: "8 Stunden"
 
-  - id: food_drinks_eating
-    name_de: "Essen, Trinken und Mahlzeiten"
-    name_en: "Food, Drinks and Meals"
-    category: "Wortschatz / Themenfelder"
-    subcategory: "Ernährung"
-    difficulty: easy
-    estimated_lessons: 5-6
-    learning_objectives:
-      - id: LO1
-        text_de: "Lebensmittel und Getränke benennen (vegetables, fruits, dairy products, beverages)"
-        text_en: "Name food and drinks"
-        bloom_level: Remember
-        curriculum_ref: KC-ENG-6-VOC.7
-      - id: LO2
-        text_de: "Über Mahlzeiten und Essgewohnheiten sprechen (breakfast, lunch, dinner, snack)"
-        text_en: "Talk about meals and eating habits"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-COMM.4
-      - id: LO3
-        text_de: "Vorlieben und Abneigungen beim Essen ausdrücken (I like/love/hate, my favourite food is)"
-        text_en: "Express food preferences and dislikes"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-COMM.5
+    - id: "LO-ENG-NS-G6-009"
+      text: "Die Schülerinnen und Schüler führen einfache Dialoge in Alltagssituationen"
+      topic: "Sprechen"
+      bloom_level: "apply"
+      difficulty: "medium"
+      cefr_level: "A1"
+      details: "Einkaufen, nach dem Weg fragen, bestellen, Verabredungen"
+      time_estimate: "12 Stunden"
 
-  - id: sports_activities
-    name_de: "Sport und Bewegung"
-    name_en: "Sports and Physical Activities"
-    category: "Wortschatz / Themenfelder"
-    subcategory: "Bewegung und Gesundheit"
-    difficulty: easy
-    estimated_lessons: 4-5
-    learning_objectives:
-      - id: LO1
-        text_de: "Sportarten benennen (football, basketball, swimming, cycling, running)"
-        text_en: "Name sports"
-        bloom_level: Remember
-        curriculum_ref: KC-ENG-6-VOC.8
-      - id: LO2
-        text_de: "Über sportliche Aktivitäten und Vereine sprechen (play, do, go + sport)"
-        text_en: "Talk about sports activities and clubs"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-COMM.6
-      - id: LO3
-        text_de: "Regeln und Fairplay im Sport verstehen und beschreiben"
-        text_en: "Understand and describe rules and fair play in sports"
-        bloom_level: Understand
-        curriculum_ref: KC-ENG-6-VOC.9
+    - id: "LO-ENG-NS-G6-010"
+      text: "Die Schülerinnen und Schüler sprechen über Vorlieben und Abneigungen"
+      topic: "Sprechen"
+      bloom_level: "apply"
+      difficulty: "medium"
+      cefr_level: "A1"
+      details: "I like/don't like, I love, I hate, my favourite"
+      time_estimate: "6 Stunden"
 
-  - id: weather_seasons
-    name_de: "Wetter und Jahreszeiten"
-    name_en: "Weather and Seasons"
-    category: "Wortschatz / Themenfelder"
-    subcategory: "Natur und Umwelt"
-    difficulty: easy
-    estimated_lessons: 3-4
-    learning_objectives:
-      - id: LO1
-        text_de: "Wetterbegriffe verwenden (sunny, rainy, cloudy, windy, snowy, foggy)"
-        text_en: "Use weather vocabulary"
-        bloom_level: Remember
-        curriculum_ref: KC-ENG-6-VOC.10
-      - id: LO2
-        text_de: "Jahreszeiten und Monate beschreiben"
-        text_en: "Describe seasons and months"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-VOC.11
-      - id: LO3
-        text_de: "Über das Wetter sprechen und Wetterberichte verstehen"
-        text_en: "Talk about weather and understand weather reports"
-        bloom_level: Understand
-        curriculum_ref: KC-ENG-6-COMM.7
+    - id: "LO-ENG-NS-G6-011"
+      text: "Die Schülerinnen und Schüler vermitteln einfache Informationen mündlich zwischen Deutsch und Englisch"
+      topic: "Sprachmittlung"
+      bloom_level: "apply"
+      difficulty: "medium"
+      cefr_level: "A1"
+      details: "Wesentliche Informationen sinngemäß übertragen"
+      time_estimate: "8 Stunden"
 
-  - id: shopping_money
-    name_de: "Einkaufen und Geld"
-    name_en: "Shopping and Money"
-    category: "Wortschatz / Themenfelder"
-    subcategory: "Alltag und Konsum"
-    difficulty: medium
-    estimated_lessons: 5-6
-    learning_objectives:
-      - id: LO1
-        text_de: "Einkaufssituationen bewältigen (How much is...?, I'd like..., Can I have...?)"
-        text_en: "Handle shopping situations"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-COMM.8
-      - id: LO2
-        text_de: "Geldbeträge benennen und verstehen (pounds, pence, dollars, cents)"
-        text_en: "Name and understand money amounts"
-        bloom_level: Understand
-        curriculum_ref: KC-ENG-6-VOC.12
-      - id: LO3
-        text_de: "Preisangaben und Mengen ausdrücken (a lot of, some, any, a few, a little)"
-        text_en: "Express prices and quantities"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-GRAM.14
+    - id: "LO-ENG-NS-G6-012"
+      text: "Die Schülerinnen und Schüler vermitteln schriftliche Informationen in der jeweils anderen Sprache"
+      topic: "Sprachmittlung"
+      bloom_level: "apply"
+      difficulty: "hard"
+      cefr_level: "A1"
+      details: "Kurze Texte sinngemäß zusammenfassen"
+      prerequisites: ["LO-ENG-NS-G6-011"]
+      time_estimate: "6 Stunden"
 
-  - id: directions_places
-    name_de: "Wegbeschreibungen und Orte"
-    name_en: "Directions and Places"
-    category: "Wortschatz / Themenfelder"
-    subcategory: "Orientierung"
-    difficulty: medium
-    estimated_lessons: 4-5
-    learning_objectives:
-      - id: LO1
-        text_de: "Wegbeschreibungen geben und verstehen (turn left/right, go straight on, at the corner)"
-        text_en: "Give and understand directions"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-COMM.9
-      - id: LO2
-        text_de: "Orte in der Stadt benennen (post office, bank, supermarket, cinema, hospital)"
-        text_en: "Name places in town"
-        bloom_level: Remember
-        curriculum_ref: KC-ENG-6-VOC.13
-      - id: LO3
-        text_de: "Präpositionen für Ortsangaben verwenden (next to, opposite, between, behind, in front of)"
-        text_en: "Use prepositions of place"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-GRAM.15
+    - id: "LO-ENG-NS-G6-013"
+      text: "Die Schülerinnen und Schüler verwenden Present Simple korrekt"
+      topic: "Grammatik"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Bildung, Verneinung, Fragestellung, he/she/it-s"
+      time_estimate: "12 Stunden"
 
-  - id: reading_comprehension
-    name_de: "Leseverstehen"
-    name_en: "Reading Comprehension"
-    category: "Kompetenzen / Rezeption"
-    subcategory: "Lesen"
-    difficulty: medium
-    estimated_lessons: durchgängig
-    learning_objectives:
-      - id: LO1
-        text_de: "Einfache Texte (Geschichten, E-Mails, Beschreibungen) global verstehen"
-        text_en: "Understand simple texts globally"
-        bloom_level: Understand
-        curriculum_ref: KC-ENG-6-READ.1
-      - id: LO2
-        text_de: "Detailinformationen aus Texten entnehmen"
-        text_en: "Extract detailed information from texts"
-        bloom_level: Analyze
-        curriculum_ref: KC-ENG-6-READ.2
-      - id: LO3
-        text_de: "Leseverstehensstrategien anwenden (Überschriften nutzen, Schlüsselwörter erkennen)"
-        text_en: "Apply reading comprehension strategies"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-READ.3
+    - id: "LO-ENG-NS-G6-014"
+      text: "Die Schülerinnen und Schüler verwenden Present Progressive korrekt"
+      topic: "Grammatik"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Bildung mit to be + -ing, Verwendung"
+      time_estimate: "10 Stunden"
 
-  - id: listening_comprehension
-    name_de: "Hörverstehen"
-    name_en: "Listening Comprehension"
-    category: "Kompetenzen / Rezeption"
-    subcategory: "Hören"
-    difficulty: medium
-    estimated_lessons: durchgängig
-    learning_objectives:
-      - id: LO1
-        text_de: "Einfache Hörtexte und Dialoge global verstehen"
-        text_en: "Understand simple listening texts and dialogues globally"
-        bloom_level: Understand
-        curriculum_ref: KC-ENG-6-LIST.1
-      - id: LO2
-        text_de: "Spezifische Informationen aus Hörtexten herausfiltern"
-        text_en: "Filter specific information from listening texts"
-        bloom_level: Analyze
-        curriculum_ref: KC-ENG-6-LIST.2
-      - id: LO3
-        text_de: "Verschiedene englische Akzente (britisch, amerikanisch) erkennen"
-        text_en: "Recognize different English accents"
-        bloom_level: Understand
-        curriculum_ref: KC-ENG-6-LIST.3
+    - id: "LO-ENG-NS-G6-015"
+      text: "Die Schülerinnen und Schüler bilden und verwenden Simple Past"
+      topic: "Grammatik"
+      bloom_level: "apply"
+      difficulty: "hard"
+      cefr_level: "A1"
+      details: "Regelmäßige und unregelmäßige Verben, -ed Endung"
+      time_estimate: "12 Stunden"
 
-  - id: speaking_interaction
-    name_de: "Sprechen und Interaktion"
-    name_en: "Speaking and Interaction"
-    category: "Kompetenzen / Produktion"
-    subcategory: "Mündliche Kommunikation"
-    difficulty: medium
-    estimated_lessons: durchgängig
-    learning_objectives:
-      - id: LO1
-        text_de: "Einfache Dialoge zu Alltagsthemen führen"
-        text_en: "Conduct simple dialogues on everyday topics"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-SPEAK.1
-      - id: LO2
-        text_de: "Persönliche Informationen über sich selbst geben (Name, Alter, Familie, Hobbys)"
-        text_en: "Give personal information about oneself"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-SPEAK.2
-      - id: LO3
-        text_de: "Aussprache und Intonation verbessern"
-        text_en: "Improve pronunciation and intonation"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-SPEAK.3
+    - id: "LO-ENG-NS-G6-016"
+      text: "Die Schülerinnen und Schüler verwenden Personalpronomen und Possessivbegleiter korrekt"
+      topic: "Grammatik"
+      bloom_level: "apply"
+      difficulty: "easy"
+      details: "I, you, he, she, it, we, they / my, your, his, her, its, our, their"
+      time_estimate: "6 Stunden"
 
-  - id: writing_production
-    name_de: "Schreiben und Textproduktion"
-    name_en: "Writing and Text Production"
-    category: "Kompetenzen / Produktion"
-    subcategory: "Schriftliche Kommunikation"
-    difficulty: medium
-    estimated_lessons: durchgängig
-    learning_objectives:
-      - id: LO1
-        text_de: "Einfache zusammenhängende Texte schreiben (E-Mails, Postkarten, kurze Beschreibungen)"
-        text_en: "Write simple coherent texts"
-        bloom_level: Create
-        curriculum_ref: KC-ENG-6-WRITE.1
-      - id: LO2
-        text_de: "Persönliche Briefe und Nachrichten verfassen"
-        text_en: "Compose personal letters and messages"
-        bloom_level: Create
-        curriculum_ref: KC-ENG-6-WRITE.2
-      - id: LO3
-        text_de: "Rechtschreibung und Zeichensetzung verbessern"
-        text_en: "Improve spelling and punctuation"
-        bloom_level: Apply
-        curriculum_ref: KC-ENG-6-WRITE.3
+    - id: "LO-ENG-NS-G6-017"
+      text: "Die Schülerinnen und Schüler bilden Fragen mit question words und do/does"
+      topic: "Grammatik"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "What, where, when, who, why, how / Do you...? Does he...?"
+      time_estimate: "8 Stunden"
 
-quality_thresholds:
-  factual_accuracy: 100
-  age_appropriateness: 95
-  clarity: 90
-  bias_free: 100
-  curriculum_alignment: 95
+    - id: "LO-ENG-NS-G6-018"
+      text: "Die Schülerinnen und Schüler wenden einen Grundwortschatz von ca. 700-900 Wörtern aktiv an"
+      topic: "Wortschatz"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Themenfelder: Familie, Schule, Freizeit, Essen, Wohnen, Tiere"
+      time_estimate: "fortlaufend"
 
-difficulty_distribution:
-  easy: 40
-  medium: 50
-  hard: 10
+    - id: "LO-ENG-NS-G6-019"
+      text: "Die Schülerinnen und Schüler nutzen zweisprachige Wörterbücher effektiv"
+      topic: "Wortschatz"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Nachschlagetechniken, Wortarten erkennen, Kontext beachten"
+      time_estimate: "6 Stunden"
 
-blooms_taxonomy_distribution:
-  remember_understand: 35
-  apply_analyze: 50
-  evaluate_create: 15
+    - id: "LO-ENG-NS-G6-020"
+      text: "Die Schülerinnen und Schüler beschreiben kulturelle Besonderheiten englischsprachiger Länder"
+      topic: "Interkulturelle Kompetenz"
+      bloom_level: "understand"
+      difficulty: "easy"
+      details: "Feste, Traditionen, Schulsystem, Alltag in GB und USA"
+      time_estimate: "10 Stunden"
 
-grading_scale:
-  system: "1-6"
-  scale:
-    - grade: 1
-      name: "Sehr gut"
-      min_percent: 88
-      max_percent: 100
-    - grade: 2
-      name: "Gut"
-      min_percent: 74
-      max_percent: 87
-    - grade: 3
-      name: "Befriedigend"
-      min_percent: 60
-      max_percent: 73
-    - grade: 4
-      name: "Ausreichend"
-      min_percent: 46
-      max_percent: 59
-    - grade: 5
-      name: "Mangelhaft"
-      min_percent: 20
-      max_percent: 45
-    - grade: 6
-      name: "Ungenügend"
-      min_percent: 0
-      max_percent: 19
+  topics:
+    - name: "Hörverstehen"
+      description: "Verstehen gesprochener englischer Sprache"
+      subtopics:
+        - name: "Einfache Dialoge"
+          description: "Gespräche über Alltägliches verstehen"
+          time_estimate: "8 Stunden"
+          cefr_level: "A1"
+        - name: "Kurze Texte"
+          description: "Geschichten, Beschreibungen hören und verstehen"
+          time_estimate: "8 Stunden"
+          cefr_level: "A1"
+        - name: "Anweisungen"
+          description: "Classroom English, Anleitungen verstehen"
+          time_estimate: "6 Stunden"
+          cefr_level: "A1"
+        - name: "Lieder und Reime"
+          description: "Englische Songs und Gedichte"
+          time_estimate: "4 Stunden"
+          cefr_level: "A1"
+      prerequisites: ["Grundkenntnisse englischer Laute"]
 
-recommended_test_formats:
-  - name: "Klassenarbeit"
-    duration_minutes: 45
-    points: 50
-    description: "Standardklassenarbeit mit Grammatik, Vokabular und Textproduktion"
-  - name: "Vokabeltest"
-    duration_minutes: 15
-    points: 20
-    description: "Kurzer Test zu einem spezifischen Wortfeld"
-  - name: "Hörverständnistest"
-    duration_minutes: 30
-    points: 30
-    description: "Test mit Audio-Material und Multiple Choice / Gap-Fill"
-  - name: "Speaking Test"
-    duration_minutes: 10
-    points: 20
-    description: "Mündliche Prüfung zu zweit oder mit Lehrer"
+    - name: "Leseverstehen"
+      description: "Verstehen geschriebener englischer Texte"
+      subtopics:
+        - name: "Kurze Texte"
+          description: "Einfache Geschichten, Beschreibungen"
+          time_estimate: "10 Stunden"
+          cefr_level: "A1"
+        - name: "Schilder und Hinweise"
+          description: "Alltagstexte, Wegweiser, Speisekarten"
+          time_estimate: "4 Stunden"
+          cefr_level: "A1"
+        - name: "E-Mails und Nachrichten"
+          description: "Persönliche Korrespondenz"
+          time_estimate: "6 Stunden"
+          cefr_level: "A1"
+        - name: "Comics und Bildgeschichten"
+          description: "Visuell unterstützte Texte"
+          time_estimate: "4 Stunden"
+          cefr_level: "A1"
+      prerequisites: ["Grundkenntnisse englischer Buchstaben"]
+
+    - name: "Schreiben"
+      description: "Verfassen englischer Texte"
+      subtopics:
+        - name: "Kurze Mitteilungen"
+          description: "E-Mails, SMS, Notizen"
+          time_estimate: "8 Stunden"
+          cefr_level: "A1"
+        - name: "Persönliche Texte"
+          description: "Über sich selbst schreiben"
+          time_estimate: "8 Stunden"
+          cefr_level: "A1"
+        - name: "Beschreibungen"
+          description: "Personen, Orte, Dinge beschreiben"
+          time_estimate: "10 Stunden"
+          cefr_level: "A1"
+        - name: "Einfache Geschichten"
+          description: "Bildergeschichten nacherzählen"
+          time_estimate: "6 Stunden"
+          cefr_level: "A1"
+      prerequisites: ["Grundkenntnisse englischer Rechtschreibung"]
+
+    - name: "Sprechen"
+      description: "Mündliche Kommunikation auf Englisch"
+      subtopics:
+        - name: "Sich vorstellen"
+          description: "Persönliche Informationen geben"
+          time_estimate: "6 Stunden"
+          cefr_level: "A1"
+        - name: "Alltägliche Situationen"
+          description: "Einkaufen, Essen bestellen, nach dem Weg fragen"
+          time_estimate: "12 Stunden"
+          cefr_level: "A1"
+        - name: "Beschreiben"
+          description: "Personen, Orte, Dinge mündlich beschreiben"
+          time_estimate: "8 Stunden"
+          cefr_level: "A1"
+        - name: "Präsentieren"
+          description: "Kurze Präsentationen zu vertrauten Themen"
+          time_estimate: "8 Stunden"
+          cefr_level: "A1"
+      prerequisites: ["Grundlegende Aussprache"]
+
+    - name: "Sprachmittlung"
+      description: "Vermittlung zwischen Deutsch und Englisch"
+      subtopics:
+        - name: "Mündliches Dolmetschen"
+          description: "Gespräche sinngemäß übertragen"
+          time_estimate: "8 Stunden"
+          cefr_level: "A1"
+        - name: "Schriftliches Übertragen"
+          description: "Texte zusammenfassen"
+          time_estimate: "6 Stunden"
+          cefr_level: "A1"
+      prerequisites: ["Grundwortschatz"]
+
+  grammar_topics:
+    - name: "Present Simple"
+      details:
+        - "Bildung: Infinitiv, 3. Person Singular +s"
+        - "Verwendung: Gewohnheiten, Fakten, Zeitpläne"
+        - "Verneinung: don't/doesn't + Infinitiv"
+        - "Fragen: Do/Does + Subjekt + Infinitiv?"
+        - "Besonderheiten: he/she/it - das 's' muss mit"
+      examples:
+        - "I play football every day."
+        - "She likes ice cream."
+        - "Do you speak English?"
+        - "He doesn't live in London."
+      time_estimate: "12 Stunden"
+
+    - name: "Present Progressive"
+      details:
+        - "Bildung: to be + Verb-ing"
+        - "Verwendung: Handlungen im Moment, temporäre Situationen"
+        - "Verneinung: to be + not + Verb-ing"
+        - "Fragen: to be + Subjekt + Verb-ing?"
+        - "Rechtschreibung: sitting, running, lying"
+      examples:
+        - "I am reading a book."
+        - "She is playing tennis."
+        - "Are you listening?"
+        - "They aren't watching TV."
+      time_estimate: "10 Stunden"
+
+    - name: "Simple Past"
+      details:
+        - "Regelmäßige Verben: Infinitiv + -ed"
+        - "Unregelmäßige Verben: eigene Formen (go-went, see-saw)"
+        - "Verwendung: abgeschlossene Handlungen in der Vergangenheit"
+        - "Verneinung: didn't + Infinitiv"
+        - "Fragen: Did + Subjekt + Infinitiv?"
+      examples:
+        - "I played football yesterday."
+        - "She went to London last week."
+        - "Did you see the film?"
+        - "We didn't like the food."
+      time_estimate: "12 Stunden"
+
+    - name: "Personal Pronouns"
+      details:
+        - "Subjektpronomen: I, you, he, she, it, we, they"
+        - "Objektpronomen: me, you, him, her, it, us, them"
+        - "Verwendung als Subjekt und Objekt"
+      examples:
+        - "I like her. She likes me."
+        - "We see them. They see us."
+      time_estimate: "4 Stunden"
+
+    - name: "Possessive Adjectives"
+      details:
+        - "my, your, his, her, its, our, their"
+        - "Stehen vor dem Nomen"
+        - "Keine Übereinstimmung mit dem Besitz"
+      examples:
+        - "This is my book."
+        - "Her name is Sarah."
+        - "Their dog is brown."
+      time_estimate: "4 Stunden"
+
+    - name: "Articles"
+      details:
+        - "Unbestimmter Artikel: a/an"
+        - "Bestimmter Artikel: the"
+        - "Nullartikel bei Plural und unzählbaren Nomen"
+        - "a vor Konsonanten, an vor Vokalen"
+      examples:
+        - "a book, an apple"
+        - "the sun, the moon"
+        - "I like music. (kein Artikel)"
+      time_estimate: "6 Stunden"
+
+    - name: "Plural Forms"
+      details:
+        - "Regelmäßig: +s (cats, dogs)"
+        - "+es nach s, x, ch, sh (buses, boxes)"
+        - "Konsonant + y → ies (baby → babies)"
+        - "Unregelmäßig: man → men, child → children"
+      examples:
+        - "one cat → two cats"
+        - "one box → three boxes"
+        - "one child → many children"
+      time_estimate: "4 Stunden"
+
+    - name: "Question Formation"
+      details:
+        - "Yes/No-Fragen: Do/Does/Did + Subjekt + Verb?"
+        - "W-Fragen: Question word + do/does/did + Subjekt + Verb?"
+        - "Fragen mit to be: to be + Subjekt?"
+      examples:
+        - "Do you like pizza?"
+        - "Where do you live?"
+        - "What is your name?"
+      time_estimate: "8 Stunden"
+
+    - name: "Prepositions"
+      details:
+        - "Ort: in, on, at, under, next to, behind, in front of"
+        - "Zeit: in, on, at (in June, on Monday, at 5 o'clock)"
+        - "Richtung: to, from, into"
+      examples:
+        - "The book is on the table."
+        - "I go to school at 8 o'clock."
+        - "She comes from Spain."
+      time_estimate: "8 Stunden"
+
+  vocabulary_themes:
+    - name: "Family (Familie)"
+      words: ["mother", "father", "sister", "brother", "parents", "grandmother", "grandfather", "aunt", "uncle", "cousin"]
+      phrases: ["This is my...", "I have got...", "How many...?"]
+      word_count: "ca. 30 Wörter"
+
+    - name: "School (Schule)"
+      words: ["teacher", "student", "classroom", "subject", "maths", "English", "science", "history", "homework", "test", "pencil", "book", "bag"]
+      phrases: ["My favourite subject is...", "I like/don't like...", "What's your timetable?"]
+      word_count: "ca. 50 Wörter"
+
+    - name: "Hobbies and Free Time (Hobbys und Freizeit)"
+      words: ["play", "football", "tennis", "music", "read", "watch TV", "swim", "dance", "sing", "draw", "computer games"]
+      phrases: ["I like playing...", "My hobby is...", "In my free time..."]
+      word_count: "ca. 60 Wörter"
+
+    - name: "Food and Drink (Essen und Trinken)"
+      words: ["breakfast", "lunch", "dinner", "apple", "banana", "bread", "cheese", "milk", "water", "juice", "chocolate", "vegetable", "fruit"]
+      phrases: ["I'd like...", "What would you like?", "My favourite food is..."]
+      word_count: "ca. 80 Wörter"
+
+    - name: "Colours (Farben)"
+      words: ["red", "blue", "green", "yellow", "black", "white", "brown", "grey", "orange", "purple", "pink"]
+      phrases: ["What colour is...?", "It's...", "My favourite colour is..."]
+      word_count: "ca. 15 Wörter"
+
+    - name: "Numbers (Zahlen)"
+      words: ["one to hundred", "first", "second", "third"]
+      phrases: ["How many...?", "How much...?", "I'm ... years old"]
+      word_count: "ca. 120 Wörter"
+
+    - name: "Days, Months, Seasons (Tage, Monate, Jahreszeiten)"
+      words: ["Monday", "Tuesday", "January", "February", "spring", "summer", "autumn", "winter"]
+      phrases: ["What day is it?", "When is your birthday?", "In..."]
+      word_count: "ca. 30 Wörter"
+
+    - name: "Time (Zeit)"
+      words: ["o'clock", "half past", "quarter to", "quarter past", "morning", "afternoon", "evening", "night", "today", "yesterday", "tomorrow"]
+      phrases: ["What time is it?", "It's...", "At ... o'clock"]
+      word_count: "ca. 25 Wörter"
+
+    - name: "Home and Living (Zuhause und Wohnen)"
+      words: ["house", "flat", "room", "bedroom", "bathroom", "kitchen", "living room", "garden", "door", "window", "table", "chair", "bed"]
+      phrases: ["I live in...", "There is/are...", "Where do you live?"]
+      word_count: "ca. 50 Wörter"
+
+    - name: "Animals (Tiere)"
+      words: ["dog", "cat", "horse", "cow", "pig", "bird", "fish", "lion", "elephant", "monkey", "pet"]
+      phrases: ["I have got a...", "My favourite animal is...", "I like..."]
+      word_count: "ca. 40 Wörter"
+
+    - name: "Body and Clothes (Körper und Kleidung)"
+      words: ["head", "arm", "leg", "foot", "hand", "shirt", "trousers", "dress", "shoes", "jacket", "hat"]
+      phrases: ["I'm wearing...", "He/She has got...", "What are you wearing?"]
+      word_count: "ca. 60 Wörter"
+
+    - name: "Weather (Wetter)"
+      words: ["sunny", "rainy", "cloudy", "windy", "hot", "cold", "warm", "cool", "snow", "rain"]
+      phrases: ["What's the weather like?", "It's...", "How's the weather?"]
+      word_count: "ca. 30 Wörter"
+
+  text_types:
+    - name: "E-Mail"
+      features:
+        - "Betreffzeile (Subject)"
+        - "Anrede (Dear...)"
+        - "Hauptteil mit persönlichen Informationen"
+        - "Grußformel (Love, Best wishes)"
+      example_topics: ["about myself", "my family", "my hobbies", "my school"]
+      cefr_level: "A1"
+
+    - name: "Postkarte"
+      features:
+        - "Datum und Ort"
+        - "Kurze Grüße"
+        - "Aktivitäten beschreiben"
+        - "Grußformel"
+      example_topics: ["holiday greetings", "travel experiences"]
+      cefr_level: "A1"
+
+    - name: "Steckbrief (Profile)"
+      features:
+        - "Name, Alter, Wohnort"
+        - "Familie"
+        - "Hobbys"
+        - "Lieblinge (favourite...)"
+      example_topics: ["about me", "my friend", "my pet"]
+      cefr_level: "A1"
+
+    - name: "Beschreibung (Description)"
+      features:
+        - "Adjektive verwenden"
+        - "Präpositionen für Ortsangaben"
+        - "Present Simple oder Progressive"
+      example_topics: ["my room", "my friend", "my pet", "a picture"]
+      cefr_level: "A1"
+
+    - name: "Dialog"
+      features:
+        - "Frage und Antwort"
+        - "Höflichkeitsformen (Please, Thank you)"
+        - "Alltagssituationen"
+      example_topics: ["at the shop", "at a restaurant", "asking for directions"]
+      cefr_level: "A1"
+
+  cefr_descriptors:
+    A1_listening:
+      - "Kann vertraute Wörter und ganz einfache Sätze verstehen"
+      - "Kann einfache Fragen verstehen, wenn langsam und deutlich gesprochen wird"
+      - "Kann einfache Anweisungen verstehen"
+
+    A1_reading:
+      - "Kann einzelne vertraute Namen, Wörter und einfache Sätze verstehen"
+      - "Kann einfache Mitteilungen verstehen"
+      - "Kann kurze, einfache Texte lesen und verstehen"
+
+    A1_speaking:
+      - "Kann sich und andere vorstellen"
+      - "Kann einfache Fragen zur Person stellen und beantworten"
+      - "Kann sich in einfachen Alltagssituationen verständigen"
+
+    A1_writing:
+      - "Kann eine kurze, einfache Postkarte schreiben"
+      - "Kann Formulare mit persönlichen Details ausfüllen"
+      - "Kann kurze, einfache Notizen und Mitteilungen schreiben"
+
+  methodological_competencies:
+    - name: "Lernstrategien"
+      skills:
+        - "Vokabeln systematisch lernen und wiederholen"
+        - "Fehler als Lernchance nutzen"
+        - "Hilfsmittel wie Wörterbücher nutzen"
+        - "Mit Lernpartnern üben"
+
+    - name: "Kommunikationsstrategien"
+      skills:
+        - "Nachfragen bei Verständnisproblemen"
+        - "Gestik und Mimik einsetzen"
+        - "Umschreibungen verwenden"
+        - "Einfache Sprache nutzen"
+
+    - name: "Selbsteinschätzung"
+      skills:
+        - "Eigenen Lernfortschritt erkennen"
+        - "Stärken und Schwächen identifizieren"
+        - "Lernziele setzen"
+
+  assessment_criteria:
+    listening:
+      excellent:
+        - "Versteht alle wesentlichen Informationen"
+        - "Erkennt auch Details"
+        - "Benötigt kein mehrmaliges Hören"
+      good:
+        - "Versteht Hauptinformationen"
+        - "Erkennt wichtige Details"
+        - "Versteht beim zweiten Hören besser"
+      satisfactory:
+        - "Versteht Grundinformationen"
+        - "Schwierigkeiten bei Details"
+        - "Benötigt mehrmaliges Hören"
+      common_mistakes:
+        - "Verwechslung ähnlich klingender Wörter"
+        - "Zahlen und Namen nicht verstanden"
+        - "Zu schnelles Sprechen überfordert"
+
+    reading:
+      excellent:
+        - "Liest flüssig und versteht vollständig"
+        - "Erschließt unbekannte Wörter aus Kontext"
+        - "Versteht auch implizite Informationen"
+      good:
+        - "Versteht Hauptinhalte sicher"
+        - "Nutzt Erschließungsstrategien"
+        - "Wenige unbekannte Wörter stören nicht"
+      satisfactory:
+        - "Versteht einfache Texte"
+        - "Viele unbekannte Wörter erschweren Verständnis"
+        - "Benötigt Wörterbuch häufig"
+      common_mistakes:
+        - "Wort-für-Wort-Übersetzung"
+        - "False friends verwechseln"
+        - "Kontext wird nicht beachtet"
+
+    writing:
+      excellent:
+        - "Texte klar strukturiert"
+        - "Vielfältiger Wortschatz"
+        - "Wenige Grammatik- und Rechtschreibfehler"
+        - "Kreative und angemessene Formulierungen"
+      good:
+        - "Grundstruktur vorhanden"
+        - "Angemessener Wortschatz"
+        - "Grammatik überwiegend korrekt"
+        - "Einige Rechtschreibfehler"
+      satisfactory:
+        - "Einfache Strukturen"
+        - "Basiswortschatz"
+        - "Mehrere Grammatikfehler"
+        - "Häufigere Rechtschreibfehler"
+      common_mistakes:
+        - "Falsche Wortstellung (deutsches Satzmuster)"
+        - "he/she/it-s vergessen"
+        - "Falsche Zeitformen"
+        - "Präpositionen verwechselt"
+
+    speaking:
+      excellent:
+        - "Spricht flüssig und verständlich"
+        - "Gute Aussprache"
+        - "Nutzt Vokabular sicher"
+        - "Reagiert angemessen auf Fragen"
+      good:
+        - "Macht sich verständlich"
+        - "Aussprache meist korrekt"
+        - "Grundwortschatz sicher"
+        - "Einige Pausen zum Nachdenken"
+      satisfactory:
+        - "Verständigung mit Mühe möglich"
+        - "Aussprachefehler"
+        - "Häufiges Stocken"
+        - "Sucht oft nach Wörtern"
+      common_mistakes:
+        - "Deutsche Aussprache"
+        - "th-Laut falsch"
+        - "Endungen nicht hörbar (he/she/it-s)"
+        - "Falscher Satzrhythmus"
+
+  cultural_topics:
+    - name: "Großbritannien"
+      aspects:
+        - "Big Ben, Tower Bridge, Buckingham Palace"
+        - "Fish and Chips, English Breakfast"
+        - "British money: Pounds and Pence"
+        - "Driving on the left"
+        - "Weather and tea culture"
+      time_estimate: "6 Stunden"
+
+    - name: "USA"
+      aspects:
+        - "Statue of Liberty, White House"
+        - "Fast Food culture"
+        - "American sports: Baseball, American Football"
+        - "Halloween and Thanksgiving"
+      time_estimate: "4 Stunden"
+
+    - name: "School Life"
+      aspects:
+        - "British school uniform"
+        - "School subjects"
+        - "Differences to German schools"
+        - "School lunch"
+      time_estimate: "4 Stunden"
+
+    - name: "Festivals and Holidays"
+      aspects:
+        - "Christmas traditions"
+        - "Easter"
+        - "Halloween"
+        - "Bonfire Night"
+      time_estimate: "6 Stunden"
+
+  regional_specifications:
+    language: "de"
+    formality: "du"
+    target_language: "British English (primary), American English (introduced)"
+    pronunciation: "Received Pronunciation (RP) as standard, but exposure to different accents"
+    grading:
+      type: "1-6"
+      passing: 4
+      description: "Note 1 = sehr gut, Note 2 = gut, Note 3 = befriedigend, Note 4 = ausreichend, Note 5 = mangelhaft, Note 6 = ungenügend"

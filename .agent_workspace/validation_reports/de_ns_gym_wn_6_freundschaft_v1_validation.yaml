@@ -1,0 +1,349 @@
+validation_report:
+  test_id: "de-ns-gym-wn-6-freundschaft-001"
+  draft_version: 1
+  validated_at: "2025-11-20T10:30:00Z"
+  validator_version: "1.0"
+
+validation_dimensions:
+
+  # 1. FACTUAL ACCURACY
+  factual_accuracy:
+    score: 100
+    threshold: 100
+    status: "PASS"
+
+    checks_performed:
+      - check: "Terminology definitions"
+        result: "PASS"
+        details: "All ethical terms (Freundschaft, Vertrauen, Loyalität, Empathie, etc.) are correctly defined in curriculum"
+
+      - check: "Scenario realism"
+        result: "PASS"
+        details: "All scenarios are realistic and age-appropriate for 11-12 year olds"
+
+      - check: "Answer key correctness"
+        result: "PASS"
+        details: "Multiple acceptable answers provided where appropriate (ethics has no single 'right' answer)"
+
+      - check: "Ethical frameworks"
+        result: "PASS"
+        details: "Goldene Regel correctly explained and applied"
+
+      - check: "Curriculum alignment"
+        result: "PASS"
+        details: "All questions map to specified learning objectives"
+
+    issues: []
+
+    notes:
+      - "Ethics test - multiple valid perspectives acknowledged in answer key"
+      - "Answer key appropriately recognizes subjective nature of ethical questions"
+
+  # 2. AGE-APPROPRIATENESS
+  age_appropriateness:
+    score: 98
+    threshold: 95
+    status: "PASS"
+
+    language_complexity:
+      flesch_reading_ease: 72
+      flesch_kincaid_grade: 6.2
+      target_grade: 6
+      status: "APPROPRIATE"
+      notes: "Language complexity matches Grade 6 level perfectly"
+
+    concept_complexity:
+      status: "APPROPRIATE"
+      details:
+        - "Friendship concepts age-appropriate (trust, loyalty, honesty)"
+        - "Conflict scenarios realistic for 11-12 year olds"
+        - "Ethical dilemmas simplified appropriately (no complex philosophy)"
+        - "Personal reflection prompts suitable for developmental stage"
+
+    content_suitability:
+      status: "SUITABLE"
+      details:
+        - "Names used are culturally appropriate (Emma, Mia, Jonas, etc.)"
+        - "Scenarios reflect real Grade 6 experiences (school, friendships, birthdays)"
+        - "No inappropriate topics"
+        - "Sensitive topics (death in Q9) handled age-appropriately"
+        - "Positive, encouraging tone throughout"
+
+    issues:
+      - severity: "MINOR"
+        question: "Q10"
+        issue: "Mobbing scenario might be emotionally challenging for some students"
+        recommendation: "Consider trigger warning or teacher briefing"
+        impact: "Minimal - topic is curriculum-relevant and appropriately handled"
+
+    overall_assessment: "Highly age-appropriate with minor consideration for sensitive topic"
+
+  # 3. CLARITY & COMPREHENSION
+  clarity:
+    score: 95
+    threshold: 90
+    status: "PASS"
+
+    instruction_clarity:
+      status: "CLEAR"
+      details:
+        - "Test instructions explicit and helpful"
+        - "Question prompts unambiguous"
+        - "Point values clearly marked"
+        - "Time expectation communicated"
+        - "Note about subjective answers helpful ('Es gibt kein richtig oder falsch')"
+
+    question_clarity:
+      status: "MOSTLY CLEAR"
+      details:
+        - "Q1: Clear multiple choice format"
+        - "Q2: Clear position + justification format"
+        - "Q3: Table format clear with example count specified"
+        - "Q4: Matching format clear"
+        - "Q5: Scenario analysis clear"
+        - "Q6: Multi-part question well structured"
+        - "Q7: Step-by-step format helpful"
+        - "Q8: Position question clear"
+        - "Q9: Two-part empathy question clear"
+        - "Q10: Complex dilemma well-structured"
+        - "Q11: Reflection prompts helpful"
+        - "Q12: Creative task clear (bonus)"
+
+    answer_space:
+      status: "ADEQUATE"
+      details: "Sufficient lines provided for written responses"
+
+    issues:
+      - severity: "MINOR"
+        question: "Q6"
+        issue: "Part b mentions 'Goldene Regel' - ensure students know this concept"
+        recommendation: "Add brief reminder or definition"
+        impact: "Low - likely taught in class, answer key provides guidance"
+
+    overall_assessment: "Very clear test with excellent structure and instructions"
+
+  # 4. BIAS DETECTION
+  bias_detection:
+    score: 100
+    threshold: 100
+    status: "PASS"
+
+    gender_bias:
+      status: "NONE DETECTED"
+      details:
+        - "Balanced use of male and female names"
+        - "No gender stereotypes in scenarios"
+        - "Both genders portrayed in various roles"
+        - "Gender-neutral language ('Schülerinnen und Schüler')"
+
+    cultural_bias:
+      status: "NONE DETECTED"
+      details:
+        - "Names are diverse and culturally appropriate for Germany"
+        - "Scenarios are culturally neutral"
+        - "No assumptions about family structure"
+        - "No religious bias"
+
+    socioeconomic_bias:
+      status: "NONE DETECTED"
+      details:
+        - "No expensive items or activities assumed"
+        - "Scenarios accessible to all backgrounds"
+        - "No wealth-related assumptions"
+
+    ability_bias:
+      status: "NONE DETECTED"
+      details:
+        - "No assumptions about physical abilities"
+        - "Cognitive demands appropriate for grade level"
+        - "No ableist language"
+
+    other_biases:
+      status: "NONE DETECTED"
+      details:
+        - "Inclusive approach to friendship types"
+        - "Respects different values and perspectives"
+        - "No regional bias within Germany"
+
+    issues: []
+
+    overall_assessment: "Excellent bias-free content, inclusive and respectful"
+
+  # 5. CURRICULUM ALIGNMENT
+  curriculum_alignment:
+    score: 100
+    threshold: 100
+    status: "PASS"
+
+    learning_objectives_coverage:
+      total_objectives: 8
+      objectives_covered: 8
+      coverage_percentage: 100
+
+      mapping:
+        "LO-WN-NS-G6-009":
+          description: "Beschreiben verschiedene Aspekte von Freundschaft"
+          questions: ["Q1", "Q2", "Q3", "Q9"]
+          status: "FULLY COVERED"
+
+        "LO-WN-NS-G6-010":
+          description: "Reflektieren über Freundschaft und deren Bedeutung"
+          questions: ["Q11", "Q12"]
+          status: "FULLY COVERED"
+
+        "LO-WN-NS-G6-014":
+          description: "Unterscheiden zwischen Wahrheit und Lüge"
+          questions: ["Q6"]
+          status: "FULLY COVERED"
+
+        "LO-WN-NS-G6-003":
+          description: "Erkennen und analysieren Ursachen von Konflikten"
+          questions: ["Q5"]
+          status: "FULLY COVERED"
+
+        "LO-WN-NS-G6-004":
+          description: "Entwickeln konstruktive Lösungsstrategien"
+          questions: ["Q7"]
+          status: "FULLY COVERED"
+
+        "LO-WN-NS-G6-015":
+          description: "Erkennen und benennen Gefühle"
+          questions: ["Q4", "Q9"]
+          status: "FULLY COVERED"
+
+        "LO-WN-NS-G6-002":
+          description: "Reflektieren über eigene Wertvorstellungen"
+          questions: ["Q10", "Q11"]
+          status: "FULLY COVERED"
+
+        "LO-WN-NS-G6-013":
+          description: "Bewerten moralisch relevante Handlungen"
+          questions: ["Q6", "Q8", "Q10"]
+          status: "FULLY COVERED"
+
+    content_scope_adherence:
+      status: "COMPLIANT"
+      details:
+        included_topics:
+          - "Merkmale echter Freundschaft ✓"
+          - "Vertrauen als Grundlage ✓"
+          - "Loyalität und Grenzen ✓"
+          - "Ehrlichkeit in Freundschaften ✓"
+          - "Konflikte und Lösungen ✓"
+          - "Freundschaft vs. Bekanntschaft ✓"
+          - "Empathie und Perspektivwechsel ✓"
+          - "Goldene Regel ✓"
+
+        excluded_topics_avoided:
+          - "Komplexe Philosophie ✓ (avoided)"
+          - "Romantische Beziehungen ✓ (avoided)"
+          - "Social Media ✓ (avoided - different topic)"
+
+        prerequisites_met:
+          - "Social experiences assumed ✓"
+          - "Basic emotional understanding ✓"
+          - "Moral distinctions ✓"
+
+    regional_specifications:
+      language: "de"
+      formality: "du"
+      grading_system: "1-6"
+      status: "COMPLIANT"
+      details:
+        - "Informal 'du' used throughout (correct for Grade 6)"
+        - "German terminology appropriate"
+        - "Grading scale 1-6 with passing grade 4"
+        - "Cultural context appropriate for Niedersachsen"
+
+    issues: []
+
+    overall_assessment: "Perfect curriculum alignment with all 8 learning objectives covered"
+
+# OVERALL VALIDATION SUMMARY
+overall_validation:
+  status: "PASS"
+
+  dimension_scores:
+    factual_accuracy: 100
+    age_appropriateness: 98
+    clarity: 95
+    bias_detection: 100
+    curriculum_alignment: 100
+
+  average_score: 98.6
+
+  quality_gates:
+    - gate: "Factual Accuracy ≥100%"
+      status: "PASS"
+      score: 100
+
+    - gate: "Age-Appropriateness ≥95%"
+      status: "PASS"
+      score: 98
+
+    - gate: "Clarity ≥90%"
+      status: "PASS"
+      score: 95
+
+    - gate: "Bias-Free 100%"
+      status: "PASS"
+      score: 100
+
+    - gate: "Curriculum Alignment 100%"
+      status: "PASS"
+      score: 100
+
+  all_gates_passed: true
+
+strengths:
+  - "Excellent diversity of question types (12 different formats)"
+  - "Age-appropriate scenarios drawn from real Grade 6 experiences"
+  - "Thoughtful handling of subjective ethical questions in answer key"
+  - "Perfect curriculum alignment with 8 learning objectives"
+  - "Completely bias-free and inclusive"
+  - "Clear instructions and structure"
+  - "Goldene Regel appropriately integrated"
+  - "Good balance of concrete and reflective questions"
+  - "Empathy and perspective-taking well-assessed"
+  - "Bonus question provides enrichment"
+
+recommendations:
+  - priority: "LOW"
+    item: "Consider adding brief definition of 'Goldene Regel' in Q6 or test instructions"
+    rationale: "Ensures all students have equal access to concept"
+
+  - priority: "LOW"
+    item: "Teacher briefing: Q10 mobbing scenario may be sensitive for some students"
+    rationale: "Prepare to support students who may have experienced similar situations"
+
+  - priority: "OPTIONAL"
+    item: "Consider providing sample answer for reflection questions in teacher notes"
+    rationale: "Helps teachers calibrate expectations for personal reflections"
+
+validation_decision:
+  decision: "APPROVED - PROCEED TO NEXT STAGE"
+  confidence: "HIGH"
+
+  next_steps:
+    - "Proceed to Difficulty Analyzer"
+    - "Proceed to Time Estimator"
+    - "After all validations pass, proceed to Formatter"
+
+  revision_needed: false
+
+validator_notes:
+  - "This is an exceptionally well-designed ethics test"
+  - "Appropriate balance between structure and openness for ethical reflection"
+  - "Answer key demonstrates understanding that ethics has multiple valid perspectives"
+  - "Age-appropriate handling of sensitive topics (death, mobbing)"
+  - "Strong pedagogical design with clear progression from easy to hard"
+  - "Excellent use of real-life scenarios to engage students"
+
+test_designer_feedback:
+  overall: "EXCELLENT WORK"
+  commendations:
+    - "Outstanding question diversity"
+    - "Perfect curriculum coverage"
+    - "Thoughtful ethical scenarios"
+    - "Excellent answer key with multiple perspectives"
+  suggestions: []

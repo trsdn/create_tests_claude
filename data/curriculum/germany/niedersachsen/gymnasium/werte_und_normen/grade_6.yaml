@@ -1,0 +1,874 @@
+curriculum:
+  metadata:
+    country: "Germany"
+    region: "Niedersachsen"
+    school_type: "Gymnasium"
+    subject: "Werte und Normen"
+    subject_en: "Values and Norms (Ethics)"
+    grade: 6
+    grade_range: "5-6"
+    source_url: "https://cuvo.nibis.de/index.php?p=download&upload=129"
+    source_document: "Kerncurriculum für das Gymnasium Schuljahrgänge 5-10 - Werte und Normen"
+    fetch_date: "2025-11-20"
+    last_updated: "2025-11-20"
+    completeness_score: 95
+    language: "de"
+    verification_status: "needs_manual_verification"
+    note: "In Niedersachsen heißt das Fach 'Werte und Normen' (nicht 'Ethik')"
+
+  learning_objectives:
+    - id: "LO-WN-NS-G6-001"
+      text: "Die Schülerinnen und Schüler beschreiben und vergleichen verschiedene Wertvorstellungen"
+      topic: "Werte"
+      bloom_level: "understand"
+      difficulty: "easy"
+      details: "Erkennen persönlicher, familiärer und gesellschaftlicher Werte, Unterschiede zwischen materiellen und ideellen Werten"
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-002"
+      text: "Die Schülerinnen und Schüler reflektieren über eigene Wertvorstellungen und deren Herkunft"
+      topic: "Werte"
+      bloom_level: "evaluate"
+      difficulty: "medium"
+      details: "Nachdenken über eigene Prioritäten, Einfluss von Familie, Freunden, Medien auf Wertbildung"
+      prerequisites: ["LO-WN-NS-G6-001"]
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-003"
+      text: "Die Schülerinnen und Schüler erkennen und analysieren Ursachen von Konflikten"
+      topic: "Moral und Ethik"
+      bloom_level: "analyze"
+      difficulty: "medium"
+      details: "Verschiedene Konfliktarten (Interessenkonflikte, Wertekonflikte, Ressourcenkonflikte), Analyse von Konfliktsituationen"
+      time_estimate: "10 Stunden"
+
+    - id: "LO-WN-NS-G6-004"
+      text: "Die Schülerinnen und Schüler entwickeln konstruktive Lösungsstrategien für Konflikte"
+      topic: "Moral und Ethik"
+      bloom_level: "create"
+      difficulty: "medium"
+      details: "Strategien der Konfliktlösung (Kompromiss, Mediation, Gewaltfreie Kommunikation), praktische Anwendung"
+      prerequisites: ["LO-WN-NS-G6-003"]
+      time_estimate: "10 Stunden"
+
+    - id: "LO-WN-NS-G6-005"
+      text: "Die Schülerinnen und Schüler bewerten verschiedene Formen von Verantwortung"
+      topic: "Verantwortung"
+      bloom_level: "evaluate"
+      difficulty: "medium"
+      details: "Selbstverantwortung, Verantwortung für andere, für die Umwelt, für die Gesellschaft"
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-006"
+      text: "Die Schülerinnen und Schüler erkennen Zusammenhänge zwischen Freiheit und Verantwortung"
+      topic: "Verantwortung"
+      bloom_level: "understand"
+      difficulty: "medium"
+      details: "Freiheit als Grundlage für Verantwortung, Grenzen der Freiheit, Verantwortung für Entscheidungen"
+      prerequisites: ["LO-WN-NS-G6-005"]
+      time_estimate: "6 Stunden"
+
+    - id: "LO-WN-NS-G6-007"
+      text: "Die Schülerinnen und Schüler vergleichen Regeln, Normen und Gesetze"
+      topic: "Normen"
+      bloom_level: "analyze"
+      difficulty: "medium"
+      details: "Unterschiede und Gemeinsamkeiten, Funktion von Regeln in verschiedenen Bereichen (Familie, Schule, Gesellschaft)"
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-008"
+      text: "Die Schülerinnen und Schüler beurteilen die Notwendigkeit und Sinnhaftigkeit von Regeln"
+      topic: "Normen"
+      bloom_level: "evaluate"
+      difficulty: "medium"
+      details: "Analyse konkreter Regeln, Unterscheidung zwischen sinnvollen und überflüssigen Regeln, Begründung von Regeländerungen"
+      prerequisites: ["LO-WN-NS-G6-007"]
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-009"
+      text: "Die Schülerinnen und Schüler beschreiben verschiedene Aspekte von Freundschaft"
+      topic: "Zusammenleben"
+      bloom_level: "understand"
+      difficulty: "easy"
+      details: "Merkmale von Freundschaft, Unterschied zu Bekanntschaft, Bedeutung von Vertrauen und Loyalität"
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-010"
+      text: "Die Schülerinnen und Schüler reflektieren über Freundschaft und deren Bedeutung"
+      topic: "Zusammenleben"
+      bloom_level: "evaluate"
+      difficulty: "easy"
+      details: "Eigene Erfahrungen mit Freundschaft, Konflikte in Freundschaften, Wert von Freundschaft im Leben"
+      prerequisites: ["LO-WN-NS-G6-009"]
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-011"
+      text: "Die Schülerinnen und Schüler analysieren verschiedene Familienformen und -strukturen"
+      topic: "Zusammenleben"
+      bloom_level: "analyze"
+      difficulty: "medium"
+      details: "Verschiedene Familienmodelle (Kernfamilie, Patchwork, Alleinerziehende, Regenbogenfamilien), Respekt für Vielfalt"
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-012"
+      text: "Die Schülerinnen und Schüler diskutieren ethische Fragen zu Fairness und Gerechtigkeit"
+      topic: "Moral und Ethik"
+      bloom_level: "evaluate"
+      difficulty: "medium"
+      details: "Was ist fair? Gleichheit vs. Gerechtigkeit, Verteilungsgerechtigkeit, Chancengleichheit"
+      time_estimate: "10 Stunden"
+
+    - id: "LO-WN-NS-G6-013"
+      text: "Die Schülerinnen und Schüler bewerten moralisch relevante Handlungen nach verschiedenen Kriterien"
+      topic: "Moral und Ethik"
+      bloom_level: "evaluate"
+      difficulty: "hard"
+      details: "Absicht vs. Folgen, Goldene Regel, moralische Dilemmata einfacher Art"
+      time_estimate: "10 Stunden"
+
+    - id: "LO-WN-NS-G6-014"
+      text: "Die Schülerinnen und Schüler unterscheiden zwischen Wahrheit und Lüge und reflektieren über Ehrlichkeit"
+      topic: "Moral und Ethik"
+      bloom_level: "evaluate"
+      difficulty: "medium"
+      details: "Bedeutung von Wahrheit, Notlügen und ihre Rechtfertigung, Konsequenzen von Lügen"
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-015"
+      text: "Die Schülerinnen und Schüler erkennen und benennen unterschiedliche Gefühle"
+      topic: "Identität und Rolle"
+      bloom_level: "understand"
+      difficulty: "easy"
+      details: "Basisemotionen, Auslöser von Gefühlen, angemessener Umgang mit Emotionen"
+      time_estimate: "6 Stunden"
+
+    - id: "LO-WN-NS-G6-016"
+      text: "Die Schülerinnen und Schüler reflektieren über ihre eigene Identität und Persönlichkeit"
+      topic: "Identität und Rolle"
+      bloom_level: "evaluate"
+      difficulty: "medium"
+      details: "Selbstbild, Stärken und Schwächen, Einflüsse auf Identitätsentwicklung"
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-017"
+      text: "Die Schülerinnen und Schüler analysieren verschiedene Rollen im Alltag"
+      topic: "Identität und Rolle"
+      bloom_level: "analyze"
+      difficulty: "medium"
+      details: "Rollenvielfalt (als Kind, Schüler/in, Freund/in), Rollenerwartungen, Rollenkonflikte"
+      prerequisites: ["LO-WN-NS-G6-016"]
+      time_estimate: "8 Stunden"
+
+    - id: "LO-WN-NS-G6-018"
+      text: "Die Schülerinnen und Schüler erkennen Formen von Vorurteilen und Diskriminierung"
+      topic: "Zusammenleben"
+      bloom_level: "understand"
+      difficulty: "medium"
+      details: "Entstehung von Vorurteilen, Stereotypen, verschiedene Formen von Diskriminierung (Rassismus, Sexismus, Mobbing)"
+      time_estimate: "10 Stunden"
+
+    - id: "LO-WN-NS-G6-019"
+      text: "Die Schülerinnen und Schüler entwickeln Strategien gegen Vorurteile und für Toleranz"
+      topic: "Zusammenleben"
+      bloom_level: "create"
+      difficulty: "medium"
+      details: "Perspektivwechsel, kritisches Hinterfragen von Stereotypen, respektvoller Umgang mit Verschiedenheit"
+      prerequisites: ["LO-WN-NS-G6-018"]
+      time_estimate: "10 Stunden"
+
+    - id: "LO-WN-NS-G6-020"
+      text: "Die Schülerinnen und Schüler reflektieren über Glück und ein gutes Leben"
+      topic: "Lebensgestaltung"
+      bloom_level: "evaluate"
+      difficulty: "medium"
+      details: "Was macht glücklich? Unterschied zwischen kurzfristigem und langfristigem Glück, Bedingungen für ein gutes Leben"
+      time_estimate: "8 Stunden"
+
+  topics:
+    - name: "Werte"
+      description: "Auseinandersetzung mit Wertvorstellungen und Wertkonflikten"
+      subtopics:
+        - name: "Persönliche Werte"
+          description: "Eigene Wertvorstellungen erkennen und reflektieren"
+          time_estimate: "6 Stunden"
+        - name: "Wertevielfalt"
+          description: "Verschiedene Wertesysteme in Familie, Gesellschaft, Kulturen"
+          time_estimate: "8 Stunden"
+        - name: "Wertewandel"
+          description: "Veränderung von Werten im Lauf der Zeit"
+          time_estimate: "4 Stunden"
+        - name: "Wertkonflikte"
+          description: "Konflikte zwischen verschiedenen Werten und deren Lösung"
+          time_estimate: "6 Stunden"
+      prerequisites: ["Keine"]
+
+    - name: "Normen"
+      description: "Regeln, Normen und ihre Bedeutung für das Zusammenleben"
+      subtopics:
+        - name: "Regeln im Alltag"
+          description: "Regeln in Familie, Schule, Freizeit"
+          time_estimate: "6 Stunden"
+        - name: "Normen und Gesetze"
+          description: "Gesellschaftliche Normen, Rechtsnormen, Moral"
+          time_estimate: "8 Stunden"
+        - name: "Begründung von Regeln"
+          description: "Warum brauchen wir Regeln? Legitimation und Kritik"
+          time_estimate: "6 Stunden"
+        - name: "Rituale und Traditionen"
+          description: "Bedeutung von Ritualen in verschiedenen Kulturen"
+          time_estimate: "4 Stunden"
+      prerequisites: ["Grundverständnis sozialer Strukturen"]
+
+    - name: "Verantwortung"
+      description: "Verschiedene Dimensionen von Verantwortung"
+      subtopics:
+        - name: "Selbstverantwortung"
+          description: "Verantwortung für eigene Handlungen und Entscheidungen"
+          time_estimate: "6 Stunden"
+        - name: "Soziale Verantwortung"
+          description: "Verantwortung für Mitmenschen, Familie, Gemeinschaft"
+          time_estimate: "6 Stunden"
+        - name: "Umweltverantwortung"
+          description: "Verantwortung für Natur und zukünftige Generationen"
+          time_estimate: "6 Stunden"
+        - name: "Freiheit und Verantwortung"
+          description: "Zusammenhang zwischen Freiheit und Verantwortung"
+          time_estimate: "6 Stunden"
+      prerequisites: ["Grundverständnis von Handlungsfolgen"]
+
+    - name: "Zusammenleben"
+      description: "Soziale Beziehungen und Gemeinschaft"
+      subtopics:
+        - name: "Freundschaft"
+          description: "Bedeutung, Merkmale und Konflikte in Freundschaften"
+          time_estimate: "10 Stunden"
+        - name: "Familie"
+          description: "Familienformen, Rollen, Beziehungen in der Familie"
+          time_estimate: "8 Stunden"
+        - name: "Schule und Gemeinschaft"
+          description: "Klassengemeinschaft, Schulregeln, Mitbestimmung"
+          time_estimate: "6 Stunden"
+        - name: "Vielfalt und Toleranz"
+          description: "Umgang mit Verschiedenheit, Vorurteile, Diskriminierung"
+          time_estimate: "10 Stunden"
+      prerequisites: ["Eigene soziale Erfahrungen"]
+
+    - name: "Moral und Ethik"
+      description: "Grundlegende ethische Fragen und Konzepte"
+      subtopics:
+        - name: "Gut und Böse"
+          description: "Moralische Unterscheidungen, moralisches Handeln"
+          time_estimate: "8 Stunden"
+        - name: "Gerechtigkeit und Fairness"
+          description: "Was ist gerecht? Verteilungsgerechtigkeit, Chancengleichheit"
+          time_estimate: "10 Stunden"
+        - name: "Wahrheit und Lüge"
+          description: "Ehrlichkeit, Notlügen, Konsequenzen von Lügen"
+          time_estimate: "6 Stunden"
+        - name: "Konflikte und Konfliktlösung"
+          description: "Ursachen, Arten und Lösungsstrategien"
+          time_estimate: "10 Stunden"
+        - name: "Goldene Regel"
+          description: "Einführung in grundlegende ethische Prinzipien"
+          time_estimate: "6 Stunden"
+      prerequisites: ["Grundlegende Unterscheidung richtig/falsch"]
+
+    - name: "Identität und Rolle"
+      description: "Persönliche Entwicklung und soziale Rollen"
+      subtopics:
+        - name: "Selbstwahrnehmung"
+          description: "Wer bin ich? Stärken, Schwächen, Selbstbild"
+          time_estimate: "8 Stunden"
+        - name: "Gefühle"
+          description: "Emotionen erkennen und damit umgehen"
+          time_estimate: "6 Stunden"
+        - name: "Rollen im Alltag"
+          description: "Verschiedene soziale Rollen und Erwartungen"
+          time_estimate: "8 Stunden"
+        - name: "Identitätsentwicklung"
+          description: "Einflüsse auf die eigene Persönlichkeit"
+          time_estimate: "6 Stunden"
+      prerequisites: ["Eigene Erfahrungen mit sozialen Situationen"]
+
+    - name: "Lebensgestaltung"
+      description: "Fragen nach gutem Leben und Glück"
+      subtopics:
+        - name: "Glück"
+          description: "Was ist Glück? Verschiedene Vorstellungen von Glück"
+          time_estimate: "6 Stunden"
+        - name: "Gutes Leben"
+          description: "Bedingungen für ein gutes Leben, persönliche Ziele"
+          time_estimate: "6 Stunden"
+        - name: "Zukunftswünsche"
+          description: "Träume, Wünsche, realistische Zukunftsplanung"
+          time_estimate: "4 Stunden"
+        - name: "Sinnfragen"
+          description: "Erste Auseinandersetzung mit Sinnfragen des Lebens"
+          time_estimate: "4 Stunden"
+      prerequisites: ["Keine"]
+
+  vocabulary_terminology:
+    basic_concepts:
+      - term: "Wert"
+        definition: "Eine Vorstellung von dem, was wichtig und erstrebenswert ist"
+        example: "Ehrlichkeit, Freundschaft und Gerechtigkeit sind wichtige Werte."
+      - term: "Norm"
+        definition: "Eine Regel oder Vorschrift für das Verhalten in einer Gemeinschaft"
+        example: "Die Norm, anderen nicht zu schaden, gilt in fast allen Gesellschaften."
+      - term: "Regel"
+        definition: "Eine Vorschrift, die ein bestimmtes Verhalten vorgibt oder verbietet"
+        example: "Im Straßenverkehr gibt es viele Regeln, die die Sicherheit erhöhen."
+      - term: "Moral"
+        definition: "Die Gesamtheit der Regeln und Werte für richtiges Handeln"
+        example: "Nach meiner Moral sollte man niemanden anlügen."
+      - term: "Ethik"
+        definition: "Die Lehre vom richtigen Handeln, die Reflexion über Moral"
+        example: "In der Ethik fragen wir, warum bestimmte Handlungen richtig oder falsch sind."
+      - term: "Verantwortung"
+        definition: "Die Verpflichtung, für die Folgen eigener Handlungen einzustehen"
+        example: "Jeder trägt Verantwortung für sein eigenes Handeln."
+      - term: "Gewissen"
+        definition: "Das innere Gefühl, das uns sagt, ob etwas richtig oder falsch ist"
+        example: "Sein Gewissen plagte ihn, nachdem er gelogen hatte."
+
+    values_related:
+      - term: "Ehrlichkeit"
+        definition: "Die Eigenschaft, die Wahrheit zu sagen und nicht zu täuschen"
+        example: "Ehrlichkeit ist die Grundlage für Vertrauen."
+      - term: "Respekt"
+        definition: "Achtung vor anderen Menschen und ihren Rechten"
+        example: "Respekt zeigen bedeutet, andere so zu behandeln, wie man selbst behandelt werden möchte."
+      - term: "Gerechtigkeit"
+        definition: "Das Prinzip, jedem das zu geben, was ihm zusteht"
+        example: "Gerechtigkeit fordert, dass alle Menschen gleiche Chancen haben."
+      - term: "Freiheit"
+        definition: "Die Möglichkeit, selbst zu entscheiden und zu handeln"
+        example: "Freiheit bedeutet nicht, alles tun zu dürfen, was man will."
+      - term: "Solidarität"
+        definition: "Das Zusammenhalten und Füreinander-Einstehen in einer Gruppe"
+        example: "Solidarität zeigt sich, wenn man schwächeren Mitschülern hilft."
+      - term: "Toleranz"
+        definition: "Die Bereitschaft, andere Meinungen und Lebensweisen zu akzeptieren"
+        example: "Toleranz bedeutet, Unterschiede zu respektieren, auch wenn man sie nicht teilt."
+      - term: "Zivilcourage"
+        definition: "Der Mut, für das Richtige einzustehen, auch wenn es unbequem ist"
+        example: "Zivilcourage zeigt, wer sich gegen Mobbing einsetzt."
+
+    relationships:
+      - term: "Freundschaft"
+        definition: "Eine enge persönliche Beziehung, die auf gegenseitigem Vertrauen beruht"
+        example: "Echte Freundschaft erkennt man auch in schwierigen Zeiten."
+      - term: "Vertrauen"
+        definition: "Die Überzeugung, dass jemand verlässlich ist"
+        example: "Ohne Vertrauen gibt es keine echte Freundschaft."
+      - term: "Loyalität"
+        definition: "Die Treue zu einer Person oder Gruppe"
+        example: "Loyalität bedeutet, zu seinen Freunden zu stehen."
+      - term: "Empathie"
+        definition: "Die Fähigkeit, sich in andere hineinzuversetzen und ihre Gefühle nachzuvollziehen"
+        example: "Empathie hilft uns, andere besser zu verstehen."
+      - term: "Konflikt"
+        definition: "Eine Auseinandersetzung zwischen Personen mit unterschiedlichen Interessen oder Meinungen"
+        example: "Konflikte sind normal und können konstruktiv gelöst werden."
+      - term: "Kompromiss"
+        definition: "Eine Einigung, bei der beide Seiten Zugeständnisse machen"
+        example: "Ein guter Kompromiss berücksichtigt die Interessen aller Beteiligten."
+
+    moral_concepts:
+      - term: "Gut"
+        definition: "Das moralisch Richtige, das gefördert werden sollte"
+        example: "Anderen zu helfen wird als gut angesehen."
+      - term: "Böse"
+        definition: "Das moralisch Falsche, das vermieden werden sollte"
+        example: "Jemandem absichtlich zu schaden gilt als böse."
+      - term: "Recht"
+        definition: "Die Gesamtheit der Gesetze in einer Gesellschaft"
+        example: "Nach dem Recht müssen alle Menschen gleich behandelt werden."
+      - term: "Unrecht"
+        definition: "Ein Verstoß gegen Recht oder Moral"
+        example: "Stehlen ist Unrecht, weil es das Eigentum anderer verletzt."
+      - term: "Fairness"
+        definition: "Gerechtes und anständiges Verhalten gegenüber anderen"
+        example: "Fairness im Sport bedeutet, nach den Regeln zu spielen."
+      - term: "Goldene Regel"
+        definition: "Das ethische Prinzip: Behandle andere so, wie du selbst behandelt werden möchtest"
+        example: "Die Goldene Regel findet sich in fast allen Kulturen."
+      - term: "Dilemma"
+        definition: "Eine Situation, in der man zwischen zwei gleich unerwünschten Alternativen wählen muss"
+        example: "Ein moralisches Dilemma entsteht, wenn beide Handlungsoptionen problematisch sind."
+
+    identity_and_emotions:
+      - term: "Identität"
+        definition: "Das Selbstverständnis einer Person, wer sie ist"
+        example: "Die Identität entwickelt sich im Laufe des Lebens."
+      - term: "Persönlichkeit"
+        definition: "Die Gesamtheit der Eigenschaften, die einen Menschen ausmachen"
+        example: "Jeder Mensch hat eine einzigartige Persönlichkeit."
+      - term: "Rolle"
+        definition: "Die Funktion und Erwartungen, die mit einer Position verbunden sind"
+        example: "Als Schülerin habe ich eine andere Rolle als zu Hause als Tochter."
+      - term: "Selbstbild"
+        definition: "Die Vorstellung, die man von sich selbst hat"
+        example: "Ein positives Selbstbild ist wichtig für das Selbstvertrauen."
+      - term: "Fremdbild"
+        definition: "Die Vorstellung, die andere von einer Person haben"
+        example: "Selbstbild und Fremdbild stimmen nicht immer überein."
+      - term: "Emotion"
+        definition: "Ein Gefühlszustand wie Freude, Angst, Wut oder Trauer"
+        example: "Emotionen sind wichtige Signale für unsere Bedürfnisse."
+      - term: "Selbstwertgefühl"
+        definition: "Die Bewertung der eigenen Person"
+        example: "Ein gesundes Selbstwertgefühl hilft beim Umgang mit Kritik."
+
+    social_concepts:
+      - term: "Gemeinschaft"
+        definition: "Eine Gruppe von Menschen mit gemeinsamen Interessen oder Zielen"
+        example: "Die Klassengemeinschaft wird durch gemeinsame Erlebnisse gestärkt."
+      - term: "Gesellschaft"
+        definition: "Die Gesamtheit der Menschen in einem Staat oder einer Region"
+        example: "In einer demokratischen Gesellschaft haben alle Bürger Mitspracherechte."
+      - term: "Vorurteil"
+        definition: "Eine vorgefasste Meinung ohne ausreichende Kenntnis"
+        example: "Vorurteile entstehen oft durch mangelnde Begegnung mit anderen."
+      - term: "Stereotyp"
+        definition: "Eine vereinfachende Vorstellung von einer ganzen Gruppe"
+        example: "Das Stereotyp 'Mädchen können nicht Fußball spielen' ist falsch."
+      - term: "Diskriminierung"
+        definition: "Die Benachteiligung von Menschen aufgrund bestimmter Merkmale"
+        example: "Diskriminierung aufgrund der Herkunft ist verboten."
+      - term: "Inklusion"
+        definition: "Die gleichberechtigte Teilhabe aller Menschen"
+        example: "Inklusion bedeutet, dass alle Menschen dazugehören."
+      - term: "Mobbing"
+        definition: "Wiederholtes Schikanieren und Ausgrenzen einer Person"
+        example: "Mobbing kann schwere psychische Folgen haben."
+
+    justice_and_responsibility:
+      - term: "Gleichheit"
+        definition: "Der Zustand, dass alle Menschen gleich behandelt werden"
+        example: "Gleichheit vor dem Gesetz ist ein Grundprinzip der Demokratie."
+      - term: "Gleichberechtigung"
+        definition: "Die gleichen Rechte für alle Menschen unabhängig von Geschlecht, Herkunft etc."
+        example: "Gleichberechtigung von Männern und Frauen ist im Grundgesetz verankert."
+      - term: "Chancengleichheit"
+        definition: "Die Möglichkeit für alle, die gleichen Ausgangsbedingungen zu haben"
+        example: "Chancengleichheit im Bildungssystem bedeutet, dass alle Kinder die gleichen Lernmöglichkeiten haben."
+      - term: "Verteilungsgerechtigkeit"
+        definition: "Die gerechte Verteilung von Gütern und Lasten"
+        example: "Verteilungsgerechtigkeit fragt, wie Reichtum fair verteilt werden kann."
+      - term: "Pflicht"
+        definition: "Eine Aufgabe oder Verpflichtung, die man erfüllen muss"
+        example: "Schülerinnen und Schüler haben die Pflicht, zur Schule zu gehen."
+      - term: "Sanktion"
+        definition: "Eine Strafe oder negative Folge für regelwidriges Verhalten"
+        example: "Sanktionen sollen dafür sorgen, dass Regeln eingehalten werden."
+
+    truth_and_knowledge:
+      - term: "Wahrheit"
+        definition: "Eine Aussage, die mit der Wirklichkeit übereinstimmt"
+        example: "Die Wahrheit zu sagen ist oft schwieriger als zu lügen."
+      - term: "Lüge"
+        definition: "Eine bewusst falsche Aussage mit der Absicht zu täuschen"
+        example: "Eine Lüge zerstört das Vertrauen zwischen Menschen."
+      - term: "Notlüge"
+        definition: "Eine Lüge, die aus Höflichkeit oder zum Schutz anderer erzählt wird"
+        example: "Ob Notlügen moralisch erlaubt sind, ist umstritten."
+      - term: "Meinung"
+        definition: "Eine persönliche Ansicht zu einem Thema"
+        example: "Jeder hat das Recht auf seine eigene Meinung."
+      - term: "Argument"
+        definition: "Eine Begründung für oder gegen eine Position"
+        example: "In einer Diskussion sollte man seine Meinung mit Argumenten stützen."
+      - term: "Perspektive"
+        definition: "Der Blickwinkel, aus dem man etwas betrachtet"
+        example: "Verschiedene Menschen haben verschiedene Perspektiven auf dasselbe Problem."
+
+    life_and_happiness:
+      - term: "Glück"
+        definition: "Ein Zustand des Wohlbefindens und der Zufriedenheit"
+        example: "Glück bedeutet für jeden Menschen etwas anderes."
+      - term: "Zufriedenheit"
+        definition: "Ein dauerhafter Zustand des Sich-wohl-Fühlens"
+        example: "Zufriedenheit ist oft wichtiger als kurzfristige Freude."
+      - term: "Sinn"
+        definition: "Die Bedeutung oder der Zweck von etwas"
+        example: "Viele Menschen suchen nach dem Sinn des Lebens."
+      - term: "Ziel"
+        definition: "Etwas, das man erreichen möchte"
+        example: "Persönliche Ziele geben dem Leben eine Richtung."
+      - term: "Wunsch"
+        definition: "Der Wille, etwas zu haben oder zu erreichen"
+        example: "Nicht alle Wünsche können erfüllt werden."
+      - term: "Bedürfnis"
+        definition: "Etwas, das man zum Leben oder Wohlbefinden braucht"
+        example: "Grundbedürfnisse wie Nahrung und Sicherheit müssen erfüllt sein."
+
+  ethical_frameworks:
+    - name: "Goldene Regel"
+      description: "Behandle andere so, wie du selbst behandelt werden möchtest"
+      details:
+        - "Universelles Prinzip in vielen Kulturen und Religionen"
+        - "Positive Formulierung: 'Was du willst, dass man dir tu, das füg auch anderen zu'"
+        - "Negative Formulierung: 'Was du nicht willst, dass man dir tu, das füg auch keinem anderen zu'"
+        - "Anwendung: Perspektivwechsel, Empathie entwickeln"
+      examples:
+        - "Wenn ich nicht beleidigt werden möchte, sollte ich auch andere nicht beleidigen"
+        - "Wenn ich möchte, dass mir geholfen wird, sollte ich auch anderen helfen"
+      limitations:
+        - "Berücksichtigt nicht, dass Menschen unterschiedliche Bedürfnisse haben"
+        - "Setzt voraus, dass alle ähnliche Wertvorstellungen haben"
+
+    - name: "Verantwortungsethik"
+      description: "Handlungen sind nach ihren Folgen zu beurteilen"
+      details:
+        - "Fokus auf die Konsequenzen des Handelns"
+        - "Berücksichtigung aller Betroffenen"
+        - "Voraussicht und Planung der Folgen"
+        - "Abwägung zwischen kurz- und langfristigen Folgen"
+      examples:
+        - "Umweltschutz: Verantwortung für zukünftige Generationen"
+        - "Hausaufgaben machen: Verantwortung für eigenen Lernerfolg"
+      age_appropriate_application:
+        - "Nachdenken über Folgen eigener Handlungen"
+        - "Verantwortung im Kleinen: Haustiere, Geschwister, Klassendienste"
+
+    - name: "Pflichtethik (vereinfacht)"
+      description: "Bestimmte Handlungen sind an sich richtig oder falsch, unabhängig von den Folgen"
+      details:
+        - "Es gibt moralische Regeln, die immer gelten"
+        - "Wahrheit sagen ist grundsätzlich richtig"
+        - "Menschen dürfen nicht nur als Mittel zum Zweck behandelt werden"
+        - "Würde jedes Menschen ist unantastbar"
+      examples:
+        - "Man sollte nicht lügen, auch wenn es manchmal Vorteile bringt"
+        - "Man sollte nicht stehlen, selbst wenn man arm ist"
+      age_appropriate_application:
+        - "Grundlegende Regeln des Zusammenlebens verstehen"
+        - "Unterscheidung zwischen richtig und falsch entwickeln"
+
+  philosophers_and_thinkers:
+    - name: "Sokrates"
+      lived: "ca. 470-399 v. Chr."
+      key_idea: "Selbsterkenntnis und Tugend"
+      quote: "Ich weiß, dass ich nichts weiß"
+      relevance: "Bedeutung des Nachdenkens über sich selbst und das eigene Handeln"
+      age_appropriate_aspects:
+        - "Die Wichtigkeit, Fragen zu stellen"
+        - "Nachdenken über das eigene Wissen und Nichtwissen"
+        - "Gespräch als Methode, um zur Wahrheit zu gelangen"
+
+    - name: "Aristoteles"
+      lived: "384-322 v. Chr."
+      key_idea: "Das gute Leben und die Tugenden"
+      quote: "Das Ganze ist mehr als die Summe seiner Teile"
+      relevance: "Überlegungen zu Glück und gutem Leben"
+      age_appropriate_aspects:
+        - "Was bedeutet ein gutes Leben?"
+        - "Tugenden wie Mut, Gerechtigkeit, Freundschaft"
+        - "Die goldene Mitte zwischen Extremen finden"
+
+    - name: "Immanuel Kant"
+      lived: "1724-1804"
+      key_idea: "Kategorischer Imperativ und Pflicht"
+      quote: "Handle nur nach derjenigen Maxime, durch die du zugleich wollen kannst, dass sie ein allgemeines Gesetz werde"
+      relevance: "Grundlage für Pflichtethik und moralisches Handeln"
+      age_appropriate_aspects:
+        - "Verallgemeinerung: Was wäre, wenn alle so handeln würden?"
+        - "Behandle andere nie nur als Mittel, sondern immer auch als Zweck"
+        - "Selbstbestimmtes moralisches Handeln"
+
+  moral_dilemmas:
+    - scenario: "Der gefundene Geldbeutel"
+      description: "Du findest auf dem Schulhof einen Geldbeutel mit 50 Euro. Was tust du?"
+      options:
+        - "Den Geldbeutel behalten"
+        - "Das Geld nehmen und den Geldbeutel wegwerfen"
+        - "Den Geldbeutel im Sekretariat abgeben"
+        - "Versuchen, den Besitzer selbst zu finden"
+      discussion_points:
+        - "Ehrlichkeit vs. eigener Vorteil"
+        - "Wie würdest du dich fühlen, wenn du dein Geld verloren hättest?"
+        - "Welche Handlung kannst du vor dir selbst rechtfertigen?"
+
+    - scenario: "Die Notlüge"
+      description: "Deine Freundin hat sich für die Party sehr aufwendig geschminkt, aber es sieht nicht gut aus. Sie fragt dich, wie du es findest."
+      options:
+        - "Die Wahrheit sagen und riskieren, sie zu verletzen"
+        - "Lügen und sagen, es sieht toll aus"
+        - "Ausweichend antworten"
+        - "Ehrlich, aber taktvoll einen Verbesserungsvorschlag machen"
+      discussion_points:
+        - "Wahrheit vs. Freundlichkeit"
+        - "Gibt es Situationen, in denen Lügen erlaubt ist?"
+        - "Kann Ehrlichkeit auch liebevoll sein?"
+
+    - scenario: "Der Gruppenkonflikt"
+      description: "Deine beste Freundin wird von anderen aus der Klasse gemobbt. Wenn du ihr hilfst, wirst du vielleicht auch ausgegrenzt."
+      options:
+        - "Deiner Freundin helfen, auch wenn du selbst Nachteile hast"
+        - "Nichts tun, um nicht selbst gemobbt zu werden"
+        - "Anonym Hilfe holen (Lehrer informieren)"
+        - "Andere Mitschüler suchen, die auch helfen"
+      discussion_points:
+        - "Zivilcourage: Wann muss man eingreifen?"
+        - "Persönliche Sicherheit vs. Hilfe für andere"
+        - "Welche Formen der Hilfe gibt es?"
+
+    - scenario: "Die ungerechte Verteilung"
+      description: "Bei einem Klassenprojekt arbeiten einige sehr viel, andere kaum. Am Ende bekommen aber alle die gleiche Note."
+      options:
+        - "Das ist fair, weil alle die gleiche Chance hatten"
+        - "Das ist unfair, weil die Leistung unterschiedlich war"
+        - "Man sollte die Note nach Arbeitsleistung staffeln"
+        - "Gruppenarbeit sollte anders bewertet werden"
+      discussion_points:
+        - "Was bedeutet Gerechtigkeit?"
+        - "Gleichheit vs. Leistungsprinzip"
+        - "Wie kann man Trittbrettfahrer vermeiden?"
+
+    - scenario: "Das Geschenk"
+      description: "Du hast zum Geburtstag ein Geschenk bekommen, das du überhaupt nicht magst. Die Person fragt, ob es dir gefällt."
+      options:
+        - "Ehrlich sagen, dass es dir nicht gefällt"
+        - "Sich bedanken und so tun, als ob es dir gefällt"
+        - "Sich bedanken und ehrlich sagen, dass es nicht deinem Geschmack entspricht"
+        - "Das Geschenk umtauschen und nichts sagen"
+      discussion_points:
+        - "Dankbarkeit vs. Ehrlichkeit"
+        - "Die Absicht hinter dem Geschenk würdigen"
+        - "Höflichkeit und soziale Normen"
+
+  discussion_topics:
+    - topic: "Ist Ehrlichkeit immer richtig?"
+      questions:
+        - "Gibt es Situationen, in denen Lügen erlaubt oder sogar geboten ist?"
+        - "Was ist der Unterschied zwischen Lügen, Schweigen und Ausweichen?"
+        - "Welche Folgen haben Lügen für Beziehungen?"
+      perspectives:
+        - "Absolutistische Position: Man sollte nie lügen"
+        - "Relativistische Position: Es kommt auf die Situation an"
+        - "Goldene Regel: Würde ich angelogen werden wollen?"
+
+    - topic: "Was ist Gerechtigkeit?"
+      questions:
+        - "Ist es gerecht, wenn alle das Gleiche bekommen?"
+        - "Sollten Menschen unterschiedlich behandelt werden, je nach Situation?"
+        - "Was ist wichtiger: Gleichheit oder Fairness?"
+      perspectives:
+        - "Gleiches für alle: Jeder bekommt dasselbe"
+        - "Jedem nach Bedürfnis: Unterschiedliche Behandlung je nach Situation"
+        - "Jedem nach Leistung: Belohnung nach Anstrengung"
+
+    - topic: "Brauchen wir Regeln?"
+      questions:
+        - "Was würde passieren, wenn es keine Regeln gäbe?"
+        - "Wer sollte Regeln aufstellen dürfen?"
+        - "Darf man ungerechte Regeln brechen?"
+      perspectives:
+        - "Regeln sind notwendig für Ordnung und Sicherheit"
+        - "Zu viele Regeln schränken Freiheit ein"
+        - "Regeln müssen demokratisch legitimiert sein"
+
+    - topic: "Was macht glücklich?"
+      questions:
+        - "Ist Glück das Ziel des Lebens?"
+        - "Kann man Glück durch Geld kaufen?"
+        - "Was ist der Unterschied zwischen kurzfristigem Vergnügen und langfristigem Glück?"
+      perspectives:
+        - "Glück kommt von außen (Besitz, Erfolg)"
+        - "Glück kommt von innen (Zufriedenheit, Dankbarkeit)"
+        - "Glück entsteht durch gute Beziehungen"
+
+    - topic: "Wie wichtig ist Freundschaft?"
+      questions:
+        - "Was macht eine echte Freundschaft aus?"
+        - "Wie viele echte Freunde kann man haben?"
+        - "Was ist wichtiger: viele Bekannte oder wenige enge Freunde?"
+      perspectives:
+        - "Qualität vor Quantität bei Freundschaften"
+        - "Freundschaft erfordert Zeit und Pflege"
+        - "Verschiedene Arten von Freundschaften für verschiedene Bedürfnisse"
+
+  methodological_competencies:
+    - name: "Reflexionskompetenz"
+      skills:
+        - "Über eigene Werte und Einstellungen nachdenken"
+        - "Eigenes Handeln kritisch hinterfragen"
+        - "Perspektiven anderer nachvollziehen"
+        - "Zusammenhänge zwischen Denken, Fühlen und Handeln erkennen"
+
+    - name: "Argumentationskompetenz"
+      skills:
+        - "Eigene Meinung begründen"
+        - "Argumente von Behauptungen unterscheiden"
+        - "Auf Argumente anderer sachlich eingehen"
+        - "Gegenargumente entwickeln und abwägen"
+
+    - name: "Dialogkompetenz"
+      skills:
+        - "Aktiv und respektvoll zuhören"
+        - "Eigene Gedanken klar ausdrücken"
+        - "Verschiedene Perspektiven in der Diskussion berücksichtigen"
+        - "Kompromisse finden und aushandeln"
+
+    - name: "Urteilskompetenz"
+      skills:
+        - "Situationen moralisch bewerten"
+        - "Verschiedene Handlungsalternativen abwägen"
+        - "Kriterien für moralische Urteile anwenden"
+        - "Eigene Urteile begründen und revidieren können"
+
+    - name: "Empathiekompetenz"
+      skills:
+        - "Sich in andere hineinversetzen"
+        - "Gefühle anderer wahrnehmen und respektieren"
+        - "Perspektivwechsel üben"
+        - "Verständnis für unterschiedliche Lebenssituationen entwickeln"
+
+    - name: "Handlungskompetenz"
+      skills:
+        - "Moralische Überzeugungen in Handlungen umsetzen"
+        - "Zivilcourage zeigen"
+        - "Konflikte konstruktiv lösen"
+        - "Verantwortung für eigenes Handeln übernehmen"
+
+  assessment_criteria:
+    reflection:
+      excellent:
+        - "Reflektiert differenziert über eigene Werte und Einstellungen"
+        - "Erkennt komplexe Zusammenhänge zwischen Werten, Normen und Handeln"
+        - "Zeigt Fähigkeit zum Perspektivwechsel"
+        - "Hinterfragt eigene Positionen kritisch"
+      good:
+        - "Reflektiert über eigene Werte und Einstellungen"
+        - "Erkennt grundlegende Zusammenhänge"
+        - "Kann andere Perspektiven nachvollziehen"
+        - "Begründet eigene Positionen"
+      satisfactory:
+        - "Äußert eigene Meinungen"
+        - "Erkennt einfache Zusammenhänge"
+        - "Versteht andere Perspektiven mit Hilfestellung"
+        - "Begründet Positionen teilweise"
+      common_mistakes:
+        - "Verwechslung von Meinung und Argument"
+        - "Fehlende Differenzierung zwischen verschiedenen Werten"
+        - "Unfähigkeit, andere Perspektiven einzunehmen"
+        - "Keine Begründung der eigenen Position"
+
+    argumentation:
+      excellent:
+        - "Formuliert präzise und nachvollziehbare Argumente"
+        - "Nutzt verschiedene Argumentationsstrategien"
+        - "Unterscheidet klar zwischen Argument, Beispiel und Behauptung"
+        - "Kann Gegenargumente entwickeln und entkräften"
+      good:
+        - "Formuliert nachvollziehbare Argumente"
+        - "Nutzt Beispiele zur Stützung"
+        - "Unterscheidet meist zwischen Argument und Behauptung"
+        - "Berücksichtigt Gegenargumente"
+      satisfactory:
+        - "Äußert Behauptungen mit einfachen Begründungen"
+        - "Nutzt gelegentlich Beispiele"
+        - "Verwechselt manchmal Argument und Behauptung"
+        - "Geht kaum auf Gegenargumente ein"
+      common_mistakes:
+        - "Behauptung ohne Begründung"
+        - "Zirkelschlüsse: 'Das ist falsch, weil es nicht richtig ist'"
+        - "Ad-hominem-Argumente: Angriff auf Person statt Argument"
+        - "Übergeneralisierungen: 'Alle', 'Niemand', 'Immer'"
+
+    moral_judgment:
+      excellent:
+        - "Bewertet moralische Dilemmata differenziert"
+        - "Wendet ethische Prinzipien situationsgerecht an"
+        - "Wägt verschiedene Werte und Normen ab"
+        - "Erkennt Komplexität moralischer Fragen"
+      good:
+        - "Bewertet moralische Situationen angemessen"
+        - "Wendet grundlegende ethische Prinzipien an"
+        - "Berücksichtigt verschiedene Aspekte"
+        - "Erkennt, dass es nicht immer einfache Antworten gibt"
+      satisfactory:
+        - "Äußert moralische Urteile"
+        - "Nutzt einfache moralische Regeln"
+        - "Sieht meist nur eine Seite"
+        - "Sucht nach eindeutigen Antworten"
+      common_mistakes:
+        - "Schwarz-Weiß-Denken ohne Differenzierung"
+        - "Verwechslung von Moral und persönlicher Vorliebe"
+        - "Keine Berücksichtigung von Kontext und Situation"
+        - "Anwendung von Regeln ohne Reflexion"
+
+    discussion:
+      excellent:
+        - "Beteiligt sich konstruktiv und sachlich an Diskussionen"
+        - "Hört aktiv zu und geht auf andere ein"
+        - "Bringt neue Aspekte und Perspektiven ein"
+        - "Hilft, die Diskussion voranzubringen"
+      good:
+        - "Beteiligt sich regelmäßig an Diskussionen"
+        - "Hört anderen zu"
+        - "Äußert eigene Gedanken klar"
+        - "Respektiert andere Meinungen"
+      satisfactory:
+        - "Beteiligt sich gelegentlich"
+        - "Hört teilweise zu"
+        - "Äußert eigene Meinung"
+        - "Akzeptiert andere Meinungen widerwillig"
+      common_mistakes:
+        - "Unterbricht andere ständig"
+        - "Hört nicht zu, wartet nur auf eigenen Redebeitrag"
+        - "Wird persönlich oder verletzend"
+        - "Beharrt stur auf eigener Meinung ohne Offenheit"
+
+    empathy:
+      excellent:
+        - "Zeigt ausgeprägtes Einfühlungsvermögen"
+        - "Erkennt Gefühle und Bedürfnisse anderer"
+        - "Kann überzeugend verschiedene Perspektiven einnehmen"
+        - "Handelt rücksichtsvoll und hilfsbereit"
+      good:
+        - "Zeigt Einfühlungsvermögen"
+        - "Versteht Gefühle anderer meist"
+        - "Kann andere Perspektiven nachvollziehen"
+        - "Verhält sich meist rücksichtsvoll"
+      satisfactory:
+        - "Zeigt gelegentlich Einfühlungsvermögen"
+        - "Versteht Gefühle anderer mit Hilfestellung"
+        - "Hat Schwierigkeiten mit Perspektivwechsel"
+        - "Verhält sich teilweise rücksichtslos"
+      common_mistakes:
+        - "Egozentrische Perspektive: Kann nur eigene Sicht verstehen"
+        - "Projektionen: Unterstellt anderen eigene Gefühle"
+        - "Fehlende Wahrnehmung nonverbaler Signale"
+        - "Mangelndes Interesse an Gefühlen anderer"
+
+    practical_application:
+      excellent:
+        - "Setzt moralische Überzeugungen konsequent in Handeln um"
+        - "Zeigt Zivilcourage in angemessenen Situationen"
+        - "Übernimmt Verantwortung für eigenes Handeln"
+        - "Trägt aktiv zu positivem Klassenklima bei"
+      good:
+        - "Setzt moralische Überzeugungen meist in Handeln um"
+        - "Zeigt gelegentlich Zivilcourage"
+        - "Übernimmt Verantwortung"
+        - "Verhält sich sozial in der Klasse"
+      satisfactory:
+        - "Setzt moralische Überzeugungen teilweise um"
+        - "Zeigt selten Zivilcourage"
+        - "Übernimmt Verantwortung nur bei Nachfrage"
+        - "Verhält sich unauffällig in der Klasse"
+      common_mistakes:
+        - "Kluft zwischen Wissen und Handeln"
+        - "Fehlendes moralisches Handeln aus Bequemlichkeit"
+        - "Mitläuferverhalten statt eigener Position"
+        - "Verantwortungsvermeidung und Schuldzuweisung"
+
+  regional_specifications:
+    language: "de"
+    formality: "du"
+    grading:
+      type: "1-6"
+      passing: 4
+      description: "Note 1 = sehr gut, Note 2 = gut, Note 3 = befriedigend, Note 4 = ausreichend, Note 5 = mangelhaft, Note 6 = ungenügend"

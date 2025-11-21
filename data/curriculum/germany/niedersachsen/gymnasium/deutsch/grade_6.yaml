@@ -1,0 +1,643 @@
+curriculum:
+  metadata:
+    country: "Germany"
+    region: "Niedersachsen"
+    school_type: "Gymnasium"
+    subject: "Deutsch"
+    grade: 6
+    grade_range: "5-6"
+    source_url: "https://cuvo.nibis.de/"
+    source_document: "Kerncurriculum für das Gymnasium Schuljahrgänge 5-10 - Deutsch"
+    fetch_date: "2025-11-20"
+    last_updated: "2025-11-20"
+    completeness_score: 75
+    language: "de"
+    verification_status: "needs_manual_verification"
+
+  learning_objectives:
+    - id: "LO-DEU-NS-G6-001"
+      text: "Die Schülerinnen und Schüler lesen und verstehen altersgemäße literarische Texte und Sachtexte"
+      topic: "Lesen"
+      bloom_level: "understand"
+      difficulty: "easy"
+      details: "Texte sinnerfassend lesen, Hauptgedanken erfassen, Zusammenhänge erkennen"
+      time_estimate: "15 Stunden"
+
+    - id: "LO-DEU-NS-G6-002"
+      text: "Die Schülerinnen und Schüler wenden verschiedene Lesetechniken an (überfliegendes, selektives und genaues Lesen)"
+      topic: "Lesen"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Gezielt Informationen in Texten finden und Lesegeschwindigkeit situationsgerecht anpassen"
+      prerequisites: ["LO-DEU-NS-G6-001"]
+      time_estimate: "8 Stunden"
+
+    - id: "LO-DEU-NS-G6-003"
+      text: "Die Schülerinnen und Schüler schreiben ausführliche Erzählungen mit Einleitung, Hauptteil und Schluss"
+      topic: "Schreiben"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Erzähltexte verfassen mit spannungsaufbau, ausgestalteten Höhepunkt und Erzählperspektive"
+      time_estimate: "12 Stunden"
+
+    - id: "LO-DEU-NS-G6-004"
+      text: "Die Schülerinnen und Schüler verfassen sachliche Berichte nach dem W-Fragen-Prinzip"
+      topic: "Schreiben"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Berichte über Ereignisse unter Beachtung der W-Fragen (Wer? Was? Wann? Wo? Wie? Warum?)"
+      time_estimate: "10 Stunden"
+
+    - id: "LO-DEU-NS-G6-005"
+      text: "Die Schülerinnen und Schüler erstellen anschauliche Personenbeschreibungen und Vorgangsbeschreibungen"
+      topic: "Schreiben"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Systematische Beschreibungen mit präzisem Wortschatz und logischer Reihenfolge"
+      time_estimate: "10 Stunden"
+
+    - id: "LO-DEU-NS-G6-006"
+      text: "Die Schülerinnen und Schüler wenden Rechtschreibstrategien zur Groß- und Kleinschreibung an"
+      topic: "Rechtschreibung"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Substantivierte Verben und Adjektive, Nominalisierungen, Artikelprobe, Signalwörter"
+      time_estimate: "12 Stunden"
+
+    - id: "LO-DEU-NS-G6-007"
+      text: "Die Schülerinnen und Schüler unterscheiden und schreiben s-Laute korrekt (s, ss, ß)"
+      topic: "Rechtschreibung"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Rechtschreibregeln für s, ss, ß nach kurzem und langem Vokal"
+      time_estimate: "6 Stunden"
+
+    - id: "LO-DEU-NS-G6-008"
+      text: "Die Schülerinnen und Schüler erkennen und schreiben Dehnungen und Schärfungen korrekt"
+      topic: "Rechtschreibung"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Dehnungs-h, Doppelkonsonanten, ie, aa, ee, oo"
+      time_estimate: "8 Stunden"
+
+    - id: "LO-DEU-NS-G6-009"
+      text: "Die Schülerinnen und Schüler bestimmen und verwenden alle Wortarten sicher"
+      topic: "Grammatik"
+      bloom_level: "analyze"
+      difficulty: "medium"
+      details: "Nomen, Verben, Adjektive, Artikel, Pronomen, Präpositionen, Konjunktionen, Adverbien"
+      time_estimate: "15 Stunden"
+
+    - id: "LO-DEU-NS-G6-010"
+      text: "Die Schülerinnen und Schüler bestimmen Satzglieder und deren Funktion im Satz"
+      topic: "Grammatik"
+      bloom_level: "analyze"
+      difficulty: "medium"
+      details: "Subjekt, Prädikat, Akkusativobjekt, Dativobjekt, Genitivobjekt, Adverbiale (temporal, lokal, kausal, modal)"
+      prerequisites: ["LO-DEU-NS-G6-009"]
+      time_estimate: "12 Stunden"
+
+    - id: "LO-DEU-NS-G6-011"
+      text: "Die Schülerinnen und Schüler konjugieren Verben in allen Zeitformen"
+      topic: "Grammatik"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Präsens, Präteritum, Perfekt, Plusquamperfekt, Futur I und II"
+      time_estimate: "10 Stunden"
+
+    - id: "LO-DEU-NS-G6-012"
+      text: "Die Schülerinnen und Schüler unterscheiden Aktiv und Passiv und wandeln Sätze um"
+      topic: "Grammatik"
+      bloom_level: "apply"
+      difficulty: "hard"
+      details: "Vorgangspassiv und Zustandspassiv, Umformung von Aktiv- in Passivsätze"
+      prerequisites: ["LO-DEU-NS-G6-011"]
+      time_estimate: "8 Stunden"
+
+    - id: "LO-DEU-NS-G6-013"
+      text: "Die Schülerinnen und Schüler wandeln direkte in indirekte Rede um"
+      topic: "Grammatik"
+      bloom_level: "apply"
+      difficulty: "hard"
+      details: "Konjunktiv I in der indirekten Rede, Zeitenfolge, Pronomenverschiebung"
+      time_estimate: "6 Stunden"
+
+    - id: "LO-DEU-NS-G6-014"
+      text: "Die Schülerinnen und Schüler tragen Texte betont und ausdrucksvoll vor"
+      topic: "Sprechen und Zuhören"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Betonung, Pausen, Lautstärke, Tempo, Mimik und Gestik beim Vortragen"
+      time_estimate: "8 Stunden"
+
+    - id: "LO-DEU-NS-G6-015"
+      text: "Die Schülerinnen und Schüler führen Diskussionen nach Gesprächsregeln"
+      topic: "Sprechen und Zuhören"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Argumente formulieren, zuhören, auf andere eingehen, Gesprächsregeln einhalten"
+      time_estimate: "10 Stunden"
+
+    - id: "LO-DEU-NS-G6-016"
+      text: "Die Schülerinnen und Schüler präsentieren Arbeitsergebnisse strukturiert vor der Klasse"
+      topic: "Sprechen und Zuhören"
+      bloom_level: "apply"
+      difficulty: "medium"
+      details: "Freier Vortrag, Medieneinsatz, Gliederung, Blickkontakt"
+      time_estimate: "8 Stunden"
+
+    - id: "LO-DEU-NS-G6-017"
+      text: "Die Schülerinnen und Schüler analysieren und charakterisieren literarische Figuren"
+      topic: "Literatur"
+      bloom_level: "analyze"
+      difficulty: "medium"
+      details: "Charaktereigenschaften, Motive, Entwicklung von Figuren, textbasierte Begründung"
+      prerequisites: ["LO-DEU-NS-G6-001"]
+      time_estimate: "10 Stunden"
+
+    - id: "LO-DEU-NS-G6-018"
+      text: "Die Schülerinnen und Schüler untersuchen und interpretieren Gedichte"
+      topic: "Literatur"
+      bloom_level: "analyze"
+      difficulty: "hard"
+      details: "Reimschema, Metrum, sprachliche Bilder, Metaphern, Personifikationen"
+      time_estimate: "12 Stunden"
+
+    - id: "LO-DEU-NS-G6-019"
+      text: "Die Schülerinnen und Schüler unterscheiden verschiedene Textarten und erkennen ihre Merkmale"
+      topic: "Texte und Medien"
+      bloom_level: "understand"
+      difficulty: "easy"
+      details: "Erzählung, Bericht, Beschreibung, Brief, Gedicht, Sachtext, Märchen, Sage"
+      time_estimate: "8 Stunden"
+
+    - id: "LO-DEU-NS-G6-020"
+      text: "Die Schülerinnen und Schüler erweitern ihren Wortschatz systematisch und nutzen Nachschlagewerke"
+      topic: "Sprache und Sprachgebrauch"
+      bloom_level: "apply"
+      difficulty: "easy"
+      details: "Synonyme, Antonyme, Wortfamilien, Wortfelder, Fremdwörter, Wörterbucharbeit"
+      time_estimate: "fortlaufend"
+
+  topics:
+    - name: "Lesen"
+      description: "Entwicklung von Lesekompetenz und Textverständnis"
+      subtopics:
+        - name: "Lesetechniken"
+          description: "Überfliegendes, selektives und genaues Lesen"
+          time_estimate: "6 Stunden"
+        - name: "Textverständnis"
+          description: "Sinnerfassendes Lesen, Hauptgedanken, Textstruktur"
+          time_estimate: "10 Stunden"
+        - name: "Jugendbücher"
+          description: "Ganzschriftlektüre altersgemäßer Romane"
+          time_estimate: "15 Stunden"
+        - name: "Sachtexte"
+          description: "Informationsentnahme aus Sachtexten"
+          time_estimate: "8 Stunden"
+      prerequisites: ["Grundlegende Lesefähigkeit"]
+
+    - name: "Schreiben"
+      description: "Verfassen verschiedener Textarten"
+      subtopics:
+        - name: "Erzählung"
+          description: "Erlebniserzählung, Fantasieerzählung, Nacherzählung"
+          time_estimate: "12 Stunden"
+        - name: "Bericht"
+          description: "Sachlicher Bericht nach W-Fragen"
+          time_estimate: "8 Stunden"
+        - name: "Beschreibung"
+          description: "Personen-, Gegenstands- und Vorgangsbeschreibung"
+          time_estimate: "10 Stunden"
+        - name: "Brief"
+          description: "Persönlicher und formaler Brief"
+          time_estimate: "6 Stunden"
+        - name: "Schreibprozess"
+          description: "Planen, Schreiben, Überarbeiten"
+          time_estimate: "fortlaufend"
+      prerequisites: ["Grundlegende Schreibfertigkeit"]
+
+    - name: "Rechtschreibung"
+      description: "Rechtschreibstrategien und -regeln"
+      subtopics:
+        - name: "Groß-/Kleinschreibung"
+          description: "Substantivierung, Nomen, Nominalisierungen"
+          time_estimate: "10 Stunden"
+        - name: "s-Laute"
+          description: "s, ss, ß nach kurzen und langen Vokalen"
+          time_estimate: "6 Stunden"
+        - name: "Dehnung"
+          description: "Dehnungs-h, ie, Doppelvokale"
+          time_estimate: "6 Stunden"
+        - name: "Schärfung"
+          description: "Doppelkonsonanten, ck, tz"
+          time_estimate: "6 Stunden"
+        - name: "Getrennt- und Zusammenschreibung"
+          description: "Verbindungen mit Verben und Substantiven"
+          time_estimate: "4 Stunden"
+      prerequisites: ["Grundlegende Rechtschreibkenntnisse"]
+
+    - name: "Grammatik"
+      description: "Wortarten, Satzglieder und Syntax"
+      subtopics:
+        - name: "Wortarten"
+          description: "Alle Wortarten und ihre Funktionen"
+          time_estimate: "15 Stunden"
+        - name: "Satzglieder"
+          description: "Subjekt, Prädikat, Objekte, Adverbiale"
+          time_estimate: "12 Stunden"
+        - name: "Zeiten"
+          description: "Alle Zeitformen des Verbs"
+          time_estimate: "10 Stunden"
+        - name: "Satzarten"
+          description: "Aussage-, Frage-, Aufforderungssatz, Satzreihe, Satzgefüge"
+          time_estimate: "8 Stunden"
+        - name: "Aktiv und Passiv"
+          description: "Vorgangs- und Zustandspassiv"
+          time_estimate: "8 Stunden"
+      prerequisites: ["Grundlegende grammatische Kenntnisse"]
+
+    - name: "Sprechen und Zuhören"
+      description: "Mündliche Kommunikation und Präsentation"
+      subtopics:
+        - name: "Vortragen"
+          description: "Ausdrucksvolles Vorlesen und freies Sprechen"
+          time_estimate: "8 Stunden"
+        - name: "Diskutieren"
+          description: "Gesprächsregeln, Argumente, Gesprächsführung"
+          time_estimate: "10 Stunden"
+        - name: "Argumentieren"
+          description: "Begründen von Meinungen, Pro- und Contra-Argumente"
+          time_estimate: "8 Stunden"
+        - name: "Präsentieren"
+          description: "Arbeitsergebnisse strukturiert vorstellen"
+          time_estimate: "8 Stunden"
+      prerequisites: ["Grundlegende Sprechfertigkeit"]
+
+    - name: "Literatur"
+      description: "Umgang mit literarischen Texten"
+      subtopics:
+        - name: "Jugendbuch"
+          description: "Lektüre und Analyse altersgemäßer Romane"
+          time_estimate: "20 Stunden"
+        - name: "Gedichte"
+          description: "Lyrik analysieren und interpretieren"
+          time_estimate: "12 Stunden"
+        - name: "Sagen"
+          description: "Deutsche Sagen und ihre Merkmale"
+          time_estimate: "6 Stunden"
+        - name: "Märchen"
+          description: "Märchenmerkmale, Vergleiche"
+          time_estimate: "6 Stunden"
+        - name: "Fabeln"
+          description: "Fabeln und ihre Lehre"
+          time_estimate: "4 Stunden"
+      prerequisites: ["Grundlegendes Textverständnis"]
+
+  grammar_topics:
+    - name: "Wortarten"
+      details:
+        - "Nomen (Substantive): Konkreta, Abstrakta, Eigennamen, Gattungsnamen"
+        - "Verben: Vollverben, Hilfsverben, Modalverben, trennbare/untrennbare Verben"
+        - "Adjektive: Steigerung, attributiver/prädikativer/adverbialer Gebrauch"
+        - "Artikel: bestimmte, unbestimmte, Nullartikel"
+        - "Pronomen: Personal-, Possessiv-, Demonstrativ-, Relativpronomen"
+        - "Präpositionen: mit Akkusativ, Dativ, Genitiv, Wechselpräpositionen"
+        - "Konjunktionen: nebenordnend, unterordnend"
+        - "Adverbien: temporal, lokal, modal, kausal"
+      time_estimate: "15 Stunden"
+
+    - name: "Satzglieder"
+      details:
+        - "Subjekt: Wer oder was? Nominativ, Ersatzprobe"
+        - "Prädikat: einteilig, mehrteilig"
+        - "Akkusativobjekt: Wen oder was? Ersatzprobe"
+        - "Dativobjekt: Wem? Ersatzprobe"
+        - "Genitivobjekt: Wessen? (selten)"
+        - "Adverbiale: temporal (wann?), lokal (wo?), kausal (warum?), modal (wie?)"
+        - "Attribute: Beifügungen zum Nomen"
+      time_estimate: "12 Stunden"
+
+    - name: "Zeitformen"
+      details:
+        - "Präsens: Gegenwart, Regeln der Bildung"
+        - "Präteritum: Vergangenheit, Erzählzeit"
+        - "Perfekt: vollendete Gegenwart, mit haben/sein"
+        - "Plusquamperfekt: Vorvergangenheit"
+        - "Futur I: Zukunft, Vermutung"
+        - "Futur II: vollendete Zukunft (Einführung)"
+      time_estimate: "10 Stunden"
+
+    - name: "Aktiv und Passiv"
+      details:
+        - "Vorgangspassiv: werden + Partizip II"
+        - "Zustandspassiv: sein + Partizip II"
+        - "Umformung Aktiv - Passiv"
+        - "Passiv in verschiedenen Zeitformen"
+      time_estimate: "8 Stunden"
+
+    - name: "Direkte und indirekte Rede"
+      details:
+        - "Direkte Rede: Anführungszeichen, Begleitsatz"
+        - "Indirekte Rede: Konjunktiv I"
+        - "Ersatzformen mit Konjunktiv II"
+        - "Zeitenfolge, Pronomenverschiebung"
+      time_estimate: "6 Stunden"
+
+  vocabulary_terminology:
+    reading_terms:
+      - term: "Textsorte"
+        definition: "Die Art oder Gattung eines Textes"
+        example: "Erzählung, Bericht, Gedicht sind verschiedene Textsorten"
+      - term: "Hauptgedanke"
+        definition: "Die zentrale Aussage eines Textabschnitts"
+        example: "Der Hauptgedanke des ersten Absatzes ist die Einführung der Hauptfigur"
+      - term: "Textstruktur"
+        definition: "Der Aufbau und die Gliederung eines Textes"
+        example: "Die Textstruktur umfasst Einleitung, Hauptteil und Schluss"
+      - term: "Schlüsselwort"
+        definition: "Wichtiges Wort, das Kerninformation enthält"
+        example: "Schlüsselwörter helfen beim schnellen Erfassen von Textinhalten"
+
+    writing_terms:
+      - term: "Einleitung"
+        definition: "Der beginnende Teil eines Textes, der in das Thema einführt"
+        example: "Die Einleitung einer Erzählung stellt Ort, Zeit und Figuren vor"
+      - term: "Hauptteil"
+        definition: "Der mittlere Teil, in dem die Handlung oder Information entwickelt wird"
+        example: "Im Hauptteil wird der Konflikt entfaltet"
+      - term: "Schluss"
+        definition: "Der abschließende Teil eines Textes"
+        example: "Der Schluss rundet die Geschichte ab"
+      - term: "Höhepunkt"
+        definition: "Der spannendste Moment einer Erzählung"
+        example: "Am Höhepunkt wird der Konflikt gelöst"
+      - term: "Absatz"
+        definition: "Ein zusammenhängender Textabschnitt"
+        example: "Jeder neue Gedanke beginnt in einem neuen Absatz"
+      - term: "W-Fragen"
+        definition: "Wer? Was? Wann? Wo? Wie? Warum? - Fragen für vollständige Berichte"
+        example: "Ein guter Bericht beantwortet alle W-Fragen"
+      - term: "Sachlich"
+        definition: "Objektiv, ohne persönliche Meinung oder Gefühle"
+        example: "Ein Bericht muss sachlich formuliert sein"
+      - term: "Erzählperspektive"
+        definition: "Der Blickwinkel, aus dem erzählt wird"
+        example: "Ich-Erzähler oder Er/Sie-Erzähler sind verschiedene Erzählperspektiven"
+      - term: "Wörtliche Rede"
+        definition: "Direkt wiedergegebene Aussagen einer Person"
+        example: "Peter sagte: 'Ich komme morgen.'"
+
+    spelling_terms:
+      - term: "Substantivierung"
+        definition: "Verwandlung anderer Wortarten in Nomen"
+        example: "das Laufen, das Schöne, beim Spielen"
+      - term: "Nominalisierung"
+        definition: "Ein anderes Wort für Substantivierung"
+        example: "aus 'schnell laufen' wird 'das schnelle Laufen'"
+      - term: "Signalwort"
+        definition: "Wörter, die auf Großschreibung hinweisen"
+        example: "Artikel (das, ein), Präpositionen (beim, zum)"
+      - term: "Dehnungs-h"
+        definition: "Ein stummes h zur Kennzeichnung eines langen Vokals"
+        example: "fahren, Zahl, Stuhl"
+      - term: "Doppelkonsonant"
+        definition: "Verdopplung eines Konsonanten nach kurzem Vokal"
+        example: "rennen, Sonne, kommen"
+
+    grammar_terms:
+      - term: "Wortart"
+        definition: "Die grammatische Kategorie, zu der ein Wort gehört"
+        example: "Nomen, Verb, Adjektiv sind Wortarten"
+      - term: "Satzglied"
+        definition: "Ein Teil des Satzes mit einer bestimmten Funktion"
+        example: "Subjekt und Prädikat sind Satzglieder"
+      - term: "Subjekt"
+        definition: "Das Satzglied, das die Frage 'Wer oder was?' beantwortet"
+        example: "Der Hund (Subjekt) bellt laut"
+      - term: "Prädikat"
+        definition: "Das Satzglied, das aussagt, was geschieht"
+        example: "Der Hund bellt (Prädikat) laut"
+      - term: "Objekt"
+        definition: "Ergänzung zum Prädikat"
+        example: "Ich sehe den Ball (Akkusativobjekt)"
+      - term: "Adverbiale"
+        definition: "Umstandsbestimmung im Satz"
+        example: "Wir fahren morgen (temporal) nach Berlin (lokal)"
+      - term: "Konjugation"
+        definition: "Beugung des Verbs nach Person, Zahl und Zeit"
+        example: "ich gehe, du gehst, er geht"
+      - term: "Deklination"
+        definition: "Beugung von Nomen, Adjektiven und Pronomen"
+        example: "der Mann, des Mannes, dem Mann"
+      - term: "Tempus"
+        definition: "Die Zeitform eines Verbs"
+        example: "Präsens, Präteritum, Perfekt sind Tempora"
+      - term: "Modus"
+        definition: "Die Aussageweise eines Verbs"
+        example: "Indikativ, Konjunktiv, Imperativ"
+      - term: "Kasus"
+        definition: "Der Fall eines Nomens"
+        example: "Nominativ, Genitiv, Dativ, Akkusativ"
+
+    literature_terms:
+      - term: "Figur"
+        definition: "Eine Person in einem literarischen Text"
+        example: "Der Protagonist ist die Hauptfigur"
+      - term: "Charakterisierung"
+        definition: "Beschreibung der Eigenschaften einer Figur"
+        example: "Eine Charakterisierung umfasst Aussehen, Verhalten und Eigenschaften"
+      - term: "Handlung"
+        definition: "Der Ablauf der Ereignisse in einer Geschichte"
+        example: "Die Handlung wird chronologisch erzählt"
+      - term: "Setting"
+        definition: "Zeit und Ort der Handlung"
+        example: "Das Setting ist ein Dorf im 19. Jahrhundert"
+      - term: "Motiv"
+        definition: "Ein wiederkehrendes Thema oder Element"
+        example: "Das Motiv der Freundschaft zieht sich durch das Buch"
+      - term: "Strophe"
+        definition: "Ein Abschnitt eines Gedichts"
+        example: "Das Gedicht hat vier Strophen"
+      - term: "Vers"
+        definition: "Eine Zeile eines Gedichts"
+        example: "Jede Strophe besteht aus vier Versen"
+      - term: "Reim"
+        definition: "Gleichklang am Ende von Versen"
+        example: "Haus reimt sich auf Maus"
+      - term: "Metapher"
+        definition: "Ein sprachliches Bild, ein bildlicher Vergleich"
+        example: "Schneckentempo ist eine Metapher für Langsamkeit"
+      - term: "Personifikation"
+        definition: "Vermenschlichung von Dingen oder Tieren"
+        example: "Der Wind flüstert ist eine Personifikation"
+
+  text_types:
+    - name: "Erzählung"
+      features:
+        - "Einleitung, Hauptteil mit Höhepunkt, Schluss"
+        - "Erzählzeit meist Präteritum"
+        - "Ausgestaltung mit Adjektiven und wörtlicher Rede"
+        - "Spannungsaufbau"
+      variations: ["Erlebniserzählung", "Fantasieerzählung", "Nacherzählung", "Reizwortgeschichte"]
+
+    - name: "Bericht"
+      features:
+        - "Sachlich und objektiv"
+        - "Präteritum"
+        - "W-Fragen werden beantwortet"
+        - "Keine Ausschmückungen oder Gefühle"
+      variations: ["Unfallbericht", "Zeitungsbericht", "Ereignisbericht"]
+
+    - name: "Beschreibung"
+      features:
+        - "Präsens"
+        - "Genaue Beobachtung"
+        - "Systematischer Aufbau"
+        - "Präziser Wortschatz"
+      variations: ["Personenbeschreibung", "Gegenstandsbeschreibung", "Vorgangsbeschreibung", "Bildbeschreibung"]
+
+    - name: "Brief"
+      features:
+        - "Briefkopf: Ort, Datum"
+        - "Anrede"
+        - "Brieftext"
+        - "Grußformel"
+        - "Unterschrift"
+      variations: ["Persönlicher Brief", "Formaler Brief", "E-Mail"]
+
+    - name: "Gedicht"
+      features:
+        - "Verse und Strophen"
+        - "Reimschema"
+        - "Rhythmus und Metrum"
+        - "Sprachliche Bilder"
+      variations: ["Ballade", "Elfchen", "Akrostichon", "Haiku"]
+
+  methodological_competencies:
+    - name: "Lesekompetenz"
+      skills:
+        - "Verschiedene Lesetechniken anwenden"
+        - "Texte strukturieren und zusammenfassen"
+        - "Informationen entnehmen und ordnen"
+        - "Textinhalte mit Vorwissen verknüpfen"
+
+    - name: "Schreibkompetenz"
+      skills:
+        - "Schreibprozess planen (Stoffsammlung, Gliederung)"
+        - "Texte adressatengerecht formulieren"
+        - "Eigene Texte überarbeiten"
+        - "Rechtschreibstrategien anwenden"
+
+    - name: "Sprachreflexion"
+      skills:
+        - "Grammatische Phänomene erkennen und benennen"
+        - "Sprachliche Mittel bewusst einsetzen"
+        - "Wortschatz erweitern und differenzieren"
+        - "Sprachliche Richtigkeit beachten"
+
+    - name: "Gesprächskompetenz"
+      skills:
+        - "Aktiv zuhören"
+        - "Gesprächsregeln einhalten"
+        - "Eigene Meinung begründen"
+        - "Auf Gesprächspartner eingehen"
+
+    - name: "Präsentationskompetenz"
+      skills:
+        - "Vorträge strukturiert aufbauen"
+        - "Medien sinnvoll einsetzen"
+        - "Frei sprechen"
+        - "Körpersprache bewusst nutzen"
+
+    - name: "Texterschließung"
+      skills:
+        - "Texte analysieren und interpretieren"
+        - "Literarische Figuren charakterisieren"
+        - "Textsortenmerkmale erkennen"
+        - "Textaussagen belegen"
+
+  assessment_criteria:
+    reading:
+      excellent:
+        - "Erfasst komplexe Texte vollständig"
+        - "Erkennt auch implizite Informationen"
+        - "Stellt eigenständig Zusammenhänge her"
+      good:
+        - "Erfasst Hauptinformationen sicher"
+        - "Versteht explizite Textaussagen"
+        - "Kann Textstellen zuordnen"
+      satisfactory:
+        - "Erfasst grundlegende Informationen"
+        - "Versteht einfache Textpassagen"
+        - "Benötigt Hilfestellung bei komplexen Texten"
+      common_mistakes:
+        - "Überfliegt Texte zu schnell"
+        - "Versteht Fachbegriffe nicht"
+        - "Kann Wichtiges und Unwichtiges nicht unterscheiden"
+
+    writing:
+      excellent:
+        - "Strukturiert Texte klar und logisch"
+        - "Nutzt vielfältigen und präzisen Wortschatz"
+        - "Formuliert abwechslungsreich"
+        - "Rechtschreibung weitgehend sicher"
+      good:
+        - "Aufbau ist erkennbar"
+        - "Wortschatz angemessen"
+        - "Sätze meist korrekt formuliert"
+        - "Wenige Rechtschreibfehler"
+      satisfactory:
+        - "Grundstruktur vorhanden"
+        - "Einfacher Wortschatz"
+        - "Einfache Satzstrukturen"
+        - "Mehrere Rechtschreibfehler"
+      common_mistakes:
+        - "Fehlende Gliederung"
+        - "Wortwiederholungen"
+        - "Umgangssprachlicher Stil in sachlichen Texten"
+        - "Groß- und Kleinschreibung verwechselt"
+
+    grammar:
+      excellent:
+        - "Bestimmt alle Wortarten und Satzglieder sicher"
+        - "Wendet grammatische Regeln korrekt an"
+        - "Erklärt grammatische Phänomene"
+      good:
+        - "Bestimmt die wichtigsten Wortarten und Satzglieder"
+        - "Wendet Regeln meist korrekt an"
+        - "Erkennt grammatische Strukturen"
+      satisfactory:
+        - "Bestimmt einfache Wortarten und Satzglieder"
+        - "Wendet Grundregeln an"
+        - "Benötigt Hilfestellung bei komplexen Strukturen"
+      common_mistakes:
+        - "Verwechslung von Dativ und Akkusativ"
+        - "Falsche Zeitformen"
+        - "Fehler bei Aktiv-Passiv-Umformung"
+
+    speaking:
+      excellent:
+        - "Spricht frei, flüssig und verständlich"
+        - "Nutzt Mimik und Gestik angemessen"
+        - "Betont sinnvoll und ausdrucksvoll"
+      good:
+        - "Spricht weitgehend frei"
+        - "Artikulation meist deutlich"
+        - "Angemessene Lautstärke"
+      satisfactory:
+        - "Liest überwiegend ab"
+        - "Teilweise undeutlich"
+        - "Monotone Sprechweise"
+      common_mistakes:
+        - "Kein Blickkontakt"
+        - "Zu leise oder zu schnell"
+        - "Keine Pausen"
+
+  regional_specifications:
+    language: "de"
+    formality: "du"
+    grading:
+      type: "1-6"
+      passing: 4
+      description: "Note 1 = sehr gut, Note 2 = gut, Note 3 = befriedigend, Note 4 = ausreichend, Note 5 = mangelhaft, Note 6 = ungenügend"
